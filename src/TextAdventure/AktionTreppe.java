@@ -1,4 +1,4 @@
-package com.company;
+package TextAdventure;
 
 public class AktionTreppe extends Aktion{
 
