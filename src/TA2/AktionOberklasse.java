@@ -25,6 +25,17 @@ abstract class AktionOberklasse implements InterfaceOfUpdate, InterfaceOfVerfüg
     //Sonder Deaktivierung
     protected boolean sonderdeaktivierung = false;
 
+    public boolean isVerfügbar() {
+        return verfügbar;
+    }
+
+    public String getBeschreibung() {
+        return beschreibung;
+    }
+
+    public String getAusführungsText() {
+        return ausführungsText;
+    }
 
     protected AktionOberklasse(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText) {
         this.aktionsname = aktionsname;

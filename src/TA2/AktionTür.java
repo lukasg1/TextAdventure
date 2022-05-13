@@ -16,7 +16,7 @@ public class AktionTür extends AktionBrauchtRaum{
     public void ausführen() {
 
             System.out.println(ausführungsText);
-            rv.setAktuellerRaum(raum);
+            rv.setAktuellerRaum(zielraum);
             this.beschreibung= "Von "+raum.getRaumName()+" nach "+zielraum.getRaumName()+" gehen";
             this.ausführungsText="";
 
