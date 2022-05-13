@@ -6,10 +6,10 @@ public class AktionTür extends AktionBrauchtRaum{
     protected Raum zielraum;
     protected boolean verschlossen;
     protected String verschlossenText;
-    public AktionTür(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Raum raum,Raum Zielraum) {
+    public AktionTür(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Raum raum,Raum zielraum) {
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText, raum);
         this.zielraum=zielraum;
-        this.verschlossen=verschlossen;
+        this.verschlossen=true;
         this.aktionsname= raum.getRaumName()+zielraum.getRaumName()+"Tür";
 
         this.verschlossenText="Die Türe geht nicht auf. Die Türe muss verschlossen oder versperrt sein.";
