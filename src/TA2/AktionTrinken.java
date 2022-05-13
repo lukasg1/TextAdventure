@@ -1,5 +1,5 @@
 package TA2;
 
-public class AktionTrinkbar extends AktionBrauchtNix{
+public class AktionTrinken extends AktionBrauchtNix{
 
 }
