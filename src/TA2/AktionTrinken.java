@@ -1,8 +1,15 @@
 package TA2;
 
-public class AktionTrinken extends AktionTür{
+import static TA2.Main.gv;
 
-    public AktionTrinken(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Raum raum, Raum Zielraum) {
-        super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText, raum, Zielraum);
+public class AktionTrinken extends AktionBrauchtNix{
+
+    public AktionTrinken(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText) {
+        super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText);
+    }
+
+    @Override
+    public void ausführen() {
+        System.out.println("Trinke", gv.sucheTrinkbarenGegnstand());
     }
 }
