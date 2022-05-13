@@ -13,6 +13,9 @@ public class VerwaltungRaum {
 
     }
 
+    public int getEtage() {
+        return etage;
+    }
 
     public Raum getAktuellerRaum() {
         return aktuellerRaum;
