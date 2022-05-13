@@ -209,14 +209,16 @@ public class VerwaltungGegenstände implements InterfaceOfUpdate{
     public Gegenstand sucheGegnstandImInventar(Gegenstand gegenstand){
 
         for(int i = 0; i< this.gegenstandsliste.length;i++){
+            if(gegenstandsliste[i]==gegenstand) {
 
-                if(gegenstandsliste[i].verfügbarkeitPrüfen()==true){
-                    if(gegenstandsliste[i].isImInventar()==true){
+                if (gegenstandsliste[i].verfügbarkeitPrüfen() == true) {
+                    if (gegenstandsliste[i].isImInventar() == true) {
 
                         return gegenstandsliste[i];
 
                     }
                 }
+            }
 
         }
         return null;
