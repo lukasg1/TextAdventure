@@ -28,8 +28,12 @@ public class Main {
     private static Raum vorgarten= new Raum("Vorgarten", "Du trittst raus an die freie Luft, das tut gut.","Du hast das Haus wieder verlassen und denoch hast du mal wieder das Gefühl das nicht wirklich. Täuscht es vielleicht diesmal?","draußen");
     private static Raum bibliothek= new Raum("Bibliothek","Du trittst in eine Bibliothek, die Wände sind voll von Bücheregalen.","Du betrittst die Bibliothek.","Bibliothek(EG)");
 
+
     public static TA2.AktionTür türEingangshalleKüche = new TA2.AktionTür("",true,true,"Du erkennst eine große Holztüre.Ob sie wohl aufgeht?","Die Türe ist sehr schwerfällig, aber lässt sich öfnnen",eingangshalle,küche);
-    public static TA2.AktionTür treppe1EG= new TextAdventure.AktionTreppe(eingangshalle,flurOG,"",true,"Du gehst die Treppe hoch.",rv,"Nutze die Treppe");
+    public static TA2.AktionTür treppe1EG = new TA2.AktionTür("",true,true,"Nutze die Treppe?","Du gehst die Treppe hoch",eingangshalle,flurOG);
+
+
+
     public static TA2.AktionTür türEingangshalleBadezimmer= new TextAdventure.AktionTür(eingangshalle,badezimmer,"",false,"Du öffnest vorsichtig die Tür.",rv,"Mysteriöse weiße Tür öffnen",false);
     public static TA2.AktionTür türFlurOGBadezimmer=new TextAdventure.AktionTür(flurOG,badezimmer,"",false,"Du gehst bedächtig zu der Tür. Die Türe geht leicht auf.",rv,"Die weiße Türe kommt dir bekannt vor. Magst du sie öffnen?",false);
     public static TA2.AktionTreppe treppe2EG=new TextAdventure.AktionTreppe(flurEG,flurOG,"",false,"Vorsichtig nutzt du die Treppe. Stürzen mag niemand!",rv,"Nutze die massive Steintreppe");
