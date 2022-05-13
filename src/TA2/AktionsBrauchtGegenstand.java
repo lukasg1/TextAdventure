@@ -3,7 +3,7 @@ package TA2;
 import static TA2.Main.gv;
 import static TA2.Main.rv;
 
-public class AktionsBrauchtGegenstand extends AktionOberklasse{
+abstract class AktionsBrauchtGegenstand extends AktionOberklasse{
     protected Gegenstand gegenstand;
     public AktionsBrauchtGegenstand(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand) {
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText);

@@ -3,7 +3,7 @@ package TA2;
 import static TA2.Main.gv;
 import static TA2.Main.rv;
 
-public class AktionBrauchtRaumUndGegenstand extends AktionOberklasse{
+abstract class AktionBrauchtRaumUndGegenstand extends AktionOberklasse{
     protected Gegenstand gegenstand;
     protected Raum raum;
     public AktionBrauchtRaumUndGegenstand(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand, Raum raum) {
