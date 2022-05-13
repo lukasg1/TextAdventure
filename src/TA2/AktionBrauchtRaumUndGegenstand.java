@@ -17,7 +17,7 @@ abstract class AktionBrauchtRaumUndGegenstand extends AktionOberklasse{
         if(sichtbar==true&&aktiv==true&&raum==rv.getAktuellerRaum()&&sonderdeaktivierung==false&&gv.isGegenstandVerfügbar(gegenstand)==true){
             verfügbar=true;
         }
-        verfügbar=false;
+        else verfügbar=false;
 
     }
 

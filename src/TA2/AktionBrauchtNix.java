@@ -14,7 +14,7 @@ abstract class AktionBrauchtNix extends AktionOberklasse{
         if(sichtbar==true&&aktiv==true&&sonderdeaktivierung==false){
             verfügbar=true;
         }
-        verfügbar=false;
+        else verfügbar=false;
 
     }
 
