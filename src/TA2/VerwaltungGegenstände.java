@@ -171,93 +171,55 @@ public class VerwaltungGegenstände implements InterfaceOfUpdate{
         return liste;
     }
 
-    public Gegenstand[] sucheGegnstandzumAnzünden(){
-        int zähler1 =0;
-        for(int i = 0; i< this.gegenstandsliste.length;i++){
-            if(gegenstandsliste[i].isKannAnzünden()==true){
-                if(gegenstandsliste[i].verfügbarkeitPrüfen()==true){
-                    if(gegenstandsliste[i].isImInventar()==true){
+    public Gegenstand sucheGegnstandzumAnzünden(){
 
 
-                        zähler1++;
-                    }
-                }
-            }
-        }
-
-        Gegenstand[] liste=new Gegenstand[zähler1];
         int zähler=0;
         for(int i = 0; i< this.gegenstandsliste.length;i++){
             if(gegenstandsliste[i].isKannAnzünden()==true){
                 if(gegenstandsliste[i].verfügbarkeitPrüfen()==true){
                     if(gegenstandsliste[i].isImInventar()==true){
 
-                        liste[zähler]=gegenstandsliste[i];
-                        zähler++;
+                        return gegenstandsliste[i];
+
                     }
                 }
             }
         }
-        return liste;
+        return null;
     }
 
-    public Gegenstand[] sucheGegnstandzumZerstören(){
-        int zähler1 =0;
-        for(int i = 0; i< this.gegenstandsliste.length;i++){
-            if(gegenstandsliste[i].isKannZerstören()==true){
-                if(gegenstandsliste[i].verfügbarkeitPrüfen()==true){
-                    if(gegenstandsliste[i].isImInventar()==true){
+    public Gegenstand sucheGegnstandzumZerstören(){
 
 
-                        zähler1++;
-                    }
-                }
-            }
-        }
-
-        Gegenstand[] liste=new Gegenstand[zähler1];
         int zähler=0;
         for(int i = 0; i< this.gegenstandsliste.length;i++){
             if(gegenstandsliste[i].isKannZerstören()==true){
                 if(gegenstandsliste[i].verfügbarkeitPrüfen()==true){
                     if(gegenstandsliste[i].isImInventar()==true){
 
-                        liste[zähler]=gegenstandsliste[i];
-                        zähler++;
+                        return gegenstandsliste[i];
+
                     }
                 }
             }
         }
-        return liste;
+        return null;
     }
-    public Gegenstand[] sucheGegnstandImInventar(){
-        int zähler1 =0;
+    public Gegenstand sucheGegnstandImInventar(){
+
         for(int i = 0; i< this.gegenstandsliste.length;i++){
 
                 if(gegenstandsliste[i].verfügbarkeitPrüfen()==true){
                     if(gegenstandsliste[i].isImInventar()==true){
 
+                        return gegenstandsliste[i];
 
-                        zähler1++;
                     }
                 }
 
         }
-
-        Gegenstand[] liste=new Gegenstand[zähler1];
-        int zähler=0;
-        for(int i = 0; i< this.gegenstandsliste.length;i++){
-
-                if(gegenstandsliste[i].verfügbarkeitPrüfen()==true){
-                    if(gegenstandsliste[i].isImInventar()==true){
-
-                        liste[zähler]=gegenstandsliste[i];
-                        zähler++;
-                    }
-                }
-
-        }
-        return liste;
+        return null;
     }
 
 
