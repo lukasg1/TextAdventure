@@ -220,5 +220,4 @@ public class Gegenstand implements InterfaceOfUpdate, InterfaceOfVerfügbar, Int
 
     public void setSichtbar(boolean sichtbar) {
         this.sichtbar = sichtbar;
-    }
-}
+    }}
