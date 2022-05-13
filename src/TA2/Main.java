@@ -31,27 +31,28 @@ public class Main {
 
     public static TA2.AktionTür türEingangshalleKüche = new TA2.AktionTür("",true,true,"Du erkennst eine große Holztüre.Ob sie wohl aufgeht?","Die Türe ist sehr schwerfällig, aber lässt sich öfnnen",eingangshalle,küche);
     public static TA2.AktionTür treppe1EG = new TA2.AktionTür("",true,true,"Nutze die Treppe?","Du gehst die Treppe hoch",eingangshalle,flurOG);
+    public static TA2.AktionTür türEingangshalleBadezimmer = new TA2.AktionTür("",true,true,"Mysteriöse weiße Tür öffnen?","Du öffnest vorsichtig die Tür.",eingangshalle,badezimmer);
+    public static TA2.AktionTür türFlurOGBadezimmer = new TA2.AktionTür("",true,true,"Die weiße Türe kommt dir bekannt vor. Magst du sie öffnen?","Du gehst bedächtig zu der Tür. Die Türe geht leicht auf.",flurOG,badezimmer);
+    public static TA2.AktionTür treppe2EG = new TA2.AktionTür("",true,true,"Nutze die massive Steintreppe","Vorsichtig nutzt du die Treppe. Stürzen mag niemand!",flurEG,flurOG);
+    public static TA2.AktionTür türKücheEsszimmer = new TA2.AktionTür("",true,true,"Ein Durchgang führt durch die Küche in einen weiteren Raum. Gehe dort hin","Du gehst durch den Durchgang den Durchgang in der Küche in den nächsten Raum",küche,esszimmer);
+    public static TA2.AktionTür türEsszimmerGarten = new TA2.AktionTür("",true,true,"Eine große mächtige Kappelle, die gar nicht in den Garten passt. Versuche die Holztüre zu öffnen","Du reißt die Türe auf.",esszimmer,garten);
+    public static TA2.AktionTür türGartenKapelle = new TA2.AktionTür("",true,true,"Eine große mächtige Kappelle, die gar nicht in den Garten passt. Versuche die Holztüre zu öffnen","Die Türe öffnet sich träge und schlechte Luft schlägt dir entgegen.",garten,kapelle);
+    public static TA2.AktionTür türEsszimmerVorraum = new TA2.AktionTür("",true,true,"Öffne Tür im hinterem Teil des Raumes","Die Türe geht auf und du gehst durch.",esszimmer,vorraum);
+    public static TA2.AktionTür türVorraumBibliothek = new TA2.AktionTür("",true,true,"Öffne die verzierte Holztüre an der Wand. Was wohl dahinter liegt?","",vorraum,bibliothek);
+    public static TA2.AktionTür türVorraumFlurEG = new TA2.AktionTür("",true,true,"Öffne die große massive Holztüre.","Öffne die massive Tür",vorraum,flurEG);
+    public static TA2.AktionTür türFlurEGAlbtraumraum = new TA2.AktionTür("",true,true,"Eine glatte Schwarzetüre. 'Öffne mich schreit' sie dir zu. Öffnest du sie?","Die Türe ist so faszinierten. Du fühlst fast einen Sog während du sie öffnest.",flurEG,albtraumRaum);
+    public static TA2.AktionTür türEingangshalleVorgarten = new TA2.AktionTür("",true,true,"Die Konturen zeigen eine massive Türe. Versuche sie zu öffnen.","Die Eingangstüre öffnet sich.",eingangshalle,vorgarten);
+    public static TA2.AktionTür türFlurEGWohnzimmer = new TA2.AktionTür("",true,true,"Schlichte Tür am Flurende versuchen zu öffnen.","Die Türe schwingt lautlos auf.",flurEG,wohnzimmer);
+    public static TA2.AktionTür türFlurOGArena = new TA2.AktionTür("",true,true,"Türe mit Schwertsymbol öffnen.","",flurOG,arena);
+    public static TA2.AktionTür türFlurOGTeezimmer = new TA2.AktionTür("",true,true,"Schlichte Holztüre, man hört leises plätschern. Öffnen?","",flurOG,teezimmer);
+    public static TA2.AktionTür türFlurOGBeschwörerraum = new TA2.AktionTür("",true,true,"Türe auf der rechten Seite versuchen zu öffnen","Du öffnest die Tür",flurOG,beschwörkammer);
+    public static TA2.AktionTür türFlurOGGemächer = new TA2.AktionTür("",true,true,"Durch die geheime Tür gehen die man nicht sieht","Das das klappt hättest nichtmal du gedacht",flurOG,gemächer);
+    public static TA2.AktionTür türTeeZimmerHinterDemBild = new TA2.AktionTür("",true,true,"Gegen das Bild in der Mitte des Raum rennen?","Du rennst mit voller Geschwindigkeit in Richtung Wand.",teezimmer,hinterDemBild);
 
 
 
-    public static TA2.AktionTür türEingangshalleBadezimmer= new TextAdventure.AktionTür(eingangshalle,badezimmer,"",false,"Du öffnest vorsichtig die Tür.",rv,"Mysteriöse weiße Tür öffnen",false);
-    public static TA2.AktionTür türFlurOGBadezimmer=new TextAdventure.AktionTür(flurOG,badezimmer,"",false,"Du gehst bedächtig zu der Tür. Die Türe geht leicht auf.",rv,"Die weiße Türe kommt dir bekannt vor. Magst du sie öffnen?",false);
-    public static TA2.AktionTreppe treppe2EG=new TextAdventure.AktionTreppe(flurEG,flurOG,"",false,"Vorsichtig nutzt du die Treppe. Stürzen mag niemand!",rv,"Nutze die massive Steintreppe");
-    public static TA2.AktionTür türKücheEsszimmer=new TextAdventure.AktionTür(küche,esszimmer,"",false,"Du gehst durch den Durchgang den Durchgang in der Küche in den nächsten Raum.",rv,"Ein Durchgang führt durch die Küche in einen weiteren Raum. Gehe dort hin",false);
-    public static TA2.AktionTür türEsszimmerGarten=new TextAdventure.AktionTür(esszimmer,garten,"",false,"Du reißt die Türe auf.",rv,"Eine Tür die nach draußen zu führen scheint. Vielleicht in den Garten. Versuche sie zu öffnen", true);
-    public static TA2.AktionTür türGartenKapelle=new TextAdventure.AktionTür(garten,kapelle,"",true,"Die Türe öffnet sich träge und schlechte Luft schlägt dir entgegen",rv,"Eine große mächtige Kappelle, die gar nicht in den Garten passt. Versuche die Holztüre zu öffnen",true);
-    public static TA2.AktionTür türEsszimmerVorraum=new TextAdventure.AktionTür(esszimmer,vorraum,"",false,"Die Türe geht auf und du gehst durch.",rv,"Öffne Tür im hinterem Teil des Raumes",false);
-    public static TA2.AktionTür türVorraumBibliothek=new TextAdventure.AktionTür(vorraum,bibliothek,"",false,"",rv,"Öffne die verzierte Holztüre an der Wand. Was wohl dahinter liegt?",false);
-    public static TA2.AktionTür türVorraumFlurEG=new TextAdventure.AktionTür(vorraum,flurEG,"",false,"Öffne die massive Tür",rv,"Öffne die große massive Holztüre.",true);
-    public static TA2.AktionTür türFlurEGAlbtraumraum=new TextAdventure.AktionTür(flurEG,albtraumRaum,"",false,"Die Türe ist so faszinierten. Du fühlst fast einen Sog während du sie öffnest.",rv,"Eine glatte Schwarzetüre. 'Öffne mich schreit' sie dir zu. Öffnest du sie?",false);
-    public static TA2.AktionTür türEingangshalleVorgarten=new TextAdventure.AktionTür(eingangshalle,vorgarten,"",false,"Die Eingangstüre öffnet sich.",rv,"Die Konturen zeigen eine massive Türe. Versuche sie zu öffnen",true);
-    public static TA2.AktionTür türFlurEGWohnzimmer=new TextAdventure.AktionTür(flurEG,wohnzimmer,"",false,"Die Türe schwingt lautlos auf.",rv,"Schlichte Tür am Flurende versuchen zu öffnen", false);
-    public static TA2.AktionTür türFlurOGArena=new TextAdventure.AktionTür(flurOG,arena,"",false,"",rv,"Türe mit Schwertsymbol öffnen",false);
-    public static TA2.AktionTür türFlurOGTeezimmer=new TextAdventure.AktionTür(flurOG,teezimmer,"",false,"",rv,"Schlichte Holztüre, man hört leises plätschern. Öffnen?", false);
-    public static TA2.AktionTür türFlurOGBesenkammer=new TextAdventure.AktionTür(flurOG,besenkammer,"",false,"Die Türe ist bereits einen Spalt offen. Du schlüpfst durch den Spalt",rv,"Unscheinbare Tür. Die hast du glatt übersehen. Schau rein",false);
-    public static TA2.AktionTür türFlurOGBeschwörerraum=new TextAdventure.AktionTür(flurOG,beschwörkammer,"",false,"Du öffnest die Tür",rv,"Türe auf der rechten Seite versuchen zu öffnen", false);
-    public static TA2.AktionTür türFlurOGGemächer=new TextAdventure.AktionTür(flurOG,gemächer,"",true,"Das das klappt hättest nichtmal du gedacht",rv,"Durch die geheime Tür gehen die man nicht sieht.",false);
-    public static TA2.AktionTür türTeeZimmerHinterDemBild=new AktionTür(teezimmer,hinterDemBild,"",true,"Du rennst mit voller Geschwindigkeit in Richtung Wand.",rv,"Gegen das Bild in der Mitte des Raum rennen?",true);
+
+
 
 
     //Gegenstand
