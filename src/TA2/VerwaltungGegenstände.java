@@ -206,7 +206,7 @@ public class VerwaltungGegenstände implements InterfaceOfUpdate{
         }
         return null;
     }
-    public Gegenstand sucheGegnstandImInventar(){
+    public Gegenstand sucheGegnstandImInventar(Gegenstand gegenstand){
 
         for(int i = 0; i< this.gegenstandsliste.length;i++){
 
