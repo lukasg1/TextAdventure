@@ -3,36 +3,36 @@ package TA2;
 abstract class AktionOberklasse implements InterfaceOfUpdate, InterfaceOfVerfügbar, InterfaceOfAktivierenUndDeaktivieren{
 
     //kennezeichnung
-    private String aktionsname;
+    protected String aktionsname;
 
 
     //Grundvariable zum Aktualisieren
-    private boolean verfügbar;
+    protected boolean verfügbar;
 
 
     //Grundeigenschaften des Objektes die zum verfügbar wichtig sind
-    private boolean aktiv;
+    protected boolean aktiv;
 
     @Override
     public abstract void update();
 
-    private boolean sichtbar;
+    protected boolean sichtbar;
 
     //Aktionsattribute
     protected String beschreibung;
     protected String ausführungsText;
 
     //Sonder Deaktivierung
-    private boolean sonderdeaktivierung = false;
+    protected boolean sonderdeaktivierung = false;
 
 
-
-
-
-
-
-
-
+    protected AktionOberklasse(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText) {
+        this.aktionsname = aktionsname;
+        this.aktiv = aktiv;
+        this.sichtbar = sichtbar;
+        this.beschreibung = beschreibung;
+        this.ausführungsText = ausführungsText;
+    }
 
     @Override
     public void aktivieren() {
