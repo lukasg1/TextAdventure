@@ -7,6 +7,7 @@ public class AktionTürBrauchtGegenstand extends AktionBrauchtRaum{
     protected VerwaltungGegenstände gegenstandverwaltung;
     protected Gegenstand gegenstand;
 
+
     public AktionTürBrauchtGegenstand(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Raum raum,Raum zielraum,Gegenstand gegenstand,VerwaltungGegenstände gegentandverwaltung) {
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText, raum);
         this.zielraum=zielraum;
@@ -21,16 +22,11 @@ public class AktionTürBrauchtGegenstand extends AktionBrauchtRaum{
 
             if(gegenstandverwaltung.sucheGegnstandImInventar(gegenstand)==gegenstand){
                 System.out.println(ausführungsText);
-                rv.setAktuellerRaum(raum);
+                rv.setAktuellerRaum(zielraum);
                 this.beschreibung= "Von "+raum.getRaumName()+" nach "+zielraum.getRaumName()+" gehen";
-                this.ausführungsText="";
+                this.ausführungsText="Du gehst in den neuen raum";
+            }else{
+                System.out.println("Tür verloschssen");
             }
-        System.out.println("Tür verloschssen");
-
-
-
-
-
-
     }
 }
