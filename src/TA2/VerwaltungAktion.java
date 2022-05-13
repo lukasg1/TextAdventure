@@ -1,10 +1,10 @@
 package TA2;
 
-public class AktionsVerwaltung implements InterfaceOfUpdate{
+public class VerwaltungAktion implements InterfaceOfUpdate{
     AktionOberklasse[] aktionen;
     int anzahlverfügebare=0;
 
-    public AktionsVerwaltung(AktionOberklasse[] aktionen) {
+    public VerwaltungAktion(AktionOberklasse[] aktionen) {
         this.aktionen = aktionen;
         anzahlverfügareaktionen();
         verfügebarelisteerzeugen();
