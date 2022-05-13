@@ -1,5 +1,8 @@
 package TA2;
 
+import static TA2.Main.gv;
+import static TA2.Main.rv;
+
 public class AktionBrauchtRaumUndGegenstand extends AktionOberklasse{
     protected Gegenstand gegenstand;
     protected Raum raum;
@@ -11,6 +14,10 @@ public class AktionBrauchtRaumUndGegenstand extends AktionOberklasse{
 
     @Override
     public void update() {
+        if(sichtbar==true&&aktiv==true&&raum==rv.getAktuellerRaum()&&sonderdeaktivierung==false&&gv.isGegenstandVerfügbar(gegenstand)==true){
+            verfügbar=true;
+        }
+        verfügbar=false;
 
     }
 

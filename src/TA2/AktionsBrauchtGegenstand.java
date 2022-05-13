@@ -1,5 +1,8 @@
 package TA2;
 
+import static TA2.Main.gv;
+import static TA2.Main.rv;
+
 public class AktionsBrauchtGegenstand extends AktionOberklasse{
     protected Gegenstand gegenstand;
     public AktionsBrauchtGegenstand(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand) {
@@ -9,6 +12,10 @@ public class AktionsBrauchtGegenstand extends AktionOberklasse{
 
     @Override
     public void update() {
+        if(sichtbar==true&&aktiv==true&& gv.isGegenstandVerfügbar(gegenstand)==true&&sonderdeaktivierung==false){
+            verfügbar=true;
+        }
+        else verfügbar=false;
 
 
     }
