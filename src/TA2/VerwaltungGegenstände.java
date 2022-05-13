@@ -29,7 +29,7 @@ public class VerwaltungGegenstände implements InterfaceOfUpdate{
         return false;
     }
 
-    public Gegenstand[] sucheSammelbarenGegnstand(){
+    public Gegenstand[] sucheSammelbarenGegenstand(){
         int zähler1 =0;
         for(int i = 0; i< this.gegenstandsliste.length;i++){
             if(gegenstandsliste[i].isSammelbar()==true){
