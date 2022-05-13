@@ -13,9 +13,15 @@ public class Textspeicher {
     }
 
     public void text(int i){
-        switch(i){
-            case 1:
+        switch(i) {
+            case 1:{
                 t("Du weißt weder wo noch wer du bist. Dein Schädel brummt und nur langsam gewöhnst du dich an die Dunkelheit.");
+            }
+            case 2:{
+                //Für Tagebuchhexe Seite 1
+                t("");
+            }
         }
+
     }
 }
