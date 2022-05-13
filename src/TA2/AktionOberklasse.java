@@ -1,6 +1,6 @@
 package TA2;
 
-abstract class AktionOberklasse implements InterfaceOfUpdate, InterfaceOfVerfügbar, InterfaceOfAktivierenUndDeaktivieren{
+abstract class AktionOberklasse implements InterfaceOfUpdate, InterfaceOfVerfügbar, InterfaceOfAktivierenUndDeaktivieren, InterfaceOfAusführbar{
 
     //kennezeichnung
     protected String aktionsname;

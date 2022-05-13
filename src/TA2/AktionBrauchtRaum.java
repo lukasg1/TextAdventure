@@ -2,7 +2,7 @@ package TA2;
 
 import static TA2.Main.rv;
 
-public class AktionBrauchtRaum extends AktionOberklasse{
+abstract class AktionBrauchtRaum extends AktionOberklasse{
     protected Raum raum;
 
     public AktionBrauchtRaum(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText,Raum raum) {

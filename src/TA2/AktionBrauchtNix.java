@@ -2,7 +2,7 @@ package TA2;
 
 import static TA2.Main.rv;
 
-public class AktionBrauchtNix extends AktionOberklasse{
+abstract class AktionBrauchtNix extends AktionOberklasse{
 
 
     public AktionBrauchtNix(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText) {
