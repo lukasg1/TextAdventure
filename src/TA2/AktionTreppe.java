@@ -7,7 +7,7 @@ public class AktionTreppe extends AktionBrauchtRaum{
 
 
 
-    public AktionTreppe(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Raum raum,Raum zielraum,) {
+    public AktionTreppe(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Raum raum,Raum zielraum) {
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText, raum);
         this.zielraum=zielraum;
     }
