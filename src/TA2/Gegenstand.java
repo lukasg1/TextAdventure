@@ -25,6 +25,10 @@ public class Gegenstand implements InterfaceOfUpdate, InterfaceOfVerfügbar, Int
     private boolean kannAnzünden;
     private boolean kannZerstören;
 
+    //Sonderzustände
+    private boolean imInventar=false;
+
+
     //Sonder Deaktivierung
     private boolean sonderdeaktivierung = false;
 
@@ -156,10 +160,23 @@ public class Gegenstand implements InterfaceOfUpdate, InterfaceOfVerfügbar, Int
         this.sonderdeaktivierung=true;
     }
 
+    public void insInventar(){
+        imInventar=true;
+    }
+
+    public void ausInventar(){
+        imInventar=false;
+
+    }
+
     //Getter
 
     public String getName() {
         return name;
+    }
+
+    public boolean isImInventar() {
+        return imInventar;
     }
 
     public boolean isSammelbar() {
