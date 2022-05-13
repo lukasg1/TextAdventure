@@ -1,5 +1,7 @@
 package TA2;
 
+import static TA2.Main.rv;
+
 public class AktionBrauchtNix extends AktionOberklasse{
 
 
@@ -9,6 +11,10 @@ public class AktionBrauchtNix extends AktionOberklasse{
 
     @Override
     public void update() {
+        if(sichtbar==true&&aktiv==true&&sonderdeaktivierung==false){
+            verfügbar=true;
+        }
+        verfügbar=false;
 
     }
 

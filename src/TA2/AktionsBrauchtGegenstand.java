@@ -10,6 +10,7 @@ public class AktionsBrauchtGegenstand extends AktionOberklasse{
     @Override
     public void update() {
 
+
     }
 
     @Override

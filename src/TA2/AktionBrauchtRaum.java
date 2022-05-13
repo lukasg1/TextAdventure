@@ -1,5 +1,7 @@
 package TA2;
 
+import static TA2.Main.rv;
+
 public class AktionBrauchtRaum extends AktionOberklasse{
     protected Raum raum;
 
@@ -10,6 +12,10 @@ public class AktionBrauchtRaum extends AktionOberklasse{
 
     @Override
     public void update() {
+        if(sichtbar==true&&aktiv==true&&raum==rv.getAktuellerRaum()&&sonderdeaktivierung==false){
+            verfügbar=true;
+        }
+        verfügbar=false;
 
     }
 
