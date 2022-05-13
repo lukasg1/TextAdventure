@@ -72,5 +72,9 @@ public class Hauptperson implements InterfaceOfUpdate{
     }
 
 
+    @Override
+    public void update() {
+
+    }
 }
 
