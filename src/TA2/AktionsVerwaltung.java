@@ -6,11 +6,11 @@ public class AktionsVerwaltung implements InterfaceOfUpdate{
 
     public AktionsVerwaltung(AktionOberklasse[] aktionen) {
         this.aktionen = aktionen;
-        anzahlaktionen();
+        anzahlverfügareaktionen();
         verfügebarelisteerzeugen();
     }
 
-    public void anzahlaktionen(){
+    public void anzahlverfügareaktionen(){
         for (int i = 0; i < aktionen.length; i++) {
             if(aktionen[i].verfügbarkeitPrüfen()){
                 anzahlverfügebare++;
@@ -42,7 +42,7 @@ public class AktionsVerwaltung implements InterfaceOfUpdate{
 
     @Override
     public void update() {
-        anzahlaktionen();
+        anzahlverfügareaktionen();
         verfügebarelisteerzeugen();
 
     }
