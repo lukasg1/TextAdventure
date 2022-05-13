@@ -161,7 +161,10 @@ public class Gegenstand implements InterfaceOfUpdate, InterfaceOfVerfügbar, Int
     }
 
     public void insInventar(){
-        imInventar=true;
+        if(sammelbar==true){
+            imInventar=true;
+        }
+
     }
 
     public void ausInventar(){
