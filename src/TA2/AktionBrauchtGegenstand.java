@@ -1,11 +1,10 @@
 package TA2;
 
 import static TA2.Main.gv;
-import static TA2.Main.rv;
 
-abstract class AktionsBrauchtGegenstand extends AktionOberklasse{
+abstract class AktionBrauchtGegenstand extends AktionOberklasse{
     protected Gegenstand gegenstand;
-    public AktionsBrauchtGegenstand(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand) {
+    public AktionBrauchtGegenstand(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand) {
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText);
         this.gegenstand= gegenstand;
     }
