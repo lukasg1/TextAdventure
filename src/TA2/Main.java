@@ -118,7 +118,26 @@ public class Main {
 
     static TA2.VerwaltungGegenstände gv = new VerwaltungGegenstände(gegenstandsListe);
 
+    static TA2.VerwaltungAktionen2 av= new VerwaltungAktionen2(aktionsListe);
+
     public static void main(String[] args) {
+
+    }
+
+    public void spiele(){
+        try{
+            updateAll();
+
+            Thread.sleep(1000);
+        }catch(InterruptedException e){}
+
+
+    }
+
+    public void updateAll(){
+        gv.update();
+        av.update();
+        av.gibAktiveAktionen()[av.gibAktiveAktionen().length -1].ausführen();
 
     }
 
