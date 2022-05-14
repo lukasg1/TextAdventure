@@ -106,7 +106,7 @@ public class Main {
     private static Gegenstand vase=new Gegenstand("Vase",true,true,null,true,false,false,false,true);
     private static AktionZerstören zerstöreVase = new AktionZerstören("", true, true,"", "",vase);
 
-
+    private static AktionZusammenbasteln bastelSpeer=new AktionZusammenbasteln("",true,true,"","",besenstiel,klebeband,speerspitze,improvisierterSpeer);
 
     //Listen
     private static Gegenstand[] gegenstandsListe= {goldenerSchlüssel,vase,besen,truhe,schrank,handVollChips,tomatensoße,kekse,apfel,schinken,metalschrott,leiter,halbeLeiter,halbeLeiter2,tomatensoßendose,leeresGlas,flasche,speerspitze,klebeband,besenstiel, vaseMitWasser,ColaFlasche,flascheWein,glasMitWasser,wasser,modernerSchlüssel,bronzeschlüssel,alterSchlüssel,feuerzeug,streichölzer,axt,schwert,schwert2,eisenstang,improvisierterSpeer,massivesHolzbrett};

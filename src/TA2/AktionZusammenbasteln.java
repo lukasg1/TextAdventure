@@ -1,11 +1,14 @@
 package TA2;
 
+import static TA2.Main.gv;
+import static TA2.Main.rv;
+
 public class AktionZusammenbasteln extends AktionBrauchtNix{
 
-    protected Gegenstand gegenstand1;
-    protected Gegenstand gegenstand2;
-    protected Gegenstand gegenstand3;
-    protected Gegenstand gegenstand4;
+    protected Gegenstand gegenstand1=null;
+    protected Gegenstand gegenstand2=null;
+    protected Gegenstand gegenstand3=null;
+    protected Gegenstand gegenstand4=null;
     protected Gegenstand endgegenstand;
 
     public AktionZusammenbasteln(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand1, Gegenstand gegenstand2, Gegenstand endgegenstand) {
@@ -66,9 +69,28 @@ public class AktionZusammenbasteln extends AktionBrauchtNix{
         }
 
     }
+    public void update() {
+        if(sichtbar==true&&aktiv==true&&sonderdeaktivierung==false&&gv.isGegenstandVerfügbar(gegenstand1)==true&&gv.isGegenstandVerfügbar(gegenstand2)==true&&(gv.isGegenstandVerfügbar(gegenstand3)==true||gegenstand3==null)&&(gv.isGegenstandVerfügbar(gegenstand4)==true||gegenstand4==null)){
+            verfügbar=true;
+        }
+        else verfügbar=false;
+
+    }
 
     @Override
     public void ausführen() {
+        System.out.println(ausführungsText);
+        gegenstand1.deaktivieren();
+        gegenstand2.deaktivieren();
+        if(gegenstand3!=null){
+            gegenstand3.deaktivieren();
+        }
+        if(gegenstand4!=null){
+            gegenstand4.deaktivieren();
+        }
+        endgegenstand.aktivieren();
+        endgegenstand.insInventar();
+        endgegenstand.setSichtbar(true);
 
     }
 }
