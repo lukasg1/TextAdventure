@@ -75,12 +75,12 @@ public class Main {
     private static Gegenstand flascheWein= new Gegenstand("Flasche mit Wein",true,true,null,true,false,true);
     private static Gegenstand ColaFlasche= new Gegenstand("Cola",true,true,null,true,false,true);
 
-    private static Gegenstand vaseMitWasser= new Gegenstand("Vase gefüllt mit Wasser",true,true,null,true,false,true);
+    private static Gegenstand vaseMitWasser= new Gegenstand("Vase gefüllt mit Wasser",true,true,null,true,false,true,false,true);
     //Gegenstände zum nutzen und mitnehmen
     private static Gegenstand besenstiel = new Gegenstand("Besenstiel",true,true,null,true,true);
     private static Gegenstand klebeband = new Gegenstand("Klebeband",true,true,null,true,true);
-    private static Gegenstand Speerspitze = new Gegenstand("Speerspitze",true,true,null,true,true);
-    private static Gegenstand Flasche = new Gegenstand("Flasche",true,true,null,true,true);
+    private static Gegenstand speerspitze = new Gegenstand("Speerspitze",true,true,null,true,true);
+    private static Gegenstand flasche = new Gegenstand("Flasche",true,true,null,true,true);
     private static Gegenstand leeresGlas = new Gegenstand("leeresGlas",true,true,null,true,true);
 
     private static Gegenstand tomatensoßendose = new Gegenstand("Tomatensoßendose",true,true,null,true,true);
@@ -95,13 +95,21 @@ public class Main {
     private static Gegenstand apfel = new Gegenstand("Apfel",true,true,null,true,true,false,true);
     private static Gegenstand kekse = new Gegenstand("Kekse",true,true,null,true,true,false,true);
     private static Gegenstand tomatensoße = new Gegenstand("Tomatensoße",true,true,null,true,true,false,true);
+    private static Gegenstand handVollChips = new Gegenstand("Handvoll Salt&Vinger-Chips",true,true,null,true,true,false,true);
 
+    //Zerstörbares
+    private static Gegenstand schrank=new Gegenstand("Schrank",true,true,null,true,false,false,false,true);
+    private static Gegenstand truhe=new Gegenstand("Truhe",true,true,null,true,false,false,false,true);
+    private static Gegenstand besen=new Gegenstand("Besen",true,true,null,true,false,false,false,true);
+    private static Gegenstand vase=new Gegenstand("Vase",true,true,null,true,false,false,false,true);
 
 
 
 
     //Listen
-    private static Gegenstand[] gegenstandsliste= {goldenerSchlüssel};
+    private static Gegenstand[] gegenstandsliste= {goldenerSchlüssel,vase,besen,truhe,schrank,handVollChips,tomatensoße,kekse,apfel,schinken,metalschrott,leiter,halbeLeiter,halbeLeiter2,tomatensoßendose,leeresGlas,flasche,speerspitze,klebeband,besenstiel, vaseMitWasser,ColaFlasche,flascheWein,glasMitWasser,wasser,modernerSchlüssel,bronzeschlüssel,alterSchlüssel,feuerzeug,streichölzer,axt,schwert,schwert2,eisenstang,improvisierterSpeer,massivesHolzbrett};
+    private static TA2.Raum[] raumListe = {eingangshalle, küche, esszimmer, garten, vorraum, kapelle, flurEG, albtraumRaum, wohnzimmer, flurOG, arena, beschwörkammer, badezimmer, teezimmer,besenkammer, hinterDemBild, gemächer, vorgarten, bibliothek};
+
     //Verwaltungen
     static TA2.VerwaltungRaum rv= new VerwaltungRaum(eingangshalle);
 
