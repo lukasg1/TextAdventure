@@ -76,6 +76,10 @@ public class Main {
     private static Gegenstand glasMitWasser= new Gegenstand("Glas gefüllt mit Wasser",true,true,null,true,true,true);
     private static Gegenstand flascheWein= new Gegenstand("Flasche mit Wein",true,true,null,true,true,true);
     private static Gegenstand ColaFlasche= new Gegenstand("Cola",true,true,null,true,true,true);
+    private static AktionTrinken trinkeWasser = new AktionTrinken("", true, true, "", "", wasser);
+    private static AktionTrinkenMitRest trinkeWasserGlas = new AktionTrinkenMitRest("", true, true, "", "", glasMitWasser);
+    private static AktionTrinkenMitRest trinkeFlaschWein = new AktionTrinkenMitRest("", true, true, "", "", flascheWein);
+    private static AktionTrinkenMitRest trinkeFlascheCola = new AktionTrinkenMitRest("", true, true, "", "", ColaFlasche);
 
     private static Gegenstand vaseMitWasser= new Gegenstand("Vase gefüllt mit Wasser",true,true,null,true,false,true,false,true);
     //Gegenstände zum nutzen und mitnehmen
@@ -98,14 +102,22 @@ public class Main {
     private static Gegenstand kekse = new Gegenstand("Kekse",true,true,null,true,true,false,true);
     private static Gegenstand tomatensoße = new Gegenstand("Tomatensoße",true,true,null,true,true,false,true);
     private static Gegenstand handVollChips = new Gegenstand("eine Handvoll Salt&Vinger-Chips",true,true,null,true,true,false,true);
+    private static AktionEssen esseSchinken = new AktionEssen("", true, true, "", "", schinken);
+    private static AktionEssen esseApfel = new AktionEssen("", true, true, "", "", apfel);
+    private static AktionEssen esseKekse = new AktionEssen("", true, true, "", "", kekse);
+    private static AktionEssen esseTomatensoße = new AktionEssen("", true, true, "", "", tomatensoße);
+    private static AktionEssen esseHandVollChips = new AktionEssen("", true, true, "", "", handVollChips);
+
 
     //Zerstörbares
-    private static Gegenstand schrank=new Gegenstand("Schrank",true,true,null,true,false,false,false,true);
-    private static Gegenstand truhe=new Gegenstand("Truhe",true,true,null,true,false,false,false,true);
+    private static Gegenstand schrank = new Gegenstand("Schrank",true,true,null,true,false,false,false,true);
+    private static Gegenstand truhe = new Gegenstand("Truhe",true,true,null,true,false,false,false,true);
     //zerstöreSchrank
-    private static Gegenstand besen=new Gegenstand("Besen",true,true,null,true,false,false,false,true);
-    private static Gegenstand vase=new Gegenstand("Vase",true,true,null,true,false,false,false,true);
-    private static AktionZerstören zerstöreVase = new AktionZerstören("", true, true,"", "",vase);
+    //zerstöreTruhe
+    private static Gegenstand besen= new Gegenstand("Besen",true,true,null,true,false,false,false,true);
+    private static Gegenstand vase = new Gegenstand("Vase",true,true,null,true,false,false,false,true);
+    private static AktionZerstören zerstöreBesen = new AktionZerstören("", true, true, "", "", besen);
+    private static AktionZerstören zerstöreVase = new AktionZerstören("", true, true,"", "", vase);
 
     private static AktionZusammenbasteln bastelSpeer=new AktionZusammenbasteln("",true,true,"","",besenstiel,klebeband,speerspitze,improvisierterSpeer);
 

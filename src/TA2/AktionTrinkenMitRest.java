@@ -6,8 +6,7 @@ public class AktionTrinkenMitRest extends AktionTrinken{
 
     protected Gegenstand gegenstandDerÜbrigBleibt;
 
-    public AktionTrinkenMitRest(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand,
-                                Gegenstand gegenstandDerÜbrigBleibt) {
+    public AktionTrinkenMitRest(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand) {
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText, gegenstand);
         if(aktionsname=="") {
             this.aktionsname = "trinke" + gegenstand.getName();
