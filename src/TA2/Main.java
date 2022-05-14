@@ -127,7 +127,7 @@ public class Main {
     }
 
     public static void spiele(){
-        for(int i=0; i<20; i++){
+        for(int i=0; i<25; i++){
             try {
                 updateAll();
 
