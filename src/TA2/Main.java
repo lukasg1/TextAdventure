@@ -125,17 +125,20 @@ public class Main {
 
     }
 
-    public void spiele(){
-        try{
-            updateAll();
+    public static void spiele(){
+        for(int i=0; i<20; i++){
+            try {
+                updateAll();
 
-            Thread.sleep(1000);
-        }catch(InterruptedException e){}
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+            }
+        }
 
 
     }
 
-    public void updateAll(){
+    public static void updateAll(){
         gv.update();
         av.update();
         av.gibAktiveAktionen()[av.gibAktiveAktionen().length -1].ausführen();
