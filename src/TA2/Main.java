@@ -93,10 +93,10 @@ public class Main {
 
     //essbares
     private static Gegenstand schinken = new Gegenstand("Schinken",true,true,null,true,true,false,true);
-    private static Gegenstand apfel = new Gegenstand("Apfel",true,true,null,true,true,false,true);
+    private static Gegenstand apfel = new Gegenstand("Äpfel",true,true,null,true,true,false,true);
     private static Gegenstand kekse = new Gegenstand("Kekse",true,true,null,true,true,false,true);
     private static Gegenstand tomatensoße = new Gegenstand("Tomatensoße",true,true,null,true,true,false,true);
-    private static Gegenstand handVollChips = new Gegenstand("Handvoll Salt&Vinger-Chips",true,true,null,true,true,false,true);
+    private static Gegenstand handVollChips = new Gegenstand("eine Handvoll Salt&Vinger-Chips",true,true,null,true,true,false,true);
 
     //Zerstörbares
     private static Gegenstand schrank=new Gegenstand("Schrank",true,true,null,true,false,false,false,true);
