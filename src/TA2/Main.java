@@ -83,14 +83,18 @@ public class Main {
     private static Gegenstand Flasche = new Gegenstand("Flasche",true,true,null,true,true);
     private static Gegenstand leeresGlas = new Gegenstand("leeresGlas",true,true,null,true,true);
 
+    private static Gegenstand tomatensoßendose = new Gegenstand("Tomatensoßendose",true,true,null,true,true);
+
     private static Gegenstand halbeLeiter2 = new Gegenstand("halbe Leiter",true,true,null,true,true);
     private static Gegenstand halbeLeiter = new Gegenstand("halbe Leiter",true,true,null,true,true);
     private static Gegenstand leiter = new Gegenstand("Leiter",true,true,null,true);
     private static Gegenstand metalschrott = new Gegenstand("Metalschrott",true,true,null,true,true);
+
     //essbares
     private static Gegenstand schinken = new Gegenstand("Schinken",true,true,null,true,true,false,true);
     private static Gegenstand apfel = new Gegenstand("Apfel",true,true,null,true,true,false,true);
     private static Gegenstand kekse = new Gegenstand("Kekse",true,true,null,true,true,false,true);
+    private static Gegenstand tomatensoße = new Gegenstand("Tomatensoße",true,true,null,true,true,false,true);
 
 
 
