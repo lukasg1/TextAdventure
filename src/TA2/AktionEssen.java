@@ -23,7 +23,7 @@ public class AktionEssen extends AktionBrauchtGegenstand{
     public void ausführen() {
         gegenstand.deaktiviereFürImmer();
         if (ausführungsText == "") {
-            this.ausführungsText = "Du isst " + gegenstand.getName() + ". Guten!";
+            this.ausführungsText = "Du isst " + gegenstand.getName() + ". Guten Appetit!";
             System.out.println(ausführungsText);
         }
     }
