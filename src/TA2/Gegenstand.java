@@ -17,13 +17,13 @@ public class Gegenstand implements InterfaceOfUpdate, InterfaceOfVerfügbar, Int
     private boolean sichtbar;
 
     //Mögliche Sondereigenschaften
-    private boolean sammelbar;
-    private boolean trinkbar;
-    private boolean essbar;
-    private boolean zerstörbar;
-    private boolean brennbar;
-    private boolean kannAnzünden;
-    private boolean kannZerstören;
+    private boolean sammelbar = false;
+    private boolean trinkbar =false;
+    private boolean essbar= false;
+    private boolean zerstörbar=false;
+    private boolean brennbar=false;
+    private boolean kannAnzünden=false;
+    private boolean kannZerstören=false;
 
     //Sonderzustände
     private boolean imInventar=false;
@@ -131,10 +131,10 @@ public class Gegenstand implements InterfaceOfUpdate, InterfaceOfVerfügbar, Int
 
     @Override
     public void update() {
-        if(sichtbar==true&&aktiv==true&&raum==rv.getAktuellerRaum()&&sonderdeaktivierung==false){
+        if(sichtbar==true&&aktiv==true&&(raum==rv.getAktuellerRaum()||imInventar==true)&&sonderdeaktivierung==false){
             verfügbar=true;
         }
-        verfügbar=false;
+        else verfügbar=false;
 
     }
 

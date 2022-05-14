@@ -25,7 +25,17 @@ abstract class AktionOberklasse implements InterfaceOfUpdate, InterfaceOfVerfüg
     //Sonder Deaktivierung
     protected boolean sonderdeaktivierung = false;
 
+    //wichtigkeit
+    protected boolean wichtig= false;
 
+
+    public boolean isWichtig() {
+        return wichtig;
+    }
+
+    public void setWichtig(boolean wichtig) {
+        this.wichtig = wichtig;
+    }
 
     protected AktionOberklasse(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText) {
         this.aktionsname = aktionsname;
@@ -33,6 +43,15 @@ abstract class AktionOberklasse implements InterfaceOfUpdate, InterfaceOfVerfüg
         this.sichtbar = sichtbar;
         this.beschreibung = beschreibung;
         this.ausführungsText = ausführungsText;
+        this.wichtig=false;
+    }
+    protected AktionOberklasse(boolean wichtig,String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText) {
+        this.aktionsname = aktionsname;
+        this.aktiv = aktiv;
+        this.sichtbar = sichtbar;
+        this.beschreibung = beschreibung;
+        this.ausführungsText = ausführungsText;
+        this.wichtig=wichtig;
     }
 
     @Override

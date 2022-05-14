@@ -54,12 +54,50 @@ public class Main {
 
 
 
+    //Schlüssel
+    private static Gegenstand goldenerSchlüssel =new Gegenstand("goldener Schlüssel",true,true,null,true,true);
+    private static Gegenstand modernerSchlüssel = new Gegenstand("moderner Schlüssel",true,true,null,true, true);
+    private static Gegenstand bronzeschlüssel = new Gegenstand("Bronzeschlüssel",true,true,null,true, true);
+    private static Gegenstand alterSchlüssel = new Gegenstand("alter Schlüssel",true,true,null,true, true);
+    //Feuermacher
+    private static Gegenstand streichölzer = new Gegenstand("Streichhölzer",true,true,null,true, true,false,false,false,false,true);
+    private static Gegenstand feuerzeug = new Gegenstand("Feuerzeug",true,true,null,true, true,false,false,false,false,true);
+    //Massives
+    private static Gegenstand axt = new Gegenstand("Axt",true,true,null,true, true,false,false,false,false,false, true);
+    private static Gegenstand schwert = new Gegenstand("Schwert",true,true,null,true, true,false,false,false,false,false, true);
+    private static Gegenstand schwert2 = new Gegenstand("Schwert",true,true,null,true, true,false,false,false,false,false, true);
+    private static Gegenstand eisenstang = new Gegenstand("Eisenstange",true,true,null,true, true,false,false,false,false,false, true);
+    private static Gegenstand massivesHolzbrett = new Gegenstand("massives Holzbrett",true,true,null,true, true,false,false,false,false,false, true);
+    private static Gegenstand improvisierterSpeer = new Gegenstand("improvisierter Speer",true,true,null,true, true,false,false,false,false,false, true);
+    //Trinkbares
+    private static Gegenstand wasser= new Gegenstand("Wasser",true,true,null,true,false,true);
+    private static Gegenstand glasMitWasser= new Gegenstand("Glas gefüllt mit Wasser",true,true,null,true,false,true);
+    private static Gegenstand flascheWein= new Gegenstand("Flasche mit Wein",true,true,null,true,false,true);
+    private static Gegenstand ColaFlasche= new Gegenstand("Cola",true,true,null,true,false,true);
 
-    //Gegenstand
-    private static Gegenstand g1 = new Gegenstand("Hans",true,true,eingangshalle,true);
+    private static Gegenstand vaseMitWasser= new Gegenstand("Vase gefüllt mit Wasser",true,true,null,true,false,true);
+    //Gegenstände zum nutzen und mitnehmen
+    private static Gegenstand besenstiel = new Gegenstand("Besenstiel",true,true,null,true,true);
+    private static Gegenstand klebeband = new Gegenstand("Klebeband",true,true,null,true,true);
+    private static Gegenstand Speerspitze = new Gegenstand("Speerspitze",true,true,null,true,true);
+    private static Gegenstand Flasche = new Gegenstand("Flasche",true,true,null,true,true);
+    private static Gegenstand leeresGlas = new Gegenstand("leeresGlas",true,true,null,true,true);
+
+    private static Gegenstand halbeLeiter2 = new Gegenstand("halbe Leiter",true,true,null,true,true);
+    private static Gegenstand halbeLeiter = new Gegenstand("halbe Leiter",true,true,null,true,true);
+    private static Gegenstand leiter = new Gegenstand("Leiter",true,true,null,true);
+    private static Gegenstand metalschrott = new Gegenstand("Metalschrott",true,true,null,true,true);
+    //essbares
+    private static Gegenstand schinken = new Gegenstand("Schinken",true,true,null,true,true,false,true);
+    private static Gegenstand apfel = new Gegenstand("Apfel",true,true,null,true,true,false,true);
+    private static Gegenstand kekse = new Gegenstand("Kekse",true,true,null,true,true,false,true);
+
+
+
+
 
     //Listen
-    private static Gegenstand[] gegenstandsliste= {g1};
+    private static Gegenstand[] gegenstandsliste= {goldenerSchlüssel};
     //Verwaltungen
     static TA2.VerwaltungRaum rv= new VerwaltungRaum(eingangshalle);
 
