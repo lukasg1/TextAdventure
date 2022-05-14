@@ -103,7 +103,7 @@ public class Main {
     private static Gegenstand truhe=new Gegenstand("Truhe",true,true,null,true,false,false,false,true);
     private static Gegenstand besen=new Gegenstand("Besen",true,true,null,true,false,false,false,true);
     private static Gegenstand vase=new Gegenstand("Vase",true,true,null,true,false,false,false,true);
-    private static AktionZerstören = new AktionZerstören("", true, true, );
+    private static AktionZerstören zerstöreVase = new AktionZerstören("", true, true,"", "",vase);
 
 
 
