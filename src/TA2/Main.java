@@ -56,6 +56,7 @@ public class Main {
 
     //Schlüssel
     private static Gegenstand goldenerSchlüssel =new Gegenstand("goldener Schlüssel",true,true,null,true,true);
+    private static AktionSammeln sammelnGoldenerSchlüssel = new AktionSammeln("", true, true, "", "", goldenerSchlüssel);
     private static Gegenstand modernerSchlüssel = new Gegenstand("moderner Schlüssel",true,true,null,true, true);
     private static Gegenstand bronzeschlüssel = new Gegenstand("Bronzeschlüssel",true,true,null,true, true);
     private static Gegenstand alterSchlüssel = new Gegenstand("alter Schlüssel",true,true,null,true, true);
@@ -102,14 +103,14 @@ public class Main {
     private static Gegenstand truhe=new Gegenstand("Truhe",true,true,null,true,false,false,false,true);
     private static Gegenstand besen=new Gegenstand("Besen",true,true,null,true,false,false,false,true);
     private static Gegenstand vase=new Gegenstand("Vase",true,true,null,true,false,false,false,true);
-
+    private static AktionZerstören = new AktionZerstören("", true, true, );
 
 
 
     //Listen
     private static Gegenstand[] gegenstandsListe= {goldenerSchlüssel,vase,besen,truhe,schrank,handVollChips,tomatensoße,kekse,apfel,schinken,metalschrott,leiter,halbeLeiter,halbeLeiter2,tomatensoßendose,leeresGlas,flasche,speerspitze,klebeband,besenstiel, vaseMitWasser,ColaFlasche,flascheWein,glasMitWasser,wasser,modernerSchlüssel,bronzeschlüssel,alterSchlüssel,feuerzeug,streichölzer,axt,schwert,schwert2,eisenstang,improvisierterSpeer,massivesHolzbrett};
     private static TA2.Raum[] raumListe = {eingangshalle, küche, esszimmer, garten, vorraum, kapelle, flurEG, albtraumRaum, wohnzimmer, flurOG, arena, beschwörkammer, badezimmer, teezimmer,besenkammer, hinterDemBild, gemächer, vorgarten, bibliothek};
-    private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG};
+    private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG,sammelnGoldenerSchlüssel};
 
     //Verwaltungen
     static TA2.VerwaltungRaum rv= new VerwaltungRaum(eingangshalle);

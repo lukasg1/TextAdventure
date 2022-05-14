@@ -10,6 +10,6 @@ public class AktionEssen extends AktionBrauchtNix{
 
     @Override
     public void ausführen() {
-        System.out.println("Du isst", gv.sucheEssbarenGegenstand());
+
     }
 }
