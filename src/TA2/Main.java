@@ -72,9 +72,9 @@ public class Main {
     private static Gegenstand improvisierterSpeer = new Gegenstand("improvisierter Speer",true,true,null,true, true,false,false,false,false,false, true);
     //Trinkbares
     private static Gegenstand wasser= new Gegenstand("Wasser",true,true,null,true,false,true);
-    private static Gegenstand glasMitWasser= new Gegenstand("Glas gefüllt mit Wasser",true,true,null,true,false,true);
-    private static Gegenstand flascheWein= new Gegenstand("Flasche mit Wein",true,true,null,true,false,true);
-    private static Gegenstand ColaFlasche= new Gegenstand("Cola",true,true,null,true,false,true);
+    private static Gegenstand glasMitWasser= new Gegenstand("Glas gefüllt mit Wasser",true,true,null,true,true,true);
+    private static Gegenstand flascheWein= new Gegenstand("Flasche mit Wein",true,true,null,true,true,true);
+    private static Gegenstand ColaFlasche= new Gegenstand("Cola",true,true,null,true,true,true);
 
     private static Gegenstand vaseMitWasser= new Gegenstand("Vase gefüllt mit Wasser",true,true,null,true,false,true,false,true);
     //Gegenstände zum nutzen und mitnehmen
@@ -101,6 +101,7 @@ public class Main {
     //Zerstörbares
     private static Gegenstand schrank=new Gegenstand("Schrank",true,true,null,true,false,false,false,true);
     private static Gegenstand truhe=new Gegenstand("Truhe",true,true,null,true,false,false,false,true);
+    //zerstöreSchrank
     private static Gegenstand besen=new Gegenstand("Besen",true,true,null,true,false,false,false,true);
     private static Gegenstand vase=new Gegenstand("Vase",true,true,null,true,false,false,false,true);
     private static AktionZerstören zerstöreVase = new AktionZerstören("", true, true,"", "",vase);
