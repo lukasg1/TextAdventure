@@ -3,6 +3,7 @@ package TA2;
 import TA2.VerwaltungRaum;
 import TextAdventure.AktionTreppe;
 import TextAdventure.AktionTür;
+import java.lang.Math;
 
 public class Main {
     //Raumverzeichnis
@@ -141,7 +142,8 @@ public class Main {
     public static void updateAll(){
         gv.update();
         av.update();
-        av.gibAktiveAktionen()[av.gibAktiveAktionen().length -1].ausführen();
+        int rand=(int)(Math.random() * av.gibAktiveAktionen().length) ;
+        av.gibAktiveAktionen()[rand ].ausführen();
 
     }
 
