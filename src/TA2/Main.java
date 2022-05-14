@@ -121,6 +121,7 @@ public class Main {
     static TA2.VerwaltungAktionen2 av= new VerwaltungAktionen2(aktionsListe);
 
     public static void main(String[] args) {
+        spiele();
 
     }
 
