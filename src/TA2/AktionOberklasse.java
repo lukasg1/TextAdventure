@@ -54,6 +54,10 @@ abstract class AktionOberklasse implements InterfaceOfUpdate, InterfaceOfVerfüg
         this.wichtig=wichtig;
     }
 
+    protected AktionOberklasse(){
+
+    }
+
     @Override
     public void aktivieren() {
         this.aktiv=true;
