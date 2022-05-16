@@ -53,11 +53,14 @@ public class Main {
 
 
     //Schlüssel
-    private static Gegenstand goldenerSchlüssel =new Gegenstand("goldener Schlüssel",true,true,null,true,true);
-    private static AktionSammeln sammelnGoldenerSchlüssel = new AktionSammeln("", true, true, "", "", goldenerSchlüssel);
+    private static Gegenstand goldenerSchlüssel = new Gegenstand("goldener Schlüssel",true,true,null,true,true);
     private static Gegenstand modernerSchlüssel = new Gegenstand("moderner Schlüssel",true,true,null,true, true);
     private static Gegenstand bronzeschlüssel = new Gegenstand("Bronzeschlüssel",true,true,null,true, true);
     private static Gegenstand alterSchlüssel = new Gegenstand("alter Schlüssel",true,true,null,true, true);
+    private static AktionSammeln sammleGoldenerSchlüssel = new AktionSammeln("", true, true, "", "", goldenerSchlüssel);
+    private static AktionSammeln sammleModernerSchlüssel = new AktionSammeln("", true, true, "", "", modernerSchlüssel);
+    private static AktionSammeln sammleBronzeSchlüssel = new AktionSammeln("", true, true, "", "", bronzeschlüssel);
+    private static AktionSammeln sammleAlterSchlüssel = new AktionSammeln("", true, true, "", "", alterSchlüssel);
     //Feuermacher
     private static Gegenstand streichölzer = new Gegenstand("Streichhölzer",true,true,null,true, true,false,false,false,false,true);
     private static Gegenstand feuerzeug = new Gegenstand("Feuerzeug",true,true,null,true, true,false,false,false,false,true);
@@ -78,20 +81,30 @@ public class Main {
     private static AktionTrinkenMitRest trinkeFlaschWein = new AktionTrinkenMitRest("", true, true, "", "", flascheWein);
     private static AktionTrinkenMitRest trinkeFlascheCola = new AktionTrinkenMitRest("", true, true, "", "", ColaFlasche);
 
-    private static Gegenstand vaseMitWasser= new Gegenstand("Vase gefüllt mit Wasser",true,true,null,true,false,true,false,true);
+    private static Gegenstand vaseMitWasser = new Gegenstand("Vase gefüllt mit Wasser",true,true,null,true,false,true,false,true);
+    private static AktionTrinkenMitRest trinkeVaseMitRest = new AktionTrinkenMitRest("", true, true, "", "", vaseMitWasser);
     //Gegenstände zum nutzen und mitnehmen
     private static Gegenstand besenstiel = new Gegenstand("Besenstiel",true,true,null,true,true);
     private static Gegenstand klebeband = new Gegenstand("Klebeband",true,true,null,true,true);
     private static Gegenstand speerspitze = new Gegenstand("Speerspitze",true,true,null,true,true);
     private static Gegenstand flasche = new Gegenstand("Flasche",true,true,null,true,true);
     private static Gegenstand leeresGlas = new Gegenstand("leeresGlas",true,true,null,true,true);
-
     private static Gegenstand tomatensoßendose = new Gegenstand("Tomatensoßendose",true,true,null,true,true);
-
     private static Gegenstand halbeLeiter2 = new Gegenstand("halbe Leiter",true,true,null,true,true);
     private static Gegenstand halbeLeiter = new Gegenstand("halbe Leiter",true,true,null,true,true);
     private static Gegenstand leiter = new Gegenstand("Leiter",true,true,null,true);
-    private static Gegenstand metalschrott = new Gegenstand("Metalschrott",true,true,null,true,true);
+    private static Gegenstand metallschrott = new Gegenstand("Metalschrott",true,true,null,true,true);
+    private static AktionSammeln sammleBesenstiel = new AktionSammeln("", true, true, "", "",besenstiel);
+    private static AktionSammeln sammleKlebeband = new AktionSammeln("", true, true, "", "",klebeband);
+    private static AktionSammeln sammleSpeerspitze = new AktionSammeln("", true, true, "", "",speerspitze);
+    private static AktionSammeln sammleFlasche = new AktionSammeln("", true, true, "", "",flasche);
+    private static AktionSammeln sammleLeeresGlas = new AktionSammeln("", true, true, "", "",leeresGlas);
+    private static AktionSammeln sammleTomatensoßendose = new AktionSammeln("", true, true, "", "", tomatensoßendose);
+    private static AktionSammeln sammleHalbeLeiter2 = new AktionSammeln("", true, true, "", "", halbeLeiter2);
+    private static AktionSammeln sammleHalbeLeiter = new AktionSammeln("", true, true, "", "", halbeLeiter);
+    private static AktionSammeln sammleleiter = new AktionSammeln("", true, true, "", "", leiter);
+    private static AktionSammeln sammleMetallschrott = new AktionSammeln("", true, true, "", "", metallschrott);
+
 
     //essbares
     private static Gegenstand schinken = new Gegenstand("Schinken",true,true,null,true,true,false,true);
@@ -112,19 +125,19 @@ public class Main {
     //Zerstörbares
     private static Gegenstand schrank = new Gegenstand("Schrank",true,true,null,true,false,false,false,true);
     private static Gegenstand truhe = new Gegenstand("Truhe",true,true,null,true,false,false,false,true);
-    //zerstöreSchrank
-    //zerstöreTruhe
     private static Gegenstand besen= new Gegenstand("Besen",true,true,null,true,false,false,false,true);
     private static Gegenstand vase = new Gegenstand("Vase",true,true,null,true,false,false,false,true);
+    private static AktionZerstören zerstöreSchrank = new AktionZerstören("", true, true,"", "", schrank);
+    private static AktionZerstören zerstöreTruhe = new AktionZerstören("", true, true, "", "", truhe);
     private static AktionZerstören zerstöreBesen = new AktionZerstören("", true, true, "", "", besen);
     private static AktionZerstören zerstöreVase = new AktionZerstören("", true, true,"", "", vase);
 
     private static AktionZusammenbasteln bastelSpeer=new AktionZusammenbasteln("",true,true,"","",besenstiel,klebeband,speerspitze,improvisierterSpeer);
 
     //Listen
-    private static Gegenstand[] gegenstandsListe= {goldenerSchlüssel,vase,besen,truhe,schrank,handVollChips,tomatensoße,kekse,apfel,schinken,metalschrott,leiter,halbeLeiter,halbeLeiter2,tomatensoßendose,leeresGlas,flasche,speerspitze,klebeband,besenstiel, vaseMitWasser,ColaFlasche,flascheWein,glasMitWasser,wasser,modernerSchlüssel,bronzeschlüssel,alterSchlüssel,feuerzeug,streichölzer,axt,schwert,schwert2,eisenstang,improvisierterSpeer,massivesHolzbrett};
+    private static Gegenstand[] gegenstandsListe= {goldenerSchlüssel,vase,besen,truhe,schrank,handVollChips,tomatensoße,kekse,apfel,schinken,metallschrott,leiter,halbeLeiter,halbeLeiter2,tomatensoßendose,leeresGlas,flasche,speerspitze,klebeband,besenstiel, vaseMitWasser,ColaFlasche,flascheWein,glasMitWasser,wasser,modernerSchlüssel,bronzeschlüssel,alterSchlüssel,feuerzeug,streichölzer,axt,schwert,schwert2,eisenstang,improvisierterSpeer,massivesHolzbrett};
     private static TA2.Raum[] raumListe = {eingangshalle, küche, esszimmer, garten, vorraum, kapelle, flurEG, albtraumRaum, wohnzimmer, flurOG, arena, beschwörkammer, badezimmer, teezimmer,besenkammer, hinterDemBild, gemächer, vorgarten, bibliothek};
-    private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG,sammelnGoldenerSchlüssel,};
+    private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG,sammleGoldenerSchlüssel,};
     private Ereignisse[] ereignissListe ={};
 
     //Verwaltungen
