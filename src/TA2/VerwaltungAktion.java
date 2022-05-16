@@ -6,18 +6,19 @@ public class VerwaltungAktion implements InterfaceOfUpdate{
 
     public VerwaltungAktion(AktionOberklasse[] aktionen) {
         this.aktionen = aktionen;
-        anzahl= anzahlverfügareaktionen();
-        verfügebarelisteerzeugen(anzahl);
+        anzahlverfügareaktionen();
     }
 
-    public int anzahlverfügareaktionen(){
+    public void anzahlverfügareaktionen(){
         int anzahlverfügebare=0;
         for (int i = 0; i < aktionen.length; i++) {
             if(aktionen[i].verfügbarkeitPrüfen()){
                 anzahlverfügebare++;
             }
         }
-        return anzahlverfügebare;
+        anzahl= anzahlverfügebare;
+
+        verfügebarelisteerzeugen(anzahl);
 
     }
     public void verfügebarelisteerzeugen(int anz){
@@ -44,8 +45,8 @@ public class VerwaltungAktion implements InterfaceOfUpdate{
 
     @Override
     public void update() {
-        anzahl= anzahlverfügareaktionen();
-        verfügebarelisteerzeugen(anzahl);
+        anzahlverfügareaktionen();
+
 
     }
 }
