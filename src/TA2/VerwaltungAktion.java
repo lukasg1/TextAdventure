@@ -2,24 +2,26 @@ package TA2;
 
 public class VerwaltungAktion implements InterfaceOfUpdate{
     AktionOberklasse[] aktionen;
-    int anzahlverfügebare=0;
+    private int anzahl;
 
     public VerwaltungAktion(AktionOberklasse[] aktionen) {
         this.aktionen = aktionen;
-        anzahlverfügareaktionen();
-        verfügebarelisteerzeugen();
+        anzahl= anzahlverfügareaktionen();
+        verfügebarelisteerzeugen(anzahl);
     }
 
-    public void anzahlverfügareaktionen(){
+    public int anzahlverfügareaktionen(){
+        int anzahlverfügebare=0;
         for (int i = 0; i < aktionen.length; i++) {
             if(aktionen[i].verfügbarkeitPrüfen()){
                 anzahlverfügebare++;
             }
         }
+        return anzahlverfügebare;
 
     }
-    public void verfügebarelisteerzeugen(){
-        AktionOberklasse[] verfügbareliste= new AktionOberklasse[anzahlverfügebare];
+    public void verfügebarelisteerzeugen(int anz){
+        AktionOberklasse[] verfügbareliste= new AktionOberklasse[anz];
         int counter =0;
         for (int i = 0; i <aktionen.length; i++) {
             if(aktionen[i].verfügbarkeitPrüfen()){
@@ -42,8 +44,8 @@ public class VerwaltungAktion implements InterfaceOfUpdate{
 
     @Override
     public void update() {
-        anzahlverfügareaktionen();
-        verfügebarelisteerzeugen();
+        anzahl= anzahlverfügareaktionen();
+        verfügebarelisteerzeugen(anzahl);
 
     }
 }
