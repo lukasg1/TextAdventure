@@ -1,8 +1,9 @@
 package TA2;
 
+
 import java.lang.Math;
 
-public class Main {
+public class Timetravel {
     //Raumverzeichnis
     private static Raum eingangshalle = new Raum("Eingangshalle", "Du befindest dich in einem dunklem Raum.", "Du bist zurück in dem in der Eingangshalle in der du aufgewacht bist.", "Eingangshalle(EG)");
     private static Raum küche = new Raum("Küche", "Etwas Licht scheint durch die Fenster und du siehst eine Küche vor dir.", "Du betrittst die Küche.", "Küche(EG)");
@@ -105,9 +106,6 @@ public class Main {
     private static AktionEssen esseTomatensoße = new AktionEssen("", true, true, "", "", tomatensoße);
     private static AktionEssen esseHandVollChips = new AktionEssen("", true, true, "", "", handVollChips);
 
-    //TIMETRAVEL
-
-    private static ATimetravel tt=new ATimetravel("", true, true, "", "", eingangshalle);
 
     //Zerstörbares
     private static Gegenstand schrank = new Gegenstand("Schrank",true,true,null,true,false,false,false,true);
@@ -124,8 +122,7 @@ public class Main {
     //Listen
     private static Gegenstand[] gegenstandsListe= {goldenerSchlüssel,vase,besen,truhe,schrank,handVollChips,tomatensoße,kekse,apfel,schinken,metalschrott,leiter,halbeLeiter,halbeLeiter2,tomatensoßendose,leeresGlas,flasche,speerspitze,klebeband,besenstiel, vaseMitWasser,ColaFlasche,flascheWein,glasMitWasser,wasser,modernerSchlüssel,bronzeschlüssel,alterSchlüssel,feuerzeug,streichölzer,axt,schwert,schwert2,eisenstang,improvisierterSpeer,massivesHolzbrett};
     private static TA2.Raum[] raumListe = {eingangshalle, küche, esszimmer, garten, vorraum, kapelle, flurEG, albtraumRaum, wohnzimmer, flurOG, arena, beschwörkammer, badezimmer, teezimmer,besenkammer, hinterDemBild, gemächer, vorgarten, bibliothek};
-    private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG,sammelnGoldenerSchlüssel,
-    tt};
+    private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG,sammelnGoldenerSchlüssel};
     private Ereignisse[] ereignissListe ={};
 
     //Verwaltungen
@@ -139,13 +136,13 @@ public class Main {
 
 
 
-    public static void main(String[] args) {
+    public void spielen(){
         spiele();
 
     }
 
     public static void spiele(){
-        for(int i=0; i<10; i++){
+        for(int i=0; i<11; i++){
             try {
                 updateAll();
 
