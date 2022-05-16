@@ -1,8 +1,5 @@
 package TA2;
 
-import TA2.VerwaltungRaum;
-import TextAdventure.AktionTreppe;
-import TextAdventure.AktionTür;
 import java.lang.Math;
 
 public class Main {
@@ -132,7 +129,7 @@ public class Main {
 
     static TA2.VerwaltungGegenstände gv = new VerwaltungGegenstände(gegenstandsListe);
 
-    static TA2.VerwaltungAktionen2 av= new VerwaltungAktionen2(aktionsListe);
+    static VerwaltungAktionen av= new VerwaltungAktionen(aktionsListe);
 
 
 
@@ -157,7 +154,7 @@ public class Main {
     public static void updateAll(){
         gv.update();
         av.update();
-        int rand=(int)(Math.random() * av.gibAktiveAktionen().length) ;
+        int rand=(int)(Math.random() * av.anzahlaktiveaktionen()) ;
         av.gibAktiveAktionen()[rand ].ausführen();
 
     }

@@ -1,8 +1,8 @@
 package TA2;
 
-public class VerwaltungAktionen2 implements InterfaceOfUpdate{
+public class VerwaltungAktionen implements InterfaceOfUpdate{
     AktionOberklasse[] aktionen;
-    public VerwaltungAktionen2(AktionOberklasse[] aktionen) {
+    public VerwaltungAktionen(AktionOberklasse[] aktionen) {
         this.aktionen = aktionen;
     }
 
@@ -21,19 +21,30 @@ public class VerwaltungAktionen2 implements InterfaceOfUpdate{
         }
 
         AktionOberklasse[] liste=new AktionOberklasse[zähler1];
-        int zähler=0;
+         zähler1=0;
         for(int i = 0; i< this.aktionen.length;i++){
 
                 if(aktionen[i].verfügbarkeitPrüfen()==true){
 
 
-                        liste[zähler]=aktionen[i];
-                        zähler++;
+                        liste[zähler1]=aktionen[i];
+                        zähler1++;
 
                 }
 
         }
         return liste;
+    }
+    public boolean pruefeaktiv(AktionOberklasse aktion){
+        for (int i = 0; i < aktionen.length; i++) {
+            if(aktionen[i]==aktion){
+                return aktionen[i].aktiv;
+            }
+        }
+        return false;
+    }
+    public int anzahlaktiveaktionen(){
+        return gibAktiveAktionen().length;
     }
 
     @Override
