@@ -155,6 +155,7 @@ public class Main {
      //Einzelaktionen
 
     static ALichtschalter aLichtschalter= new ALichtschalter(eingangshalle);
+    static AOfen aOfen= new AOfen(küche);
     static AHandy aHandy= new AHandy(eingangshalle);
     static ARuestung aRuestungA = new ARuestung(arena);
     static ARuestung aRuestungB = new ARuestung(bibliothek);
@@ -165,7 +166,7 @@ public class Main {
     private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG,sammleGoldenerSchlüssel,
     sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleleiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
     zerstöreSchrank,zerstöreBesen,zerstöreTruhe,zerstöreVase,bastleSpeer,esseApfel,esseKekse,esseSchinken,esseTomatensoße,esseHandVollChips,trinkeFlascheCola,trinkeFlaschWein,trinkeVaseMitRest,trinkeWasser,trinkeWasserGlas,
-            aLichtschalter,aHandy, aRuestungA, aRuestungB};
+            aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße};
     private Ereignisse[] ereignissListe ={};
 
     //Verwaltungen

@@ -165,6 +165,7 @@ public class Auswahl implements InterfaceOfUpdate {
 
 
         sb.append(av.gibAktiveAktionen()[stelle].getAusführungsText());
+        zv.update();
 
         av.gibAktiveAktionen()[stelle].ausführen();
         String a=rv.returnText();

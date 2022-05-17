@@ -26,7 +26,7 @@ public class AOfen extends AktionOberklasse{
         if(sichtbar==true&&aktiv==true&&raum==rv.getAktuellerRaum()&&sonderdeaktivierung==false){
             verfügbar=true;
         }
-        else verfügbar=true;
+        else verfügbar=false;
 
 
     }
