@@ -177,17 +177,18 @@ public class Main {
 
     static VerwaltungZeit zv=new VerwaltungZeit();
 
+    static JFrame frame = new JFrame("Drecksdringsda");
 
 
 
 
     public static void main(String[] args) {
         updateAll();
-        JFrame frame = new JFrame("Drecksdringsda");
         frame.setContentPane(new Auswahl().maintest);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+
 
         //spiele();
 
