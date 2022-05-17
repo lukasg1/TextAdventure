@@ -150,17 +150,24 @@ public class Auswahl {
         }
     }
 
+    public void aktionausfuehren(int stelle){
+        av.aktionen[stelle].ausführen();
+        buttonbeschreibung();
+    }
+
 
     public Auswahl() {
         aktion1Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(0);
 
             }
         });
         aktion2Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(1);
 
             }
         });
