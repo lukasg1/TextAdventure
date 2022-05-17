@@ -57,4 +57,14 @@ public class VerwaltungAktionen implements InterfaceOfUpdate{
 
 
     }
+
+    public AktionOberklasse sucheAktion(AktionOberklasse a){
+        for (int i = 0; i < aktionen.length; i++) {
+            if(aktionen[i]==a){
+                return aktionen[i];
+            }
+        }
+        return null;
+
+    }
 }
