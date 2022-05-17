@@ -184,11 +184,11 @@ public class Main {
     }
 
     public static void spiele(){
-        for(int i=0; i<200; i++){
+        for(int i=0; i<20; i++){
             try {
                 updateAll();
 
-                Thread.sleep(10);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
             }
         }
