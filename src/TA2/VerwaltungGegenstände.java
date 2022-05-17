@@ -253,7 +253,7 @@ public class VerwaltungGegenstände implements InterfaceOfUpdate{
     }
     
     public String giveInventoryText(){
-        String namen = null;
+        String namen = "";
         for(int i = 0; i< this.gegenstandsliste.length;i++){
             if(gegenstandsliste[i].isImInventar()){
                 if(gegenstandsliste[i].verfügbarkeitPrüfen()==true){
