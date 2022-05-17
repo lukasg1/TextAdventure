@@ -40,9 +40,10 @@ public class AktionTür extends AktionBrauchtRaum {
             rv.setAktuellerRaum(raum);
 
             this.ausführungsText = "";
-            this.texthelp=true;
+
 
 
         }
+        this.texthelp=true;
     }
 }

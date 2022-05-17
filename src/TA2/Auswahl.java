@@ -233,12 +233,14 @@ public class Auswahl implements InterfaceOfUpdate {
         textPaneStory.setText(String.valueOf(sb));
 
 
-        av.update();
+
         gv.update();
         textPaneInventar.setText(gv.giveInventoryText());
+        av.update();
 
         update();
         textPaneInventar.setText(gv.giveInventoryText());
+
 
 
 
@@ -328,6 +330,7 @@ public class Auswahl implements InterfaceOfUpdate {
 
     @Override
     public void update() {
+
         buttonbeschreibung();
     }
 }
