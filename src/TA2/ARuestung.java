@@ -1,6 +1,8 @@
 package TA2;
 
 
+import static TA2.Main.rv;
+
 public class ARuestung extends AktionOberklasse{
 
     protected Raum raum;
@@ -11,15 +13,21 @@ public class ARuestung extends AktionOberklasse{
         this.aktionsname = "Ritterrüstung";
         this.aktiv = false;
         this.sichtbar = true;
+        this.wichtig = true;
     }
 
     @Override
     public void update() {
+        if(sichtbar==true&&aktiv==true&&raum==rv.getAktuellerRaum()&&sonderdeaktivierung==false){
+            verfügbar=true;
+        }
+        else verfügbar=false;
 
     }
 
     @Override
     public void ausführen() {
+        System.out.println(ausführungsText);
 
     }
 }
