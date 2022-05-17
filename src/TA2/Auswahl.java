@@ -171,5 +171,61 @@ public class Auswahl {
 
             }
         });
+        aktion3Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(2);
+
+            }
+        });
+        aktion4Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(3);
+
+            }
+        });
+        aktion5Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(4);
+
+            }
+        });
+        aktion6Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(5);
+
+            }
+        });
+        aktion7Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(6);
+
+            }
+        });
+        aktion8Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(7);
+
+            }
+        });
+        aktion9Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(8);
+
+            }
+        });
+        aktion10Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(9);
+
+            }
+        });
     }
 }
