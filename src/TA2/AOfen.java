@@ -35,7 +35,7 @@ public class AOfen extends AktionOberklasse{
     public void ausführen() {
 
         System.out.println(ausführungsText);
-        gv.sucheGegenstand(goldenerSchlüssel).aktivieren();
+        gv.sucheGegenstand(goldenerSchlüssel).setSichtbar(true);
         deaktiviereFürImmer();
 
     }
