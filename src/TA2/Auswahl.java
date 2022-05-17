@@ -5,8 +5,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import static TA2.Main.av;
+import static TA2.Main.updateAll;
 
 public class Auswahl implements InterfaceOfUpdate {
+
     private JButton aktion5Button;
     private JButton aktion3Button;
     private JButton aktion1Button;
@@ -18,19 +20,25 @@ public class Auswahl implements InterfaceOfUpdate {
     private JButton aktion9Button;
     private JButton aktion10Button;
     public JPanel maintest;
-
+    private JTextPane textPaneStory;
+    private JTextPane textPaneInventar;
+    private JLabel inventarlbl;
+    private JLabel storylbl;
+    private StringBuilder sb= new StringBuilder("");
+    AktionOberklasse[] aktionen;
 
 
 
     public void buttonbeschreibung(){
         av.update();
         int anzahl=av.anzahlaktiveaktionen();
+       aktionen=av.gibAktiveAktionen();
         if(anzahl>10){
             anzahl=10;
         }
         switch (anzahl){
             case 1:
-                aktion1Button.setText(av.aktionen[0].getBeschreibung());
+                aktion1Button.setText(aktionen[0].getBeschreibung());
                 aktion2Button.hide();
                 aktion3Button.hide();
                 aktion4Button.hide();
@@ -42,8 +50,8 @@ public class Auswahl implements InterfaceOfUpdate {
                 aktion10Button.hide();
 
             case 2:
-                aktion1Button.setText(av.aktionen[0].getBeschreibung());
-                aktion2Button.setText(av.aktionen[1].getBeschreibung());
+                aktion1Button.setText(aktionen[0].getBeschreibung());
+                aktion2Button.setText(aktionen[1].getBeschreibung());
                 aktion3Button.hide();
                 aktion4Button.hide();
                 aktion5Button.hide();
@@ -155,9 +163,20 @@ public class Auswahl implements InterfaceOfUpdate {
     }
 
     public void aktionausfuehren(int stelle){
-        av.aktionen[stelle].ausführen();
+        aktionen[stelle].ausführen();
+        sb.append(aktionen[stelle].getAusführungsText());
+        sb.append("\n");
+        textPaneStory.setText(String.valueOf(sb));
+        System.out.println(av.aktionen[0]);
+        System.out.println(aktionen[0]);
+
         update();
+        updateAll();
+
     }
+
+
+
 
 
     public Auswahl() {

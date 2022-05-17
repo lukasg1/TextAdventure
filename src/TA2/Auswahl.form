@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="TA2.Auswahl">
-  <grid id="27dc6" binding="maintest" layout-manager="GridLayoutManager" row-count="13" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="maintest" layout-manager="GridLayoutManager" row-count="12" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="494"/>
+      <xy x="20" y="20" width="1200" height="900"/>
     </constraints>
-    <properties/>
+    <properties>
+      <maximumSize width="1200" height="900"/>
+      <minimumSize width="1200" height="900"/>
+      <preferredSize width="1200" height="900"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="1329" class="javax.swing.JLabel">
@@ -16,11 +20,6 @@
           <text value="Wähle klug, der Verlauf des Spiels hängt davon ab!"/>
         </properties>
       </component>
-      <vspacer id="b26e7">
-        <constraints>
-          <grid row="1" column="1" row-span="12" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
       <component id="fa1c1" class="javax.swing.JButton" binding="aktion3Button" default-binding="true">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -93,12 +92,53 @@
           <text value="Aktion9"/>
         </properties>
       </component>
+      <component id="329dd" class="javax.swing.JTextPane" binding="textPaneStory">
+        <constraints>
+          <grid row="1" column="2" row-span="9" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="0" height="600"/>
+            <preferred-size width="400" height="600"/>
+            <maximum-size width="800" height="600"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="7a525" class="javax.swing.JTextPane" binding="textPaneInventar">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="1200" height="100"/>
+            <maximum-size width="1200" height="150"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <text value=""/>
+        </properties>
+      </component>
       <component id="9704b" class="javax.swing.JButton" binding="aktion10Button">
         <constraints>
           <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Aktion10"/>
+        </properties>
+      </component>
+      <component id="ccc6b" class="javax.swing.JLabel" binding="inventarlbl">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Inventar:"/>
+        </properties>
+      </component>
+      <component id="60b33" class="javax.swing.JLabel" binding="storylbl">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="                           Story:"/>
         </properties>
       </component>
     </children>

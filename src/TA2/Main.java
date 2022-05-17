@@ -179,19 +179,24 @@ public class Main {
 
 
 
+
+
     public static void main(String[] args) {
+        updateAll();
         JFrame frame = new JFrame("Drecksdringsda");
         frame.setContentPane(new Auswahl().maintest);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
-        spiele();
+
+        //spiele();
 
     }
 
     public static void spiele(){
         for(int i=0; i<20; i++){
             try {
+
                 updateAll();
 
                 Thread.sleep(1000);
@@ -205,8 +210,10 @@ public class Main {
     public static void updateAll(){
         gv.update();
         av.update();
-        int rand=(int)(Math.random() * av.anzahlaktiveaktionen()) ;
-        av.gibAktiveAktionen()[rand ].ausführen();
+
+
+        //int rand=(int)(Math.random() * av.anzahlaktiveaktionen()) ;
+       // av.gibAktiveAktionen()[rand ].ausführen();
 
     }
 
