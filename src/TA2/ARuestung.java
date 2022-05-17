@@ -14,6 +14,7 @@ public class ARuestung extends AktionOberklasse{
         this.aktiv = true;
         this.sichtbar = true;
         this.wichtig = true;
+        this.beschreibung="ritterrüstungen anschauen";
     }
 
     @Override

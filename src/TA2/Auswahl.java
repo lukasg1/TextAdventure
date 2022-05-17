@@ -162,13 +162,15 @@ public class Auswahl implements InterfaceOfUpdate {
 
     public void aktionausfuehren(int stelle){
 
-        av.update();
-        gv.update();
+
+
         sb.append(av.gibAktiveAktionen()[stelle].getAusführungsText());
-        if(rv.update()!=null){
-            sb.append(rv.returnText());
-        }
+
         av.gibAktiveAktionen()[stelle].ausführen();
+        String a=rv.returnText();
+        if(rv.update()!=null){
+            sb.append(a);
+        }
 
         sb.append("\n");
         textPaneStory.setText(String.valueOf(sb));
@@ -176,6 +178,12 @@ public class Auswahl implements InterfaceOfUpdate {
         System.out.println(av.gibAktiveAktionen()[0]);
 
         update();
+
+
+        av.update();
+        gv.update();
+
+
 
 
     }

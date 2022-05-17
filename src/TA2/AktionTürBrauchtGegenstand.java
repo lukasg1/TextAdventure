@@ -14,6 +14,7 @@ public class AktionTürBrauchtGegenstand extends AktionBrauchtRaum{
         this.zielraum=zielraum;
         this.aktionsname= raum.getRaumName()+zielraum.getRaumName()+"Tür";
         this.gegenstand=gegenstand;
+        this.ausführungsText="Tür verschlossen";
 
 
     }
@@ -34,9 +35,9 @@ public class AktionTürBrauchtGegenstand extends AktionBrauchtRaum{
             if(gv.sucheGegnstandImInventar(gegenstand)==gegenstand){
                 System.out.println(ausführungsText);
                 rv.setAktuellerRaum(zielraum);
-                this.ausführungsText="Du gehst in den neuen raum";
+                this.ausführungsText="Du gehst in den neuen Raum";
             }else{
-                System.out.println("Tür verloschssen");
+                this.ausführungsText="Tür verlschlossen";
             }
     }
 }
