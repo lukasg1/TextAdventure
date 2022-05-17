@@ -69,9 +69,17 @@ public class Main {
     private static Gegenstand axt = new Gegenstand("Axt",true,true,null,true, true,false,false,false,false,false, true);
     private static Gegenstand schwert = new Gegenstand("Schwert",true,true,null,true, true,false,false,false,false,false, true);
     private static Gegenstand schwert2 = new Gegenstand("Schwert",true,true,null,true, true,false,false,false,false,false, true);
-    private static Gegenstand eisenstang = new Gegenstand("Eisenstange",true,true,null,true, true,false,false,false,false,false, true);
+    private static Gegenstand eisenstange = new Gegenstand("Eisenstange",true,true,null,true, true,false,false,false,false,false, true);
     private static Gegenstand massivesHolzbrett = new Gegenstand("massives Holzbrett",true,true,null,true, true,false,false,false,false,false, true);
     private static Gegenstand improvisierterSpeer = new Gegenstand("improvisierter Speer",true,true,null,true, true,false,false,false,false,false, true);
+    private static AktionSammeln sammleAxt = new AktionSammeln("", true, true, "", "", axt);
+    private static AktionSammeln sammleSchwert = new AktionSammeln("", true, true, "", "", schwert);
+    private static AktionSammeln sammleSchwert2 = new AktionSammeln("", true, true, "", "", schwert2);
+    private static AktionSammeln sammleEisenstange = new AktionSammeln("", true, true, "", "", eisenstange);
+    private static AktionSammeln sammleMassivesHolzbrett = new AktionSammeln("", true, true, "", "", massivesHolzbrett);
+    private static AktionSammeln sammleImprovisierterSpeer = new AktionSammeln("", true, true, "", "", improvisierterSpeer);
+
+
     //Trinkbares
     private static Gegenstand wasser= new Gegenstand("Wasser",true,true,null,true,false,true);
     private static Gegenstand leeresGlas = new Gegenstand("leeresGlas",true,true,null,true,true);
