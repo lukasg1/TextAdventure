@@ -64,6 +64,8 @@ public class Main {
     //Feuermacher
     private static Gegenstand streichölzer = new Gegenstand("Streichhölzer",true,true,null,true, true,false,false,false,false,true);
     private static Gegenstand feuerzeug = new Gegenstand("Feuerzeug",true,true,null,true, true,false,false,false,false,true);
+    private static AktionSammeln sammleStreichhölzer = new AktionSammeln("", true, true, "", "", streichölzer);
+    private static AktionSammeln sammleFeuerzeug = new AktionSammeln("", true, true, "", "", feuerzeug);
     //Massives
     private static Gegenstand axt = new Gegenstand("Axt",true,true,null,true, true,false,false,false,false,false, true);
     private static Gegenstand schwert = new Gegenstand("Schwert",true,true,null,true, true,false,false,false,false,false, true);
@@ -134,7 +136,7 @@ public class Main {
     private static AktionZerstören zerstöreBesen = new AktionZerstören("", true, true, "", "", besen);
     private static AktionZerstören zerstöreVase = new AktionZerstören("", true, true,"", "", vase);
 
-    private static AktionZusammenbasteln bastelSpeer=new AktionZusammenbasteln("",true,true,"","",besenstiel,klebeband,speerspitze,improvisierterSpeer);
+    private static AktionZusammenbasteln bastleSpeer=new AktionZusammenbasteln("",true,true,"","",besenstiel,klebeband,speerspitze,improvisierterSpeer);
 
     //Listen
     private static Gegenstand[] gegenstandsListe= {goldenerSchlüssel,vase,besen,truhe,schrank,handVollChips,tomatensoße,kekse,apfel,schinken,metallschrott,leiter,halbeLeiter,halbeLeiter2,tomatensoßendose,leeresGlas,flasche,speerspitze,klebeband,besenstiel, vaseMitWasser,ColaFlasche,flascheWein,glasMitWasser,wasser,modernerSchlüssel,bronzeschlüssel,alterSchlüssel,feuerzeug,streichölzer,axt,schwert,schwert2,eisenstang,improvisierterSpeer,massivesHolzbrett};
