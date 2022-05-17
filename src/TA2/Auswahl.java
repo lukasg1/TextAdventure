@@ -4,8 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import static TA2.Main.av;
-import static TA2.Main.updateAll;
+import static TA2.Main.*;
 
 public class Auswahl implements InterfaceOfUpdate {
 
@@ -164,6 +163,7 @@ public class Auswahl implements InterfaceOfUpdate {
     public void aktionausfuehren(int stelle){
 
         av.update();
+        gv.update();
 
         av.gibAktiveAktionen()[stelle].ausführen();
         sb.append(av.gibAktiveAktionen()[stelle].getAusführungsText());
