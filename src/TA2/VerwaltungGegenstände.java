@@ -251,6 +251,18 @@ public class VerwaltungGegenstände implements InterfaceOfUpdate{
         }
         return false;
     }
+    
+    public String giveInventoryText(){
+        String namen = null;
+        for(int i = 0; i< this.gegenstandsliste.length;i++){
+            if(gegenstandsliste[i].isImInventar()){
+                if(gegenstandsliste[i].verfügbarkeitPrüfen()==true){
+                    namen=namen+gegenstandsliste[i].getName()+ System.lineSeparator() ;
+                }
+            }
+        }
+        return namen;
+    }
 
 
 
