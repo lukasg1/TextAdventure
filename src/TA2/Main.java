@@ -159,6 +159,8 @@ public class Main {
     static AHandy aHandy= new AHandy(eingangshalle);
     static ARuestung aRuestungA = new ARuestung(arena);
     static ARuestung aRuestungB = new ARuestung(bibliothek);
+    static  AKaempfe aKaempfeA = new AKaempfe(arena);
+    static  AKaempfe aKaempfeB = new AKaempfe(bibliothek);
 
     //Listen
     private static Gegenstand[] gegenstandsListe= {goldenerSchlüssel,vase,besen,truhe,schrank,handVollChips,tomatensoße,kekse,apfel,schinken,metallschrott,leiter,halbeLeiter,halbeLeiter2,tomatensoßendose,leeresGlas,flasche,speerspitze,klebeband,besenstiel, vaseMitWasser,ColaFlasche,flascheWein,glasMitWasser,wasser,modernerSchlüssel,bronzeschlüssel,alterSchlüssel,feuerzeug,streichölzer,axt,schwert,schwert2,eisenstange,improvisierterSpeer,massivesHolzbrett};
@@ -166,7 +168,7 @@ public class Main {
     private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG,sammleGoldenerSchlüssel,
     sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleleiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
     zerstöreSchrank,zerstöreBesen,zerstöreTruhe,zerstöreVase,bastleSpeer,esseApfel,esseKekse,esseSchinken,esseTomatensoße,esseHandVollChips,trinkeFlascheCola,trinkeFlaschWein,trinkeVaseMitRest,trinkeWasser,trinkeWasserGlas,
-            aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße};
+            aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB};
     private Ereignisse[] ereignisListe ={};
 
     //Verwaltungen

@@ -1,6 +1,6 @@
 package TA2;
 
-import static TA2.Main.rv;
+import static TA2.Main.*;
 
 public class ARuestung extends AktionOberklasse{
 
@@ -28,6 +28,9 @@ public class ARuestung extends AktionOberklasse{
     @Override
     public void ausführen() {
         System.out.println(ausführungsText);
+        av.sucheAktion(aKaempfeB).setSichtbar(true);
+
+
 
     }
 }
