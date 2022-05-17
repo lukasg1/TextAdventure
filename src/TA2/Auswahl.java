@@ -230,13 +230,13 @@ public class Auswahl implements InterfaceOfUpdate {
 
         sb.append("\n");
         textPaneStory.setText(String.valueOf(sb));
-        System.out.println(av.gibAktiveAktionen()[0]);
-        System.out.println(av.gibAktiveAktionen()[0]);
+
 
         av.update();
         gv.update();
 
         update();
+        textPaneInventar.setText(gv.giveInventoryText());
 
 
 

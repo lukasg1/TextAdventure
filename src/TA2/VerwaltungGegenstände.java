@@ -4,6 +4,7 @@ package TA2;
 
 public class VerwaltungGegenstände implements InterfaceOfUpdate{
     public Gegenstand[] gegenstandsliste;
+    public String namen = "";
     public VerwaltungGegenstände(Gegenstand[] gegenstandsliste){
 
         this.gegenstandsliste=gegenstandsliste;
@@ -253,11 +254,11 @@ public class VerwaltungGegenstände implements InterfaceOfUpdate{
     }
     
     public String giveInventoryText(){
-        String namen = "";
+
         for(int i = 0; i< this.gegenstandsliste.length;i++){
             if(gegenstandsliste[i].isImInventar()){
                 if(gegenstandsliste[i].verfügbarkeitPrüfen()==true){
-                    namen=namen+gegenstandsliste[i].getName()+ System.lineSeparator() ;
+                    namen=namen+gegenstandsliste[i].getName()+ ", " ;
                 }
             }
         }
