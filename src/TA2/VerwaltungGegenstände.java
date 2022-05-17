@@ -10,6 +10,17 @@ public class VerwaltungGegenstände implements InterfaceOfUpdate{
 
     }
 
+    public Gegenstand sucheGegenstand(Gegenstand g){
+        for (int i = 0; i < gegenstandsliste.length; i++) {
+            if(gegenstandsliste[i]==g){
+                return gegenstandsliste[i];
+            }
+        }
+        return null;
+
+    }
+
+
     public String sucheGegenstandsName(Gegenstand gegenstand){
         for(int i = 0; i< this.gegenstandsliste.length;i++){
             if(gegenstandsliste[i]==gegenstand){

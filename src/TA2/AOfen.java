@@ -1,23 +1,23 @@
 package TA2;
 
+import static TA2.Main.*;
 
-import static TA2.Main.rv;
-
-public class AHandy extends AktionOberklasse{
+public class AOfen extends AktionOberklasse{
 
 
     protected Raum raum;
 
 
+    //Aktionsattribute
 
 
-    public AHandy(Raum raum) {
+    public AOfen(Raum raum) {
         this.raum=raum;
-        this.ausführungsText="Du hebst das Handy hoch und hörst eine Stimme: 'Hilfe, sie tötet uns alle. Sie ist hier.' Du lässt das Handy fallen";
-        this.aktionsname="Handy";
+        this.ausführungsText="Du gehst zum Ofen, dadrin glitzert ertwas golden.";
+        this.aktionsname="Ofen";
         this.aktiv=false;
         this.sichtbar=true;
-        this.beschreibung = "Handy hochheben";
+        this.beschreibung = "Zum Ofen gehen";
 
     }
 
@@ -26,7 +26,7 @@ public class AHandy extends AktionOberklasse{
         if(sichtbar==true&&aktiv==true&&raum==rv.getAktuellerRaum()&&sonderdeaktivierung==false){
             verfügbar=true;
         }
-        else verfügbar=false;
+        else verfügbar=true;
 
 
     }
@@ -35,6 +35,7 @@ public class AHandy extends AktionOberklasse{
     public void ausführen() {
 
         System.out.println(ausführungsText);
+        gv.sucheGegenstand(goldenerSchlüssel).aktivieren();
         deaktiviereFürImmer();
 
     }

@@ -25,8 +25,18 @@ public class Main {
      static Raum vorgarten= new Raum("Vorgarten", "Du trittst raus an die freie Luft, das tut gut.","Du hast das Haus wieder verlassen und denoch hast du mal wieder das Gefühl das nicht wirklich. Täuscht es vielleicht diesmal?","draußen");
      static Raum bibliothek= new Raum("Bibliothek","Du trittst in eine Bibliothek, die Wände sind voll von Bücheregalen.","Du betrittst die Bibliothek.","Bibliothek(EG)");
 
+    //Schlüssel
+    static Gegenstand goldenerSchlüssel = new Gegenstand("goldener Schlüssel",true,true,küche,false,true);
+    static Gegenstand modernerSchlüssel = new Gegenstand("moderner Schlüssel",true,true,null,true, true);
+    static Gegenstand bronzeschlüssel = new Gegenstand("Bronzeschlüssel",true,true,null,true, true);
+    static Gegenstand alterSchlüssel = new Gegenstand("alter Schlüssel",true,true,null,true, true);
+    static AktionSammeln sammleGoldenerSchlüssel = new AktionSammeln("", true, true, "", "", goldenerSchlüssel);
+    static AktionSammeln sammleModernerSchlüssel = new AktionSammeln("", true, true, "", "", modernerSchlüssel);
+    static AktionSammeln sammleBronzeSchlüssel = new AktionSammeln("", true, true, "", "", bronzeschlüssel);
+    static AktionSammeln sammleAlterSchlüssel = new AktionSammeln("", true, true, "", "", alterSchlüssel);
 
-     static TA2.AktionTür türEingangshalleKüche = new TA2.AktionTür("",true,false,"Du erkennst eine große Holztüre.Ob sie wohl aufgeht?","Die Türe ist sehr schwerfällig, aber lässt sich öfnnen",eingangshalle,küche);
+
+    static TA2.AktionTür türEingangshalleKüche = new TA2.AktionTür("",true,false,"Du erkennst eine große Holztüre.Ob sie wohl aufgeht?","Die Türe ist sehr schwerfällig, aber lässt sich öfnnen",eingangshalle,küche);
      static TA2.AktionTreppe treppe1EG = new TA2.AktionTreppe("",false,true,"Nutze die Treppe?","Du gehst die Treppe hoch",eingangshalle,flurOG);
      static TA2.AktionTür türEingangshalleBadezimmer = new TA2.AktionTür("",true,false,"Mysteriöse weiße Tür öffnen?","Du öffnest vorsichtig die Tür.",eingangshalle,badezimmer);
      static TA2.AktionTür türFlurOGBadezimmer = new TA2.AktionTür("",true,true,"Die weiße Türe kommt dir bekannt vor. Magst du sie öffnen?","Du gehst bedächtig zu der Tür. Die Türe geht leicht auf.",flurOG,badezimmer);
@@ -38,7 +48,7 @@ public class Main {
      static TA2.AktionTür türVorraumBibliothek = new TA2.AktionTür("",true,true,"Öffne die verzierte Holztüre an der Wand. Was wohl dahinter liegt?","",vorraum,bibliothek);
      static TA2.AktionTür türVorraumFlurEG = new TA2.AktionTür("",true,true,"Öffne die große massive Holztüre.","Öffne die massive Tür",vorraum,flurEG);
      static TA2.AktionTür türFlurEGAlbtraumraum = new TA2.AktionTür("",true,true,"Eine glatte Schwarzetüre. 'Öffne mich schreit' sie dir zu. Öffnest du sie?","Die Türe ist so faszinierten. Du fühlst fast einen Sog während du sie öffnest.",flurEG,albtraumRaum);
-     static TA2.AktionTür türEingangshalleVorgarten = new TA2.AktionTür("",true,false,"Die Konturen zeigen eine massive Türe. Versuche sie zu öffnen.","Die Eingangstüre öffnet sich.",eingangshalle,vorgarten);
+     static TA2.AktionTürBrauchtGegenstand türEingangshalleVorgarten = new TA2.AktionTürBrauchtGegenstand("",true,false,"Die Konturen zeigen eine massive Türe. Versuche sie zu öffnen.","Die Eingangstüre öffnet sich.",eingangshalle,vorgarten,goldenerSchlüssel);
      static TA2.AktionTür türFlurEGWohnzimmer = new TA2.AktionTür("",true,true,"Schlichte Tür am Flurende versuchen zu öffnen.","Die Türe schwingt lautlos auf.",flurEG,wohnzimmer);
      static TA2.AktionTür türFlurOGArena = new TA2.AktionTür("",true,true,"Türe mit Schwertsymbol öffnen.","",flurOG,arena);
      static TA2.AktionTür türFlurOGTeezimmer = new TA2.AktionTür("",true,true,"Schlichte Holztüre, man hört leises plätschern. Öffnen?","",flurOG,teezimmer);
@@ -51,22 +61,13 @@ public class Main {
 
 
 
-    //Schlüssel
-     static Gegenstand goldenerSchlüssel = new Gegenstand("goldener Schlüssel",true,true,null,true,true);
-     static Gegenstand modernerSchlüssel = new Gegenstand("moderner Schlüssel",true,true,null,true, true);
-     static Gegenstand bronzeschlüssel = new Gegenstand("Bronzeschlüssel",true,true,null,true, true);
-     static Gegenstand alterSchlüssel = new Gegenstand("alter Schlüssel",true,true,null,true, true);
-     static AktionSammeln sammleGoldenerSchlüssel = new AktionSammeln("", true, true, "", "", goldenerSchlüssel);
-     static AktionSammeln sammleModernerSchlüssel = new AktionSammeln("", true, true, "", "", modernerSchlüssel);
-     static AktionSammeln sammleBronzeSchlüssel = new AktionSammeln("", true, true, "", "", bronzeschlüssel);
-     static AktionSammeln sammleAlterSchlüssel = new AktionSammeln("", true, true, "", "", alterSchlüssel);
     //Feuermacher
      static Gegenstand streichölzer = new Gegenstand("Streichhölzer",true,true,null,true, true,false,false,false,false,true);
      static Gegenstand feuerzeug = new Gegenstand("Feuerzeug",true,true,null,true, true,false,false,false,false,true);
      static AktionSammeln sammleStreichhölzer = new AktionSammeln("", true, true, "", "", streichölzer);
      static AktionSammeln sammleFeuerzeug = new AktionSammeln("", true, true, "", "", feuerzeug);
     //Massives
-     static Gegenstand axt = new Gegenstand("Axt",true,true,null,true, true,false,false,false,false,false, true);
+     static Gegenstand axt = new Gegenstand("Axt",true,true,küche,true, true,false,false,false,false,false, true);
      static Gegenstand schwert = new Gegenstand("Schwert",true,true,null,true, true,false,false,false,false,false, true);
      static Gegenstand schwert2 = new Gegenstand("Schwert",true,true,null,true, true,false,false,false,false,false, true);
      static Gegenstand eisenstange = new Gegenstand("Eisenstange",true,true,null,true, true,false,false,false,false,false, true);
@@ -120,7 +121,7 @@ public class Main {
 
     //essbares
      static Gegenstand schinken = new Gegenstand("Schinken",true,true,null,true,true,false,true);
-     static Gegenstand apfel = new Gegenstand("Äpfel",true,true,null,true,true,false,true);
+     static Gegenstand apfel = new Gegenstand("Äpfel",true,true,küche,true,true,false,true);
      static Gegenstand kekse = new Gegenstand("Kekse",true,true,null,true,true,false,true);
      static Gegenstand tomatensoße = new Gegenstand("Tomatensoße",true,true,null,true,true,false,true);
      static Gegenstand handVollChips = new Gegenstand("eine Handvoll Salt&Vinger-Chips",true,true,null,true,true,false,true);

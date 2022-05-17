@@ -4,11 +4,8 @@ import static TA2.Main.*;
 
 public class ALichtschalter extends AktionOberklasse{
 
-    protected String aktionsname="Lichtschalter";
-    protected boolean aktiv=true;
-    protected boolean sichtbar=true;
+
     protected Raum raum;
-    protected String ausführungsText="Du findest einen Lichschalter und du siehst dich blinzelnd um, du findest ein Handy auf dem Boden und erkennst die Türen um dich herum.";
 
 
     //Aktionsattribute
@@ -16,6 +13,12 @@ public class ALichtschalter extends AktionOberklasse{
 
     public ALichtschalter(Raum raum) {
         this.raum=raum;
+        this.sichtbar=true;
+        this.aktionsname="Lichtschalter";
+        this.ausführungsText="Du findest einen Lichschalter und du siehst dich blinzelnd um, du findest ein Handy auf dem Boden und erkennst die Türen um dich herum.";
+        this.aktiv=true;
+
+
     }
 
     @Override
