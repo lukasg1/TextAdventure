@@ -39,7 +39,23 @@ public class AktionTürBrauchtGegenstand extends AktionBrauchtRaum{
 
             if(gv.sucheGegnstandImInventar(gegenstand)==gegenstand){
                 System.out.println(ausführungsText);
-                rv.setAktuellerRaum(zielraum);
+
+
+
+                if (raum == rv.getAktuellerRaum()) {
+                    System.out.println(ausführungsText);
+                    rv.setAktuellerRaum(zielraum);
+
+                    this.ausführungsText = "";
+                } else if (zielraum == rv.getAktuellerRaum()) {
+                    System.out.println(ausführungsText);
+                    rv.setAktuellerRaum(raum);
+
+                    this.ausführungsText = "";
+
+
+
+                }
                 this.ausführungsText="Du gehst in den neuen Raum";
                 this.texthelp=true;
             }else{
