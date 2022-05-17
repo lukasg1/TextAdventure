@@ -3,6 +3,7 @@ package TA2;
 import static TA2.Main.rv;
 
 public class AktionTür extends AktionBrauchtRaum {
+    protected boolean texthelp=false;
     protected Raum zielraum;
 
     public AktionTür(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Raum raum, Raum zielraum) {
@@ -15,11 +16,14 @@ public class AktionTür extends AktionBrauchtRaum {
     public void update() {
         if (sichtbar == true && aktiv == true && raum == rv.getAktuellerRaum() && sonderdeaktivierung == false) {
             verfügbar = true;
-            this.beschreibung = "Von " + raum.getRaumName() + " nach " + zielraum.getRaumName() + " gehen";
+            if(texthelp==true) {
+                this.beschreibung = "Von " + raum.getRaumName() + " nach " + zielraum.getRaumName() + " gehen";
+            }
 
         } else if (sichtbar == true && aktiv == true && zielraum == rv.getAktuellerRaum() && sonderdeaktivierung == false) {
             verfügbar = true;
-            this.beschreibung = "Von " + zielraum.getRaumName() + " nach " + raum.getRaumName() + " gehen";
+            if(texthelp==true) {
+                this.beschreibung = "Von " + zielraum.getRaumName() + " nach " + raum.getRaumName() + " gehen";}
         } else verfügbar = false;
 
     }
@@ -36,6 +40,7 @@ public class AktionTür extends AktionBrauchtRaum {
             rv.setAktuellerRaum(raum);
 
             this.ausführungsText = "";
+            this.texthelp=true;
 
 
         }
