@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 
 import static TA2.Main.av;
 
-public class Auswahl {
+public class Auswahl implements InterfaceOfUpdate {
     private JButton aktion5Button;
     private JButton aktion3Button;
     private JButton aktion1Button;
@@ -156,7 +156,7 @@ public class Auswahl {
 
     public void aktionausfuehren(int stelle){
         av.aktionen[stelle].ausführen();
-        buttonbeschreibung();
+        update();
     }
 
 
@@ -231,5 +231,10 @@ public class Auswahl {
 
             }
         });
+    }
+
+    @Override
+    public void update() {
+        buttonbeschreibung();
     }
 }
