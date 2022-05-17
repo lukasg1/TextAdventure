@@ -5,11 +5,8 @@ import static TA2.Main.rv;
 
 public class AHandy extends AktionOberklasse{
 
-    protected String aktionsname="Handy";
-    protected boolean aktiv=false;
-    protected boolean sichtbar=true;
+
     protected Raum raum;
-    protected String ausführungsText="Du hebst das Handy hoch und hörst eine Stimme: Hilfe, sie tötet uns alle. Sie ist hier. Du lässt das Handy fallen";
 
 
     //Aktionsattribute
@@ -17,6 +14,11 @@ public class AHandy extends AktionOberklasse{
 
     public AHandy(Raum raum) {
         this.raum=raum;
+        this.ausführungsText="Du hebst das Handy hoch und hörst eine Stimme: 'Hilfe, sie tötet uns alle. Sie ist hier.' Du lässt das Handy fallen";
+        this.aktionsname="Handy";
+        this.aktiv=false;
+        this.sichtbar=true;
+
     }
 
     @Override
