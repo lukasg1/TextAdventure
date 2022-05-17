@@ -17,6 +17,10 @@ public class Auswahl {
     private JButton aktion8Button;
     private JButton aktion9Button;
     private JButton aktion10Button;
+    public JPanel maintest;
+
+
+
 
     public void buttonbeschreibung(){
         av.update();

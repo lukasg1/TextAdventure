@@ -1,5 +1,6 @@
 package TA2;
 
+import javax.swing.*;
 import java.lang.Math;
 
 public class Main {
@@ -179,6 +180,11 @@ public class Main {
 
 
     public static void main(String[] args) {
+        JFrame frame = new JFrame("Drecksdringsda");
+        frame.setContentPane(new Auswahl().maintest);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
         spiele();
 
     }
