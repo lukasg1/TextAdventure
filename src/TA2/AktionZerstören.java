@@ -15,6 +15,10 @@ public class AktionZerstören extends AktionBrauchtGegenstand{
         if (beschreibung == "") {
             this.beschreibung = "Zerstöre " + gegenstand.getName();
         }
+        if (ausführungsText == "") {
+            this.ausführungsText = "Du hast "+ gegenstand.getName() + " zerstört.";
+
+        }
     }
 
     @Override

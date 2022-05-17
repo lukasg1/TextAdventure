@@ -9,6 +9,10 @@ public class AktionEssen extends AktionBrauchtGegenstand{
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText, gegenstand);
         this.aktionsname = "esse" + gegenstand.getName();
         this.beschreibung = "Esse " + gegenstand.getName();
+        if (ausführungsText == "") {
+            this.ausführungsText = "Du isst " + gegenstand.getName() + ". Guten Appetit!";
+            System.out.println(ausführungsText);
+        }
     }
 
     @Override
@@ -22,9 +26,6 @@ public class AktionEssen extends AktionBrauchtGegenstand{
     @Override
     public void ausführen() {
         gegenstand.deaktiviereFürImmer();
-        if (ausführungsText == "") {
-            this.ausführungsText = "Du isst " + gegenstand.getName() + ". Guten Appetit!";
-            System.out.println(ausführungsText);
-        }
+
     }
 }

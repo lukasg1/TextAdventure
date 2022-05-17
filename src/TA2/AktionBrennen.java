@@ -10,6 +10,9 @@ public class AktionBrennen extends AktionBrauchtGegenstand{
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText, gegenstand);
         this.aktionsname = "verbrenne" + gegenstand.getName();
         this.beschreibung = "Verbrenne " + gegenstand.getName();
+        if (ausführungsText == "") {
+            this.ausführungsText = "Du hast den " + gegenstand.getName() + " mit einem " + gegenstandMitDemVerbranntWird.getName() + " verbrannt. " +
+                    "Wenn das der Hausmeister mitbekommt ...";}
     }
 
     @Override
