@@ -41,9 +41,10 @@ public class AktionTürBrauchtGegenstand extends AktionBrauchtRaum{
                 System.out.println(ausführungsText);
                 rv.setAktuellerRaum(zielraum);
                 this.ausführungsText="Du gehst in den neuen Raum";
+                this.texthelp=true;
             }else{
                 this.ausführungsText="Tür verlschlossen";
             }
-        this.texthelp=true;
+
     }
 }
