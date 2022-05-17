@@ -15,6 +15,11 @@ public class AktionZerstörenMitRest extends AktionZerstören{
             this.beschreibung = "Zerstöre " + gegenstand.getName();
         }
         this.gegenstandDerÜbrigBleibt = gegenstandDerÜbrigBleibt;
+        if (ausführungsText == "") {
+            this.ausführungsText = "Du hast mit " + gegenstandMitDemZerstörtWird.getName() + " " + gegenstand.getName() + " zerstört."+
+                    " Übrig bleibt hier noch ein " + gegenstandDerÜbrigBleibt + ".";
+            System.out.println(ausführungsText);
+        }
     }
 
     @Override
@@ -31,10 +36,6 @@ public class AktionZerstörenMitRest extends AktionZerstören{
         gegenstand.deaktiviereFürImmer();
         gegenstandDerÜbrigBleibt.setSichtbar(true);
         gegenstandDerÜbrigBleibt.aktivieren();
-        if (ausführungsText == "") {
-            this.ausführungsText = "Du hast mit " + gegenstandMitDemZerstörtWird.getName() + " " + gegenstand.getName() + " zerstört."+
-            " Übrig bleibt hier noch ein " + gegenstandDerÜbrigBleibt + ".";
-            System.out.println(ausführungsText);
-        }
+
     }
 }

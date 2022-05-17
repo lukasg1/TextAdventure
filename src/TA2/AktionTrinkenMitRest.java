@@ -18,6 +18,9 @@ public class AktionTrinkenMitRest extends AktionTrinken{
             this.beschreibung = "Trinke" + gegenstand.getName();
         }
         this.gegenstandDerÜbrigBleibt = gegenstandDerÜbrigBleibt;
+        if(gegenstand.isImInventar()){
+            gegenstandDerÜbrigBleibt.insInventar();
+        }
     }
 
     @Override
@@ -33,9 +36,7 @@ public class AktionTrinkenMitRest extends AktionTrinken{
         gegenstand.deaktivieren();
         gegenstandDerÜbrigBleibt.aktivieren();
         gegenstandDerÜbrigBleibt.setSichtbar(true);
-        if(gegenstand.isImInventar()){
-            gegenstandDerÜbrigBleibt.insInventar();
-        }
+
         System.out.println(ausführungsText);
     }
 }

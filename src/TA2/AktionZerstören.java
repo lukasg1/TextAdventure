@@ -15,6 +15,10 @@ public class AktionZerstören extends AktionBrauchtGegenstand{
         if (beschreibung == "") {
             this.beschreibung = "Zerstöre " + gegenstand.getName();
         }
+        if (ausführungsText == "") {
+            this.ausführungsText = "Du hast mit " + gegenstandMitDemZerstörtWird.getName() + " " + gegenstand.getName() + " zerstört.";
+            System.out.println(ausführungsText);
+        }
     }
 
     @Override
@@ -29,9 +33,6 @@ public class AktionZerstören extends AktionBrauchtGegenstand{
     public void ausführen() {
         gegenstandMitDemZerstörtWird = gv.sucheGegnstandzumZerstören();
         gegenstand.deaktiviereFürImmer();
-        if (ausführungsText == "") {
-            this.ausführungsText = "Du hast mit " + gegenstandMitDemZerstörtWird.getName() + " " + gegenstand.getName() + " zerstört.";
-            System.out.println(ausführungsText);
-        }
+
     }
 }
