@@ -180,7 +180,7 @@ public class Main {
 
     static VerwaltungZeit zv=new VerwaltungZeit();
 
-    static JFrame frame = new JFrame("Drecksdringsda");
+    static JFrame frame = new JFrame("Das Haus");
 
 
 
