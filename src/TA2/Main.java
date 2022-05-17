@@ -1,7 +1,16 @@
 package TA2;
 
 import javax.swing.*;
-import java.lang.Math;
+import java.awt.*;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.GridLayout;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
 
 public class Main {
     //Raumverzeichnis
@@ -179,6 +188,10 @@ public class Main {
     static VerwaltungZeit zv=new VerwaltungZeit();
 
     static JFrame frame = new JFrame("Drecksdringsda");
+
+    //Versuch eines Scrollers
+   // JScrollPane scrollPane = new JScrollPane(frame);
+   // add(scrollPane, BorderLayout.CENTER);
 
 
 
