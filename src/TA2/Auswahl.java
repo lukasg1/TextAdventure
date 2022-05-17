@@ -164,16 +164,19 @@ public class Auswahl implements InterfaceOfUpdate {
 
         av.update();
         gv.update();
-
-        av.gibAktiveAktionen()[stelle].ausführen();
         sb.append(av.gibAktiveAktionen()[stelle].getAusführungsText());
+        if(rv.update()!=null){
+            sb.append(rv.returnText());
+        }
+        av.gibAktiveAktionen()[stelle].ausführen();
+
         sb.append("\n");
         textPaneStory.setText(String.valueOf(sb));
         System.out.println(av.gibAktiveAktionen()[0]);
         System.out.println(av.gibAktiveAktionen()[0]);
 
         update();
-        updateAll();
+
 
     }
 

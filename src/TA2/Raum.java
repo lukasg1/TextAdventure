@@ -38,13 +38,14 @@ public class Raum {
         return raumName;
     }
 
-    public void betreteRaum(){
+    public String betreteRaum(){
         if(entdeckt==false ){
-            System.out.println(textErstesMal);
             entdeckt=true;
+            return (textErstesMal);
+
         }
         else{
-            System.out.println(textNichtErstesMal);
+            return (textNichtErstesMal);
         }
     }
 

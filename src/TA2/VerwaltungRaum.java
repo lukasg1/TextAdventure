@@ -5,6 +5,9 @@ public class VerwaltungRaum {
     public int raumCounter;
     public int etage;
 
+    public String textspeicher="";
+    public String textspeicher2="";
+
     public VerwaltungRaum(Raum aktuellerRaum){
         this.aktuellerRaum=aktuellerRaum;
         this.raumCounter = 0;
@@ -34,7 +37,20 @@ public class VerwaltungRaum {
 
         this.aktuellerRaum = aktuellerRaum;
         raumCounter++;
-        aktuellerRaum.betreteRaum();
+        textspeicher2="\n" +aktuellerRaum.betreteRaum();
         aktuellerRaum.setLetzterAufruf(raumCounter);
     }
+
+    public String update(){
+        if(textspeicher2!=textspeicher){
+            textspeicher=textspeicher2;
+            return textspeicher2;
+        }
+        else return null;
+    }
+    public String returnText(){
+        return textspeicher2;
+    }
+
+
 }
