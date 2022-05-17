@@ -130,6 +130,11 @@ public class Main {
      static AktionEssen esseKekse = new AktionEssen("", true, true, "", "", kekse);
      static AktionEssen esseTomatensoße = new AktionEssen("", true, true, "", "", tomatensoße);
      static AktionEssen esseHandVollChips = new AktionEssen("", true, true, "", "", handVollChips);
+     static AktionSammeln sammleSchinken = new AktionSammeln("", true, true, "", "", schinken);
+     static AktionSammeln sammleApfel = new AktionSammeln("", true, true, "", "", apfel);
+     static AktionSammeln sammleKekse = new AktionSammeln("", true, true, "", "", kekse);
+     static AktionSammeln sammleTomatensoße = new AktionSammeln("", true, true, "", "", tomatensoße);
+     static AktionSammeln sammleHandVollChips = new AktionSammeln("", true, true, "", "", handVollChips);
 
     //TIMETRAVEL
 
