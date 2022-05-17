@@ -222,6 +222,7 @@ public class Auswahl implements InterfaceOfUpdate {
         sb.append(av.gibAktiveAktionen()[stelle].getAusführungsText());
         zv.update();
 
+        textPaneInventar.setText(gv.giveInventoryText());
         av.gibAktiveAktionen()[stelle].ausführen();
         String a=rv.returnText();
         if(rv.update()!=null){
@@ -234,9 +235,11 @@ public class Auswahl implements InterfaceOfUpdate {
 
         av.update();
         gv.update();
+        textPaneInventar.setText(gv.giveInventoryText());
 
         update();
         textPaneInventar.setText(gv.giveInventoryText());
+
 
 
 
