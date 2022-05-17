@@ -201,7 +201,6 @@ public class Main {
         av.update();
         int rand=(int)(Math.random() * av.anzahlaktiveaktionen()) ;
         av.gibAktiveAktionen()[rand ].ausführen();
-        System.out.println(gv.giveInventoryText());
 
     }
 
