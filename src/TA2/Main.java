@@ -5,7 +5,7 @@ import java.lang.Math;
 
 public class Main {
     //Raumverzeichnis
-    static Raum eingangshalle = new Raum("Eingangshalle", "Du befindest dich in einem dunklem Raum.", "Du bist zurück in dem in der Eingangshalle in der du aufgewacht bist.", "Eingangshalle(EG)");
+     static Raum eingangshalle = new Raum("Eingangshalle", "Du befindest dich in einem dunklem Raum.", "Du bist zurück in dem in der Eingangshalle in der du aufgewacht bist.", "Eingangshalle(EG)");
      static Raum küche = new Raum("Küche", "Etwas Licht scheint durch die Fenster und du siehst eine Küche vor dir.", "Du betrittst die Küche.", "Küche(EG)");
      static Raum esszimmer = new Raum("Esszimmer", "Du betrittst ein großes Esszimmer, indem wohl schon länger niemand mehr war.", "Du stehst wieder im Speisezimmer", "Esszimmer(EG)");
      static Raum garten = new Raum("Garten", "Du hast es in den Garten hinter dem Haus geschafft.", "Du befindest dich wieder im Garten.","Garten(draußen)");
@@ -37,7 +37,7 @@ public class Main {
     static AktionSammeln sammleAlterSchlüssel = new AktionSammeln("", true, true, "", "", alterSchlüssel);
 
 
-    static TA2.AktionTür türEingangshalleKüche = new TA2.AktionTür("",true,false,"Du erkennst eine große Holztüre.Ob sie wohl aufgeht?","Die Türe ist sehr schwerfällig, aber lässt sich öfnnen",eingangshalle,küche);
+    static TA2.AktionTür türEingangshalleKüche = new TA2.AktionTür("",true,false,"Du erkennst eine große Holztüre. Ob sie wohl aufgeht?","Die Türe ist sehr schwerfällig, aber lässt sich öfnnen",eingangshalle,küche);
      static TA2.AktionTreppe treppe1EG = new TA2.AktionTreppe("",false,true,"Nutze die Treppe?","Du gehst die Treppe hoch",eingangshalle,flurOG);
      static TA2.AktionTür türEingangshalleBadezimmer = new TA2.AktionTür("",true,false,"Mysteriöse weiße Tür öffnen?","Du öffnest vorsichtig die Tür.",eingangshalle,badezimmer);
      static TA2.AktionTür türFlurOGBadezimmer = new TA2.AktionTür("",true,true,"Die weiße Türe kommt dir bekannt vor. Magst du sie öffnen?","Du gehst bedächtig zu der Tür. Die Türe geht leicht auf.",flurOG,badezimmer);
@@ -167,7 +167,7 @@ public class Main {
     sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleleiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
     zerstöreSchrank,zerstöreBesen,zerstöreTruhe,zerstöreVase,bastleSpeer,esseApfel,esseKekse,esseSchinken,esseTomatensoße,esseHandVollChips,trinkeFlascheCola,trinkeFlaschWein,trinkeVaseMitRest,trinkeWasser,trinkeWasserGlas,
             aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße};
-    private Ereignisse[] ereignissListe ={};
+    private Ereignisse[] ereignisListe ={};
 
     //Verwaltungen
     static TA2.VerwaltungRaum rv= new VerwaltungRaum(eingangshalle);

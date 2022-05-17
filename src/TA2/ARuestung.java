@@ -1,6 +1,5 @@
 package TA2;
 
-
 import static TA2.Main.rv;
 
 public class ARuestung extends AktionOberklasse{
