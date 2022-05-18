@@ -28,15 +28,16 @@ public class AktionTreppe extends AktionBrauchtRaum{
     public void ausführen() {
         if(rv.getEtage()==0) {
             System.out.println(ausführungsText);
-            if(rv.aktuellerRaum==raum) {
-                rv.setAktuellerRaum(zielraum);
+            if(rv.aktuellerRaum==zielraum) {
+                rv.setAktuellerRaum(raum);
             }
+
             this.ausführungsText = "Du gehst die Treppe Hoch";
         }
         if(rv.getEtage()==1){
             System.out.println(ausführungsText);
-            if(rv.aktuellerRaum==zielraum) {
-                rv.setAktuellerRaum(raum);
+            if(rv.aktuellerRaum==raum) {
+                rv.setAktuellerRaum(zielraum);
             }
             this.ausführungsText = "Du gehst die Treppe Runter";
         }
