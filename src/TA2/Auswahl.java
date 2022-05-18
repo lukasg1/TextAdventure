@@ -22,6 +22,11 @@ public class Auswahl implements InterfaceOfUpdate {
     private JTextPane textPaneStory;
     private JTextPane textPaneInventar;
     private JLabel storylbl;
+    private JButton aktion11Button;
+    private JButton aktion12Button;
+    private JButton aktion13Button;
+    private JButton aktion14Button;
+    private JButton aktion15Button;
     private StringBuilder sb= new StringBuilder("");
     AktionOberklasse[] aktionen;
 
@@ -30,8 +35,8 @@ public class Auswahl implements InterfaceOfUpdate {
     public void buttonbeschreibung(){
         av.update();
         int anzahlaktiv=av.gibAktiveAktionen().length;
-        if(anzahlaktiv>10){
-            anzahlaktiv=10;
+        if(anzahlaktiv>15){
+            anzahlaktiv=15;
         }
         switch (anzahlaktiv){
             case 1:
@@ -46,6 +51,11 @@ public class Auswahl implements InterfaceOfUpdate {
                 aktion8Button.hide();
                 aktion9Button.hide();
                 aktion10Button.hide();
+                aktion11Button.hide();
+                aktion12Button.hide();
+                aktion13Button.hide();
+                aktion14Button.hide();
+                aktion15Button.hide();
 
             case 2:
                 aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
@@ -61,6 +71,11 @@ public class Auswahl implements InterfaceOfUpdate {
                 aktion8Button.hide();
                 aktion9Button.hide();
                 aktion10Button.hide();
+                aktion11Button.hide();
+                aktion12Button.hide();
+                aktion13Button.hide();
+                aktion14Button.hide();
+                aktion15Button.hide();
 
             case 3:
                 aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
@@ -76,6 +91,11 @@ public class Auswahl implements InterfaceOfUpdate {
                 aktion8Button.hide();
                 aktion9Button.hide();
                 aktion10Button.hide();
+                aktion11Button.hide();
+                aktion12Button.hide();
+                aktion13Button.hide();
+                aktion14Button.hide();
+                aktion15Button.hide();
 
             case 4:
                 aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
@@ -92,6 +112,11 @@ public class Auswahl implements InterfaceOfUpdate {
                 aktion8Button.hide();
                 aktion9Button.hide();
                 aktion10Button.hide();
+                aktion11Button.hide();
+                aktion12Button.hide();
+                aktion13Button.hide();
+                aktion14Button.hide();
+                aktion15Button.hide();
 
             case 5:
                 aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
@@ -109,6 +134,11 @@ public class Auswahl implements InterfaceOfUpdate {
                 aktion8Button.hide();
                 aktion9Button.hide();
                 aktion10Button.hide();
+                aktion11Button.hide();
+                aktion12Button.hide();
+                aktion13Button.hide();
+                aktion14Button.hide();
+                aktion15Button.hide();
 
             case 6:
                 aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
@@ -128,6 +158,11 @@ public class Auswahl implements InterfaceOfUpdate {
                 aktion8Button.hide();
                 aktion9Button.hide();
                 aktion10Button.hide();
+                aktion11Button.hide();
+                aktion12Button.hide();
+                aktion13Button.hide();
+                aktion14Button.hide();
+                aktion15Button.hide();
 
             case 7:
                 aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
@@ -147,6 +182,11 @@ public class Auswahl implements InterfaceOfUpdate {
                 aktion8Button.hide();
                 aktion9Button.hide();
                 aktion10Button.hide();
+                aktion11Button.hide();
+                aktion12Button.hide();
+                aktion13Button.hide();
+                aktion14Button.hide();
+                aktion15Button.hide();
 
             case 8:
                 aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
@@ -167,6 +207,11 @@ public class Auswahl implements InterfaceOfUpdate {
                 aktion8Button.show();
                 aktion9Button.hide();
                 aktion10Button.hide();
+                aktion11Button.hide();
+                aktion12Button.hide();
+                aktion13Button.hide();
+                aktion14Button.hide();
+                aktion15Button.hide();
 
             case 9:
                 aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
@@ -188,6 +233,11 @@ public class Auswahl implements InterfaceOfUpdate {
                 aktion9Button.setText(av.gibAktiveAktionen()[8].getBeschreibung());
                 aktion9Button.show();
                 aktion10Button.hide();
+                aktion11Button.hide();
+                aktion12Button.hide();
+                aktion13Button.hide();
+                aktion14Button.hide();
+                aktion15Button.hide();
 
             case 10:
                 aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
@@ -210,6 +260,162 @@ public class Auswahl implements InterfaceOfUpdate {
                 aktion9Button.show();
                 aktion10Button.setText(av.gibAktiveAktionen()[9].getBeschreibung());
                 aktion10Button.show();
+                aktion11Button.hide();
+                aktion12Button.hide();
+                aktion13Button.hide();
+                aktion14Button.hide();
+                aktion15Button.hide();
+
+            case 11:
+                aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
+                aktion1Button.show();
+                aktion2Button.setText(av.gibAktiveAktionen()[1].getBeschreibung());
+                aktion2Button.show();
+                aktion3Button.setText(av.gibAktiveAktionen()[2].getBeschreibung());
+                aktion3Button.show();
+                aktion4Button.setText(av.gibAktiveAktionen()[3].getBeschreibung());
+                aktion4Button.show();
+                aktion5Button.setText(av.gibAktiveAktionen()[4].getBeschreibung());
+                aktion5Button.show();
+                aktion6Button.setText(av.gibAktiveAktionen()[5].getBeschreibung());
+                aktion6Button.show();
+                aktion7Button.setText(av.gibAktiveAktionen()[6].getBeschreibung());
+                aktion7Button.show();
+                aktion8Button.setText(av.gibAktiveAktionen()[7].getBeschreibung());
+                aktion8Button.show();
+                aktion9Button.setText(av.gibAktiveAktionen()[8].getBeschreibung());
+                aktion9Button.show();
+                aktion10Button.setText(av.gibAktiveAktionen()[9].getBeschreibung());
+                aktion10Button.show();
+                aktion11Button.setText(av.gibAktiveAktionen()[10].getBeschreibung());
+                aktion11Button.show();
+                aktion12Button.hide();
+                aktion13Button.hide();
+                aktion14Button.hide();
+                aktion15Button.hide();
+
+            case 12:
+                aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
+                aktion1Button.show();
+                aktion2Button.setText(av.gibAktiveAktionen()[1].getBeschreibung());
+                aktion2Button.show();
+                aktion3Button.setText(av.gibAktiveAktionen()[2].getBeschreibung());
+                aktion3Button.show();
+                aktion4Button.setText(av.gibAktiveAktionen()[3].getBeschreibung());
+                aktion4Button.show();
+                aktion5Button.setText(av.gibAktiveAktionen()[4].getBeschreibung());
+                aktion5Button.show();
+                aktion6Button.setText(av.gibAktiveAktionen()[5].getBeschreibung());
+                aktion6Button.show();
+                aktion7Button.setText(av.gibAktiveAktionen()[6].getBeschreibung());
+                aktion7Button.show();
+                aktion8Button.setText(av.gibAktiveAktionen()[7].getBeschreibung());
+                aktion8Button.show();
+                aktion9Button.setText(av.gibAktiveAktionen()[8].getBeschreibung());
+                aktion9Button.show();
+                aktion10Button.setText(av.gibAktiveAktionen()[9].getBeschreibung());
+                aktion10Button.show();
+                aktion11Button.setText(av.gibAktiveAktionen()[10].getBeschreibung());
+                aktion11Button.show();
+                aktion12Button.setText(av.gibAktiveAktionen()[11].getBeschreibung());
+                aktion12Button.show();
+                aktion13Button.hide();
+                aktion14Button.hide();
+                aktion15Button.hide();
+
+            case 13:
+                aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
+                aktion1Button.show();
+                aktion2Button.setText(av.gibAktiveAktionen()[1].getBeschreibung());
+                aktion2Button.show();
+                aktion3Button.setText(av.gibAktiveAktionen()[2].getBeschreibung());
+                aktion3Button.show();
+                aktion4Button.setText(av.gibAktiveAktionen()[3].getBeschreibung());
+                aktion4Button.show();
+                aktion5Button.setText(av.gibAktiveAktionen()[4].getBeschreibung());
+                aktion5Button.show();
+                aktion6Button.setText(av.gibAktiveAktionen()[5].getBeschreibung());
+                aktion6Button.show();
+                aktion7Button.setText(av.gibAktiveAktionen()[6].getBeschreibung());
+                aktion7Button.show();
+                aktion8Button.setText(av.gibAktiveAktionen()[7].getBeschreibung());
+                aktion8Button.show();
+                aktion9Button.setText(av.gibAktiveAktionen()[8].getBeschreibung());
+                aktion9Button.show();
+                aktion10Button.setText(av.gibAktiveAktionen()[9].getBeschreibung());
+                aktion10Button.show();
+                aktion11Button.setText(av.gibAktiveAktionen()[10].getBeschreibung());
+                aktion11Button.show();
+                aktion12Button.setText(av.gibAktiveAktionen()[11].getBeschreibung());
+                aktion12Button.show();
+                aktion13Button.setText(av.gibAktiveAktionen()[12].getBeschreibung());
+                aktion13Button.show();
+                aktion14Button.hide();
+                aktion15Button.hide();
+
+            case 14:
+                aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
+                aktion1Button.show();
+                aktion2Button.setText(av.gibAktiveAktionen()[1].getBeschreibung());
+                aktion2Button.show();
+                aktion3Button.setText(av.gibAktiveAktionen()[2].getBeschreibung());
+                aktion3Button.show();
+                aktion4Button.setText(av.gibAktiveAktionen()[3].getBeschreibung());
+                aktion4Button.show();
+                aktion5Button.setText(av.gibAktiveAktionen()[4].getBeschreibung());
+                aktion5Button.show();
+                aktion6Button.setText(av.gibAktiveAktionen()[5].getBeschreibung());
+                aktion6Button.show();
+                aktion7Button.setText(av.gibAktiveAktionen()[6].getBeschreibung());
+                aktion7Button.show();
+                aktion8Button.setText(av.gibAktiveAktionen()[7].getBeschreibung());
+                aktion8Button.show();
+                aktion9Button.setText(av.gibAktiveAktionen()[8].getBeschreibung());
+                aktion9Button.show();
+                aktion10Button.setText(av.gibAktiveAktionen()[9].getBeschreibung());
+                aktion10Button.show();
+                aktion11Button.setText(av.gibAktiveAktionen()[10].getBeschreibung());
+                aktion11Button.show();
+                aktion12Button.setText(av.gibAktiveAktionen()[11].getBeschreibung());
+                aktion12Button.show();
+                aktion13Button.setText(av.gibAktiveAktionen()[12].getBeschreibung());
+                aktion13Button.show();
+                aktion14Button.setText(av.gibAktiveAktionen()[13].getBeschreibung());
+                aktion14Button.show();
+                aktion15Button.hide();
+
+            case 15:
+                aktion1Button.setText(av.gibAktiveAktionen()[0].getBeschreibung());
+                aktion1Button.show();
+                aktion2Button.setText(av.gibAktiveAktionen()[1].getBeschreibung());
+                aktion2Button.show();
+                aktion3Button.setText(av.gibAktiveAktionen()[2].getBeschreibung());
+                aktion3Button.show();
+                aktion4Button.setText(av.gibAktiveAktionen()[3].getBeschreibung());
+                aktion4Button.show();
+                aktion5Button.setText(av.gibAktiveAktionen()[4].getBeschreibung());
+                aktion5Button.show();
+                aktion6Button.setText(av.gibAktiveAktionen()[5].getBeschreibung());
+                aktion6Button.show();
+                aktion7Button.setText(av.gibAktiveAktionen()[6].getBeschreibung());
+                aktion7Button.show();
+                aktion8Button.setText(av.gibAktiveAktionen()[7].getBeschreibung());
+                aktion8Button.show();
+                aktion9Button.setText(av.gibAktiveAktionen()[8].getBeschreibung());
+                aktion9Button.show();
+                aktion10Button.setText(av.gibAktiveAktionen()[9].getBeschreibung());
+                aktion10Button.show();
+                aktion11Button.setText(av.gibAktiveAktionen()[10].getBeschreibung());
+                aktion11Button.show();
+                aktion12Button.setText(av.gibAktiveAktionen()[11].getBeschreibung());
+                aktion12Button.show();
+                aktion13Button.setText(av.gibAktiveAktionen()[12].getBeschreibung());
+                aktion13Button.show();
+                aktion14Button.setText(av.gibAktiveAktionen()[13].getBeschreibung());
+                aktion14Button.show();
+                aktion15Button.setText(av.gibAktiveAktionen()[14].getBeschreibung());
+                aktion15Button.show();
+
 
         }
     }
@@ -323,6 +529,36 @@ public class Auswahl implements InterfaceOfUpdate {
             public void actionPerformed(ActionEvent e) {
                 aktionausfuehren(9);
 
+            }
+        });
+        aktion11Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(10);
+            }
+        });
+        aktion12Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(11);
+            }
+        });
+        aktion13Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(12);
+            }
+        });
+        aktion14Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(13);
+            }
+        });
+        aktion15Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aktionausfuehren(14);
             }
         });
     }
