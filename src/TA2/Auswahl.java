@@ -21,7 +21,6 @@ public class Auswahl implements InterfaceOfUpdate {
     public JPanel maintest;
     private JTextPane textPaneStory;
     private JTextPane textPaneInventar;
-    private JLabel inventarlbl;
     private JLabel storylbl;
     private StringBuilder sb= new StringBuilder("");
     AktionOberklasse[] aktionen;

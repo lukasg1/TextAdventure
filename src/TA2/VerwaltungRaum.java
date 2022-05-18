@@ -25,11 +25,11 @@ public class VerwaltungRaum {
     }
 
     public void etageHoch(){
-        etage=etage+1;
+        etage=1;
     }
 
     public void etageRunter(){
-        etage=etage-1;
+        etage=0;
     }
 
 

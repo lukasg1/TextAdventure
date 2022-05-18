@@ -18,6 +18,8 @@ public class Raum {
 
     }
 
+
+
     public int getLetzterAufruf() {
         return letzterAufruf;
     }

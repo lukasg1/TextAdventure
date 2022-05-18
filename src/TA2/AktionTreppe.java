@@ -15,32 +15,29 @@ public class AktionTreppe extends AktionBrauchtRaum{
     public void update() {
         if (sichtbar == true && aktiv == true && raum == rv.getAktuellerRaum() && sonderdeaktivierung == false) {
             verfügbar = true;
-            this.beschreibung = "Von " + raum.getRaumName() + " nach " + zielraum.getRaumName() + " gehen";
+            this.beschreibung = "Von " + raum.getRaumName() + " nach " + zielraum.getRaumName() + " gehen";this.ausführungsText = "Du gehst die Treppe Hoch" ;
 
         } else if (sichtbar == true && aktiv == true && zielraum == rv.getAktuellerRaum() && sonderdeaktivierung == false) {
             verfügbar = true;
-            this.beschreibung = "Die Treppe von " + zielraum.getRaumName() + " nach " + raum.getRaumName() + " gehen";
-        } else verfügbar = false;
+            this.beschreibung = "Die Treppe von " + zielraum.getRaumName() + " nach " + raum.getRaumName() + " gehen";this.ausführungsText = "Du gehst die Treppe Runter";
+        }
+         else verfügbar = false;
 
     }
 
     @Override
     public void ausführen() {
-        if(rv.getEtage()==0) {
+
             System.out.println(ausführungsText);
-            if(rv.aktuellerRaum==zielraum) {
-                rv.setAktuellerRaum(raum);
+            if(rv.getEtage()==0) {
+                rv.setAktuellerRaum(zielraum);rv.etageHoch();
+            }
+            else if(rv.getEtage()==1) {
+                rv.setAktuellerRaum(raum); rv.etageRunter();
             }
 
-            this.ausführungsText = "Du gehst die Treppe Hoch";
-        }
-        if(rv.getEtage()==1){
-            System.out.println(ausführungsText);
-            if(rv.aktuellerRaum==raum) {
-                rv.setAktuellerRaum(zielraum);
-            }
-            this.ausführungsText = "Du gehst die Treppe Runter";
-        }
+
+
 
     }
 }
