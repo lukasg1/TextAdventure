@@ -120,48 +120,43 @@
               <text value=""/>
             </properties>
           </component>
-          <component id="59775" class="javax.swing.JButton" binding="aktion11Button">
+          <component id="4435c" class="javax.swing.JButton" binding="aktion11Button">
             <constraints>
-              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <label value=""/>
               <text value=""/>
             </properties>
           </component>
-          <component id="8b86f" class="javax.swing.JButton" binding="aktion12Button">
+          <component id="b021f" class="javax.swing.JButton" binding="aktion12Button">
             <constraints>
-              <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <label value=""/>
               <text value=""/>
             </properties>
           </component>
-          <component id="74e11" class="javax.swing.JButton" binding="aktion13Button">
+          <component id="b7fba" class="javax.swing.JButton" binding="aktion13Button">
             <constraints>
-              <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <label value=""/>
               <text value=""/>
             </properties>
           </component>
-          <component id="4b280" class="javax.swing.JButton" binding="aktion14Button">
+          <component id="65c65" class="javax.swing.JButton" binding="aktion14Button">
             <constraints>
-              <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <label value=""/>
               <text value=""/>
             </properties>
           </component>
-          <component id="4278b" class="javax.swing.JButton" binding="aktion15Button">
+          <component id="ed5dc" class="javax.swing.JButton" binding="aktion15Button">
             <constraints>
-              <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <label value=""/>
               <text value=""/>
             </properties>
           </component>
