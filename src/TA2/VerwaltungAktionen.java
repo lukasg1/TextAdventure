@@ -7,34 +7,68 @@ public class VerwaltungAktionen implements InterfaceOfUpdate{
     }
 
     public AktionOberklasse[] gibAktiveAktionen(){
+
         int zähler1 =0;
+        int zählerw=0;
+        boolean wichtig =false;
+
+
+
         for(int i = 0; i< this.aktionen.length;i++){
 
-                if(aktionen[i].verfügbarkeitPrüfen()==true){
+                if(aktionen[i].verfügbarkeitPrüfen()==true && aktionen[i].isWichtig()){
+
+                        wichtig=true;
+
+                        zählerw++;
+
+                }else if(aktionen[i].verfügbarkeitPrüfen()==true ){
 
 
 
-                        zähler1++;
+                    zähler1++;
 
                 }
 
         }
 
-        AktionOberklasse[] liste=new AktionOberklasse[zähler1];
-         zähler1=0;
-        for(int i = 0; i< this.aktionen.length;i++){
+        AktionOberklasse[] liste;
+        if(wichtig){
+            liste = new AktionOberklasse[zählerw];
+            zählerw=0;
+            for(int i = 0; i< this.aktionen.length;i++){
 
-                if(aktionen[i].verfügbarkeitPrüfen()==true){
+                if(aktionen[i].verfügbarkeitPrüfen()==true&&aktionen[i].isWichtig()){
 
 
-                        liste[zähler1]=aktionen[i];
-                        zähler1++;
+                    liste[zählerw]=aktionen[i];
+                    zählerw++;
 
                 }
 
+            }return liste;
+
+        }else {
+            liste = new AktionOberklasse[zähler1];
+            zähler1 = 0;
+            for (int i = 0; i < this.aktionen.length; i++) {
+
+                if (aktionen[i].verfügbarkeitPrüfen() == true) {
+
+
+                    liste[zähler1] = aktionen[i];
+                    zähler1++;
+                    wichtig=false;
+
+
+                }
+
+            }return liste;
         }
-        return liste;
+
     }
+
+
     public boolean pruefeaktiv(AktionOberklasse aktion){
         for (int i = 0; i < aktionen.length; i++) {
             if(aktionen[i]==aktion){
