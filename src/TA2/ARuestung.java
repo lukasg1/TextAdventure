@@ -13,7 +13,7 @@ public class ARuestung extends AktionOberklasse{
         this.aktionsname = "Ritterrüstung";
         this.aktiv = true;
         this.sichtbar = true;
-        this.wichtig = true;
+        this.wichtig = false;
         this.beschreibung="Ritterrüstungen begutachten";
         this.aktion=aktion;
     }
