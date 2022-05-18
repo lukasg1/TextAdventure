@@ -28,7 +28,7 @@ public class ARuestung extends AktionOberklasse{
     @Override
     public void ausführen() {
         System.out.println(ausführungsText);
-        av.sucheAktion(aKaempfeB).setSichtbar(true);
+        av.sucheAktion(aKaempfeB).aktivieren();
 
 
 

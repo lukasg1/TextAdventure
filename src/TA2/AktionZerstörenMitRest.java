@@ -1,6 +1,7 @@
 package TA2;
 
 import static TA2.Main.gv;
+import static TA2.Main.rv;
 
 public class AktionZerstörenMitRest extends AktionZerstören{
 
@@ -36,6 +37,7 @@ public class AktionZerstörenMitRest extends AktionZerstören{
         gegenstand.deaktiviereFürImmer();
         gegenstandDerÜbrigBleibt.setSichtbar(true);
         gegenstandDerÜbrigBleibt.aktivieren();
+        gegenstandDerÜbrigBleibt.setRaum(rv.getAktuellerRaum());
         if (ausführungsText == "") {
             this.ausführungsText = "Du hast mit " + gegenstandMitDemZerstörtWird.getName() + " " + gegenstand.getName() + " zerstört."+
             " Übrig bleibt hier noch ein " + gegenstandDerÜbrigBleibt + ".";
