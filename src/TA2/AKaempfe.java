@@ -25,5 +25,6 @@ public class AKaempfe extends AktionOberklasse{
     @Override
     public void ausführen() {
         System.out.println(ausführungsText);
+        deaktivieren();
     }
 }

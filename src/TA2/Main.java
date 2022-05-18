@@ -158,10 +158,11 @@ public class Main {
     static ALichtschalter aLichtschalter= new ALichtschalter(eingangshalle);
     static AOfen aOfen= new AOfen(küche);
     static AHandy aHandy= new AHandy(eingangshalle);
-    static ARuestung aRuestungA = new ARuestung(arena);
-    static ARuestung aRuestungB = new ARuestung(bibliothek);
     static  AKaempfe aKaempfeA = new AKaempfe(arena);
     static  AKaempfe aKaempfeB = new AKaempfe(bibliothek);
+    static ARuestung aRuestungA = new ARuestung(arena,aKaempfeA);
+    static ARuestung aRuestungB = new ARuestung(bibliothek,aKaempfeB);
+
     static ARucksackAufheben aRucksackAufheben= new ARucksackAufheben();
 
     //Listen

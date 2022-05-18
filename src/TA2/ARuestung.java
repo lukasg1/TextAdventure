@@ -5,8 +5,9 @@ import static TA2.Main.*;
 public class ARuestung extends AktionOberklasse{
 
     protected Raum raum;
+    protected AktionOberklasse aktion;
 
-    public ARuestung( Raum raum) {
+    public ARuestung( Raum raum, AktionOberklasse aktion) {
         this.raum = raum;
         this.ausführungsText = "Eine Ritterrüstung fängt an sich zu bewegen und sieht angriffslustig aus!";
         this.aktionsname = "Ritterrüstung";
@@ -14,6 +15,7 @@ public class ARuestung extends AktionOberklasse{
         this.sichtbar = true;
         this.wichtig = true;
         this.beschreibung="Ritterrüstungen begutachten";
+        this.aktion=aktion;
     }
 
     @Override
@@ -28,7 +30,8 @@ public class ARuestung extends AktionOberklasse{
     @Override
     public void ausführen() {
         System.out.println(ausführungsText);
-        av.sucheAktion(aKaempfeB).aktivieren();
+        av.sucheAktion(this.aktion).aktivieren();
+        deaktivieren();
 
 
 
