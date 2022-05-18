@@ -19,7 +19,7 @@ public class AktionTreppe extends AktionBrauchtRaum{
 
         } else if (sichtbar == true && aktiv == true && zielraum == rv.getAktuellerRaum() && sonderdeaktivierung == false) {
             verfügbar = true;
-            this.beschreibung = "Von " + zielraum.getRaumName() + " nach " + raum.getRaumName() + " gehen";
+            this.beschreibung = "Die Treppe von " + zielraum.getRaumName() + " nach " + raum.getRaumName() + " gehen";
         } else verfügbar = false;
 
     }
@@ -28,7 +28,7 @@ public class AktionTreppe extends AktionBrauchtRaum{
     public void ausführen() {
         if(rv.getEtage()==0) {
             System.out.println(ausführungsText);
-            if(rv.aktuellerRaum==zielraum) {
+            if(rv.aktuellerRaum==raum) {
                 rv.setAktuellerRaum(zielraum);
             }
             this.ausführungsText = "Du gehst die Treppe Hoch";
@@ -36,7 +36,7 @@ public class AktionTreppe extends AktionBrauchtRaum{
         if(rv.getEtage()==1){
             System.out.println(ausführungsText);
             if(rv.aktuellerRaum==zielraum) {
-                rv.setAktuellerRaum(zielraum);
+                rv.setAktuellerRaum(raum);
             }
             this.ausführungsText = "Du gehst die Treppe Runter";
         }
