@@ -39,6 +39,7 @@ public class ALichtschalter extends AktionOberklasse{
         av.sucheAktion(türEingangshalleKüche).setSichtbar(true);
         av.sucheAktion(türEingangshalleVorgarten).setSichtbar(true);
         av.sucheAktion(aHandy).aktivieren();
+        av.sucheAktion(aRucksackAufheben).aktivieren();
         deaktiviereFürImmer();
 
 
