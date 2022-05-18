@@ -9,7 +9,7 @@ public class ALichtschalter extends AktionOberklasse{
 
 
     //Aktionsattribute
-    protected String beschreibung = "Lichschalter suchen";
+
 
     public ALichtschalter(Raum raum) {
         this.raum=raum;
