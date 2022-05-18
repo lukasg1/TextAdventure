@@ -71,7 +71,7 @@ public class Main {
      static Gegenstand axt = new Gegenstand("Axt",true,true,küche,true, true,false,false,false,false,false, true);
      static Gegenstand schwert = new Gegenstand("Schwert",true,true,null,true, true,false,false,false,false,false, true);
      static Gegenstand schwert2 = new Gegenstand("Schwert",true,true,null,true, true,false,false,false,false,false, true);
-     static Gegenstand eisenstange = new Gegenstand("Eisenstange",true,true,null,true, true,false,false,false,false,false, true);
+     static Gegenstand eisenstange = new Gegenstand("Eisenstange",true,true,garten,true, true,false,false,false,false,false, true);
      static Gegenstand massivesHolzbrett = new Gegenstand("massives Holzbrett",true,true,null,true, true,false,false,false,false,false, true);
      static Gegenstand improvisierterSpeer = new Gegenstand("improvisierter Speer",true,true,null,true, true,false,false,false,false,false, true);
      static AktionSammeln sammleAxt = new AktionSammeln("", true, true, "", "", axt);
@@ -162,6 +162,7 @@ public class Main {
     static  AKaempfe aKaempfeB = new AKaempfe(bibliothek);
     static ARuestung aRuestungA = new ARuestung(arena,aKaempfeA);
     static ARuestung aRuestungB = new ARuestung(bibliothek,aKaempfeB);
+    static AStart1 start1=new AStart1();
 
     static ARucksackAufheben aRucksackAufheben= new ARucksackAufheben();
 
@@ -171,7 +172,7 @@ public class Main {
     private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG,sammleGoldenerSchlüssel,
     sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleleiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
     zerstöreSchrank,zerstöreBesen,zerstöreTruhe,zerstöreVase,bastleSpeer,esseApfel,esseKekse,esseSchinken,esseTomatensoße,esseHandVollChips,trinkeFlascheCola,trinkeFlaschWein,trinkeVaseMitRest,trinkeWasser,trinkeWasserGlas,
-            aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas, aRucksackAufheben};
+            aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas, aRucksackAufheben, start1};
     private Ereignisse[] ereignisListe ={};
 
     //Verwaltungen
