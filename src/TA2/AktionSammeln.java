@@ -8,9 +8,9 @@ public class AktionSammeln extends AktionBrauchtGegenstand{
 
     public AktionSammeln(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand) {
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText, gegenstand);
-        this.aktionsname = "sammel" + gegenstand.getName();
+        this.aktionsname = "sammle" + gegenstand.getName();
         this.ausführungsText = "Du sammelst " + gegenstand.getName() + " auf.";
-        this.beschreibung = "Sammel " + gegenstand.getName();
+        this.beschreibung = "Sammle " + gegenstand.getName();
     }
 
     @Override
