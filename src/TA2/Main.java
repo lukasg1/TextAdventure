@@ -43,7 +43,7 @@ public class Main {
      static TA2.TürBadezimmer türFlurOGBadezimmer = new TA2.TürBadezimmer("",true,true,"Die weiße Türe kommt dir bekannt vor. Magst du sie öffnen?","Du gehst bedächtig zu der Tür. Die Türe geht leicht auf.",flurOG,badezimmer);
      static TA2.AktionTreppe treppe2EG = new TA2.AktionTreppe("",true,true,"Nutze die massive Steintreppe","Vorsichtig nutzt du die Treppe. Stürzen mag niemand!",flurEG,flurOG);
      static TA2.AktionTür türKücheEsszimmer = new TA2.AktionTür("",true,true,"Ein Durchgang führt durch die Küche in einen weiteren Raum. Gehe dort hin","Du gehst durch den Durchgang in der Küche in den nächsten Raum",küche,esszimmer);
-     static TA2.AktionTür türEsszimmerGarten = new TA2.AktionTür("",true,true,"Eine große mächtige Kappelle, die gar nicht in den Garten passt. Versuche die Holztüre zu öffnen","Du reißt die Türe auf.",esszimmer,garten);
+     static TA2.AktionTür türEsszimmerGarten = new TA2.AktionTür("",true,true,"Eine kleine Türe, vielleicht ein Ausgang?","Du reißt die Türe auf.",esszimmer,garten);
      static TA2.AktionTür türGartenKapelle = new TA2.AktionTür("",true,true,"Eine große mächtige Kappelle, die gar nicht in den Garten passt. Versuche die Holztüre zu öffnen","Die Türe öffnet sich träge und schlechte Luft schlägt dir entgegen.",garten,kapelle);
      static TA2.AktionTür türEsszimmerVorraum = new TA2.AktionTür("",true,true,"Öffne Tür im hinterem Teil des Raumes","Die Türe geht auf und du gehst durch.",esszimmer,vorraum);
      static TA2.AktionTür türVorraumBibliothek = new TA2.AktionTür("",true,true,"Öffne die verzierte Holztüre an der Wand. Was wohl dahinter liegt?","",vorraum,bibliothek);
