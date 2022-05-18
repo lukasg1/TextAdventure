@@ -119,7 +119,7 @@ public class Main {
      static AktionSammeln sammleleiter = new AktionSammeln("", true, true, "", "", leiter);
      static AktionSammeln sammleMetallschrott = new AktionSammeln("", true, true, "", "", metallschrott);
 
-    static AktionSammeln sammleGlas = new AktionSammeln("", true, true, "", "",glasMitWasser);
+     static AktionSammeln sammleGlas = new AktionSammeln("", true, true, "", "",glasMitWasser);
 
     //essbares
      static Gegenstand schinken = new Gegenstand("Schinken",true,true,küche,true,true,false,true);
@@ -151,9 +151,10 @@ public class Main {
      static AktionZerstören zerstöreBesen = new AktionZerstören("", true, true, "", "", besen);
      static AktionZerstören zerstöreVase = new AktionZerstören("", true, true,"", "", vase);
 
-     static AktionZusammenbasteln bastleSpeer=new AktionZusammenbasteln("",true,true,"","",besenstiel,klebeband,speerspitze,improvisierterSpeer);
+     static AktionZusammenbasteln bastleSpeer = new AktionZusammenbasteln("",true,true,"","",besenstiel,klebeband,speerspitze,improvisierterSpeer);
+     static AktionZusammenbasteln bastleLeiter = new AktionZusammenbasteln("",true,true,"","",halbeLeiter,halbeLeiter2,leiter);
 
-     //Einzelaktionen
+    //Einzelaktionen
 
     static ALichtschalter aLichtschalter= new ALichtschalter(eingangshalle);
     static AOfen aOfen= new AOfen(küche);
