@@ -7,6 +7,7 @@ public class VerwaltungAktionen implements InterfaceOfUpdate{
     }
 
     public AktionOberklasse[] gibAktiveAktionen(){
+        update();
 
         int zähler1 =0;
         int zählerw=0;
