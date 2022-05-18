@@ -1,6 +1,7 @@
 package TA2;
 
 import static TA2.Main.gv;
+import static TA2.Main.rv;
 
 public class AktionTrinkenMitRest extends AktionTrinken{
 
@@ -36,6 +37,7 @@ public class AktionTrinkenMitRest extends AktionTrinken{
         gegenstand.deaktivieren();
         gegenstandDerÜbrigBleibt.aktivieren();
         gegenstandDerÜbrigBleibt.setSichtbar(true);
+        gegenstandDerÜbrigBleibt.setRaum(rv.getAktuellerRaum());
         if(gegenstand.isImInventar()){
             gegenstandDerÜbrigBleibt.insInventar();
         }

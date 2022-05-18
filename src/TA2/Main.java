@@ -1,7 +1,7 @@
 package TA2;
 
 import javax.swing.*;
-import java.awt.*;
+
 
 public class Main {
     //Raumverzeichnis
@@ -63,8 +63,8 @@ public class Main {
 
 
     //Feuermacher
-     static Gegenstand streichölzer = new Gegenstand("Streichhölzer",true,true,null,true, true,false,false,false,false,true);
-     static Gegenstand feuerzeug = new Gegenstand("Feuerzeug",true,true,null,true, true,false,false,false,false,true);
+     static Gegenstand streichölzer = new Gegenstand("Streichhölzer",true,true,flurOG,true, true,false,false,false,false,true);
+     static Gegenstand feuerzeug = new Gegenstand("Feuerzeug",true,true,vorgarten,true, true,false,false,false,false,true);
      static AktionSammeln sammleStreichhölzer = new AktionSammeln("", true, true, "", "", streichölzer);
      static AktionSammeln sammleFeuerzeug = new AktionSammeln("", true, true, "", "", feuerzeug);
     //Massives
@@ -83,10 +83,10 @@ public class Main {
 
 
     //Trinkbares
-     static Gegenstand wasser= new Gegenstand("Wasser",true,true,null,true,false,true);
+     static Gegenstand wasser= new Gegenstand("Wasser",true,true,badezimmer,true,false,true);
      static Gegenstand leeresGlas = new Gegenstand("leeresGlas",true,true,null,true,true);
-     static Gegenstand glasMitWasser= new Gegenstand("Glas gefüllt mit Wasser",true,true,null,true,true,true);
-     static Gegenstand flascheWein= new Gegenstand("Flasche mit Wein",true,true,null,true,true,true);
+     static Gegenstand glasMitWasser= new Gegenstand("Glas gefüllt mit Wasser",true,true,küche,true,true,true);
+     static Gegenstand flascheWein= new Gegenstand("Flasche mit Wein",true,true,wohnzimmer,true,true,true);
      static Gegenstand ColaFlasche= new Gegenstand("Cola",true,true,null,true,true,true);
      static AktionTrinken trinkeWasser = new AktionTrinken("", true, true, "", "", wasser);
      static Gegenstand flasche = new Gegenstand("Flasche",true,true,null,true,true);
@@ -95,13 +95,13 @@ public class Main {
      static AktionTrinkenMitRest trinkeFlaschWein = new AktionTrinkenMitRest("", true, true, "", "", flascheWein, flasche);
      static AktionTrinkenMitRest trinkeFlascheCola = new AktionTrinkenMitRest("", true, true, "", "", ColaFlasche, flasche2);
 
-     static Gegenstand vaseMitWasser = new Gegenstand("Vase gefüllt mit Wasser",true,true,null,true,false,true,false,true);
+     static Gegenstand vaseMitWasser = new Gegenstand("Vase gefüllt mit Wasser",true,true,esszimmer,true,false,true,false,true);
      static Gegenstand vase = new Gegenstand("Vase",true,true,null,true,false,false,false,true);
      static AktionTrinkenMitRest trinkeVaseMitRest = new AktionTrinkenMitRest("", true, true, "", "", vaseMitWasser, vase);
     //Gegenstände zum nutzen und mitnehmen
      static Gegenstand besenstiel = new Gegenstand("Besenstiel",true,true,null,true,true);
-     static Gegenstand klebeband = new Gegenstand("Klebeband",true,true,null,true,true);
-     static Gegenstand speerspitze = new Gegenstand("Speerspitze",true,true,null,true,true);
+     static Gegenstand klebeband = new Gegenstand("Klebeband",true,true,badezimmer,true,true);
+     static Gegenstand speerspitze = new Gegenstand("Speerspitze",true,true,gemächer,true,true);
 
      static Gegenstand tomatensoßendose = new Gegenstand("Tomatensoßendose",true,true,null,true,true);
      static Gegenstand halbeLeiter2 = new Gegenstand("halbe Leiter",true,true,null,true,true);
@@ -119,13 +119,14 @@ public class Main {
      static AktionSammeln sammleleiter = new AktionSammeln("", true, true, "", "", leiter);
      static AktionSammeln sammleMetallschrott = new AktionSammeln("", true, true, "", "", metallschrott);
 
+    static AktionSammeln sammleGlas = new AktionSammeln("", true, true, "", "",glasMitWasser);
 
     //essbares
-     static Gegenstand schinken = new Gegenstand("Schinken",true,true,null,true,true,false,true);
+     static Gegenstand schinken = new Gegenstand("Schinken",true,true,küche,true,true,false,true);
      static Gegenstand apfel = new Gegenstand("Äpfel",true,true,küche,true,true,false,true);
-     static Gegenstand kekse = new Gegenstand("Kekse",true,true,null,true,true,false,true);
+     static Gegenstand kekse = new Gegenstand("Kekse",true,true,esszimmer,true,true,false,true);
      static Gegenstand tomatensoße = new Gegenstand("Tomatensoße",true,true,null,true,true,false,true);
-     static Gegenstand handVollChips = new Gegenstand("eine Handvoll Salt&Vinger-Chips",true,true,null,true,true,false,true);
+     static Gegenstand handVollChips = new Gegenstand("eine Handvoll Salt&Vinger-Chips",true,true,wohnzimmer,true,true,false,true);
      static AktionEssen esseSchinken = new AktionEssen("", true, true, "", "", schinken);
      static AktionEssen esseApfel = new AktionEssen("", true, true, "", "", apfel);
      static AktionEssen esseKekse = new AktionEssen("", true, true, "", "", kekse);
@@ -142,9 +143,9 @@ public class Main {
 
 
     //Zerstörbares
-     static Gegenstand schrank = new Gegenstand("Schrank",true,true,null,true,false,false,false,true);
-     static Gegenstand truhe = new Gegenstand("Truhe",true,true,null,true,false,false,false,true);
-     static Gegenstand besen= new Gegenstand("Besen",true,true,null,true,false,false,false,true);
+     static Gegenstand schrank = new Gegenstand("Schrank",true,true,teezimmer,true,false,false,false,true);
+     static Gegenstand truhe = new Gegenstand("Truhe",true,true,arena,true,false,false,false,true);
+     static Gegenstand besen= new Gegenstand("Besen",true,true,esszimmer,true,false,false,false,true);
      static AktionZerstören zerstöreSchrank = new AktionZerstören("", true, true,"", "", schrank);
      static AktionZerstören zerstöreTruhe = new AktionZerstören("", true, true, "", "", truhe);
      static AktionZerstören zerstöreBesen = new AktionZerstören("", true, true, "", "", besen);
@@ -168,7 +169,7 @@ public class Main {
     private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG,sammleGoldenerSchlüssel,
     sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleleiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
     zerstöreSchrank,zerstöreBesen,zerstöreTruhe,zerstöreVase,bastleSpeer,esseApfel,esseKekse,esseSchinken,esseTomatensoße,esseHandVollChips,trinkeFlascheCola,trinkeFlaschWein,trinkeVaseMitRest,trinkeWasser,trinkeWasserGlas,
-            aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB};
+            aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas};
     private Ereignisse[] ereignisListe ={};
 
     //Verwaltungen
