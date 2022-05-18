@@ -39,10 +39,10 @@ public class AStart1 extends AktionOberklasse{
 
         System.out.println(ausführungsText);
         switch (zähler) {
-            case 1: this.beschreibung="Aufstehen";
+            case 2: this.beschreibung="Aufstehen";
                     this.ausführungsText="Vorsichtig stehst du auf, Schatten flackern in deinem Gehirn. Wo bist du? Und wer?";
                     break;
-            case 2:
+            case 1:
                 this.beschreibung = "Versuche dich zu bewegen";
                 this.ausführungsText="Du versuchst dich zu bewegen alles schmerzt";
                 break;
