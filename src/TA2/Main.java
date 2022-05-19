@@ -237,6 +237,13 @@ public class Main {
         gv.update();
         av.update();
 
+        //Abbruchbedingung
+        if(gewonnen.isAktiv()||gestorben.isAktiv()){
+            frame.dispose();
+
+        }
+
+
 
         //int rand=(int)(Math.random() * av.anzahlaktiveaktionen()) ;
        // av.gibAktiveAktionen()[rand ].ausführen();
