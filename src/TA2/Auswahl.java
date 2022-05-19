@@ -444,6 +444,18 @@ public class Auswahl implements InterfaceOfUpdate {
         zv.update();
 
         textPaneInventar.setText(gv.giveInventoryText());
+        try {
+
+            if(gewonnen.isAktiv()||gestorben.isAktiv()){
+                textPaneStory.setText("Vorbei");
+                Thread.sleep(2000);
+                frame.dispose();
+
+            }
+
+
+        } catch (InterruptedException e) {
+        }
         av.gibAktiveAktionen()[stelle].ausführen();
         String a=rv.returnText();
         if(rv.update()!=null){
@@ -461,17 +473,7 @@ public class Auswahl implements InterfaceOfUpdate {
 
         update();
         textPaneInventar.setText(gv.giveInventoryText());
-        try {
 
-            if(gewonnen.isAktiv()||gestorben.isAktiv()){
-                Thread.sleep(2000);
-                frame.dispose();
-
-            }
-
-
-        } catch (InterruptedException e) {
-        }
 
 
 
