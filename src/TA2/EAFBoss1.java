@@ -31,7 +31,7 @@ public class EAFBoss1 extends AktionOberklasse{
 
     @Override
     public void update() {
-        if(sichtbar==true&&aktiv==true&&raum==rv.getAktuellerRaum()&&sonderdeaktivierung==false){
+        if(sichtbar==true&&aktiv==true&&raum==rv.getAktuellerRaum()&&sonderdeaktivierung==false&&this.ereignis.isAktiv()){
             verfügbar=true;
         }
         else verfügbar=false;
