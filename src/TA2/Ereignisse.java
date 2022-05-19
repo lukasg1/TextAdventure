@@ -1,14 +1,11 @@
 package TA2;
 
-public class Ereignisse implements InterfaceOfUpdate, InterfaceOfVerfügbar, InterfaceOfAktivierenUndDeaktivieren{
+public class Ereignisse {
 
     //kennezeichnung
     private String name;
 
 
-    //Grundvariable zum Aktualisieren
-    private boolean verfügbar;
-    private boolean dauerdeaktiv=false;
 
     //Grundeigenschaften des Objektes die zum verfügbar wichtig sind
     private boolean aktiv;
@@ -20,9 +17,13 @@ public class Ereignisse implements InterfaceOfUpdate, InterfaceOfVerfügbar, Int
 
     }
 
-    @Override
+
     public void aktivieren() {
         this.aktiv=true;
+    }
+
+    public boolean isAktiv() {
+        return aktiv;
     }
 
     public void deaktivieren() {
@@ -30,23 +31,5 @@ public class Ereignisse implements InterfaceOfUpdate, InterfaceOfVerfügbar, Int
 
     }
 
-    @Override
-    public void deaktiviereFürImmer() {
-        dauerdeaktiv=true;
 
-    }
-
-    @Override
-    public boolean verfügbarkeitPrüfen() {
-        return verfügbar;
-    }
-
-    @Override
-    public void update() {
-        if(aktiv==true&&dauerdeaktiv==false){
-            verfügbar=true;
-        }
-        else verfügbar=false;
-
-    }
 }

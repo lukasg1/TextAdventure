@@ -1,6 +1,6 @@
 package TA2;
 
-public class VerwaltungEreignisse implements InterfaceOfUpdate{
+public class VerwaltungEreignisse{
     Ereignisse[] ereignisse;
 
     public VerwaltungEreignisse(Ereignisse[] aktionen) {
@@ -8,13 +8,6 @@ public class VerwaltungEreignisse implements InterfaceOfUpdate{
 
     }
 
-    @Override
-    public void update() {
-        for(int i = 0; i< this.ereignisse.length;i++){
 
-            ereignisse[i].update();
 
-        }
-
-    }
 }
