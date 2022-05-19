@@ -7,7 +7,7 @@ public class ARuestung extends AktionOberklasse{
     protected Raum raum;
     protected AktionOberklasse aktion;
 
-    public ARuestung( Raum raum, AktionOberklasse aktion) {
+    public ARuestung(Raum raum, AktionOberklasse aktion, AFlucht aFluchtB) {
         this.raum = raum;
         this.ausführungsText = "Eine Ritterrüstung fängt an sich zu bewegen und sieht angriffslustig aus!";
         this.aktionsname = "Ritterrüstung";

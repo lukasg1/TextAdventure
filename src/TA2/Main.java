@@ -161,8 +161,11 @@ public class Main {
     static AHandy aHandy= new AHandy(eingangshalle);
     static  AKaempfe aKaempfeA = new AKaempfe(arena);
     static  AKaempfe aKaempfeB = new AKaempfe(bibliothek);
-    static ARuestung aRuestungA = new ARuestung(arena,aKaempfeA);
-    static ARuestung aRuestungB = new ARuestung(bibliothek,aKaempfeB);
+    static AFlucht aFluchtA = new AFlucht(arena);
+    static  AFlucht aFluchtB = new AFlucht(bibliothek);
+    static ARuestung aRuestungA = new ARuestung(arena,aKaempfeA,aFluchtA);
+    static ARuestung aRuestungB = new ARuestung(bibliothek,aKaempfeB,aFluchtB); //wie füge ich flucht funktion hinzu????
+
     static AStart1 start1=new AStart1();
 
     static ARucksackAufheben aRucksackAufheben= new ARucksackAufheben();
@@ -173,7 +176,7 @@ public class Main {
     private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG,sammleGoldenerSchlüssel,
     sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleleiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
     zerstöreSchrank,zerstöreBesen,zerstöreTruhe,zerstöreVase,bastleSpeer,esseApfel,esseKekse,esseSchinken,esseTomatensoße,esseHandVollChips,trinkeFlascheCola,trinkeFlaschWein,trinkeVaseMitRest,trinkeWasser,trinkeWasserGlas,
-            aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas, aRucksackAufheben, start1};
+            aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas, aRucksackAufheben, start1, aFluchtA, aFluchtB};
     private Ereignisse[] ereignisListe ={};
 
     //Verwaltungen
