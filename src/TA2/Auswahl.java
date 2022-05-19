@@ -461,10 +461,18 @@ public class Auswahl implements InterfaceOfUpdate {
 
         update();
         textPaneInventar.setText(gv.giveInventoryText());
-        if(gewonnen.isAktiv()||gestorben.isAktiv()){
-            frame.dispose();
+        try {
 
+            if(gewonnen.isAktiv()||gestorben.isAktiv()){
+                Thread.sleep(2000);
+                frame.dispose();
+
+            }
+
+
+        } catch (InterruptedException e) {
         }
+
 
 
 
