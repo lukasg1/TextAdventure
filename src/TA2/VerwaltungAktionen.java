@@ -102,4 +102,10 @@ public class VerwaltungAktionen implements InterfaceOfUpdate{
         return null;
 
     }
+    public void allesDeaktivieren(){
+        for (int i = 0; i < aktionen.length; i++) {
+             aktionen[i].deaktivieren();
+
+        }
+    }
 }
