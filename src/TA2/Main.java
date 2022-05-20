@@ -105,9 +105,9 @@ public class Main {
      static Gegenstand speerspitze = new Gegenstand("Speerspitze",true,true,gemächer,true,true);
 
      static Gegenstand tomatensoßendose = new Gegenstand("Tomatensoßendose",true,true,null,true,true);
-     static Gegenstand halbeLeiter2 = new Gegenstand("halbe Leiter",true,true,null,true,true);
-     static Gegenstand halbeLeiter = new Gegenstand("halbe Leiter",true,true,null,true,true);
-     static Gegenstand leiter = new Gegenstand("Leiter",true,true,null,true);
+     static Gegenstand halbeLeiter2 = new Gegenstand("halbe Leiter",true,true,vorgarten,true,true);
+     static Gegenstand halbeLeiter = new Gegenstand("halbe Leiter",true,true,garten,true,true);
+     static Gegenstand leiter = new Gegenstand("Leiter",true,true, null,true);
      static Gegenstand metallschrott = new Gegenstand("Metalschrott",true,true,null,true,true);
      static AktionSammeln sammleBesenstiel = new AktionSammeln("", true, true, "", "",besenstiel);
      static AktionSammeln sammleKlebeband = new AktionSammeln("", true, true, "", "",klebeband);
@@ -121,6 +121,7 @@ public class Main {
      static AktionSammeln sammleMetallschrott = new AktionSammeln("", true, true, "", "", metallschrott);
 
      static AktionSammeln sammleGlas = new AktionSammeln("", true, true, "", "",glasMitWasser);
+
 
     //essbares
      static Gegenstand schinken = new Gegenstand("Schinken",true,true,küche,true,true,false,true);
@@ -162,9 +163,10 @@ public class Main {
     static AHandy aHandy= new AHandy(eingangshalle);
     static  AKaempfe aKaempfeA = new AKaempfe(arena);
     static  AKaempfe aKaempfeB = new AKaempfe(bibliothek);
-    static ARuestung aRuestungA = new ARuestung(arena);
-    static ARuestung aRuestungB = new ARuestung(bibliothek);
-    static AEntkommen aEntkommen=new AEntkommen();
+    static AFlucht aFluchtA = new AFlucht(arena);
+    static  AFlucht aFluchtB = new AFlucht(bibliothek);
+    static ARuestung aRuestungA = new ARuestung(arena,aKaempfeA,aFluchtA);
+    static ARuestung aRuestungB = new ARuestung(bibliothek,aKaempfeB,aFluchtB); //wie füge ich flucht funktion hinzu????
 
     static AStart1 start1=new AStart1();
 
@@ -186,8 +188,8 @@ public class Main {
     private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG,sammleGoldenerSchlüssel,
     sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleleiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
     zerstöreSchrank,zerstöreBesen,zerstöreTruhe,zerstöreVase,bastleSpeer,esseApfel,esseKekse,esseSchinken,esseTomatensoße,esseHandVollChips,trinkeFlascheCola,trinkeFlaschWein,trinkeVaseMitRest,trinkeWasser,trinkeWasserGlas,
-            aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas, aRucksackAufheben, start1,
-    eafBoss1,eafBoss2, aEntkommen};
+            aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas, aRucksackAufheben, start1, aFluchtA, aFluchtB,
+    eafBoss1,eafBoss2};
     private Ereignisse[] ereignisListe ={};
 
     //Verwaltungen
@@ -212,6 +214,7 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+
 
 
         //spiele();
