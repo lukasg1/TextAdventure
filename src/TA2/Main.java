@@ -162,10 +162,8 @@ public class Main {
     static AHandy aHandy= new AHandy(eingangshalle);
     static  AKaempfe aKaempfeA = new AKaempfe(arena);
     static  AKaempfe aKaempfeB = new AKaempfe(bibliothek);
-    static AFlucht aFluchtA = new AFlucht(arena);
-    static  AFlucht aFluchtB = new AFlucht(bibliothek);
-    static ARuestung aRuestungA = new ARuestung(arena,aKaempfeA,aFluchtA);
-    static ARuestung aRuestungB = new ARuestung(bibliothek,aKaempfeB,aFluchtB); //wie füge ich flucht funktion hinzu????
+    static ARuestung aRuestungA = new ARuestung(arena);
+    static ARuestung aRuestungB = new ARuestung(bibliothek);
 
     static AStart1 start1=new AStart1();
 
@@ -187,7 +185,7 @@ public class Main {
     private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG,sammleGoldenerSchlüssel,
     sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleleiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
     zerstöreSchrank,zerstöreBesen,zerstöreTruhe,zerstöreVase,bastleSpeer,esseApfel,esseKekse,esseSchinken,esseTomatensoße,esseHandVollChips,trinkeFlascheCola,trinkeFlaschWein,trinkeVaseMitRest,trinkeWasser,trinkeWasserGlas,
-            aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas, aRucksackAufheben, start1, aFluchtA, aFluchtB,
+            aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas, aRucksackAufheben, start1,
     eafBoss1,eafBoss2};
     private Ereignisse[] ereignisListe ={};
 

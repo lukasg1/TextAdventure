@@ -7,7 +7,8 @@ public class ARuestung extends AktionOberklasse{
     protected Raum raum;
     protected AktionOberklasse aktion;
 
-    public ARuestung(Raum raum, AktionOberklasse aktion, AFlucht aFluchtB) {
+
+    public ARuestung(Raum raum) {
         this.raum = raum;
         this.ausführungsText = "Eine Ritterrüstung fängt an sich zu bewegen und sieht angriffslustig aus!";
         this.aktionsname = "Ritterrüstung";
@@ -15,7 +16,8 @@ public class ARuestung extends AktionOberklasse{
         this.sichtbar = true;
         this.wichtig = false;
         this.beschreibung="Ritterrüstungen begutachten";
-        this.aktion=aktion;
+
+
     }
 
     @Override
@@ -31,9 +33,7 @@ public class ARuestung extends AktionOberklasse{
     public void ausführen() {
         System.out.println(ausführungsText);
         av.sucheAktion(this.aktion).aktivieren();
-        deaktivieren();
-
-
 
     }
+
 }
