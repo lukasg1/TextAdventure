@@ -165,8 +165,8 @@ public class Main {
     static  AKaempfe aKaempfeB = new AKaempfe(bibliothek);
     static AFlucht aFluchtA = new AFlucht(arena);
     static  AFlucht aFluchtB = new AFlucht(bibliothek);
-    static ARuestung aRuestungA = new ARuestung(arena,aKaempfeA,aFluchtA);
-    static ARuestung aRuestungB = new ARuestung(bibliothek,aKaempfeB,aFluchtB); //wie füge ich flucht funktion hinzu????
+    static ARuestung aRuestungA = new ARuestung(arena);
+    static ARuestung aRuestungB = new ARuestung(bibliothek); //wie füge ich flucht funktion hinzu????
 
     static AStart1 start1=new AStart1();
 
