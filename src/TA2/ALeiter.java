@@ -1,24 +1,19 @@
 package TA2;
 
 import static TA2.Main.*;
+import static TA2.Main.aRucksackAufheben;
 
-public class AOfen extends AktionOberklasse{
-
+public class ALeiter extends AktionOberklasse {
 
     protected Raum raum;
 
-
-    //Aktionsattribute
-
-
-    public AOfen(Raum raum) {
-        this.raum=raum;
-        this.ausführungsText="Du gehst zum Ofen, dadrin glitzert ertwas golden.";
-        this.aktionsname="Ofen";
-        this.aktiv=true;
+    public ALeiter() {
+        this.raum=bibliothek;
         this.sichtbar=true;
-        this.beschreibung = "Zum Ofen gehen";
-
+        this.aktionsname="Leiter";
+        this.ausführungsText="Du steigst mit der Leiter auf ein Dach und findest einen Blutstein.";
+        this.aktiv=true;
+        this.beschreibung = "Blutschein finden";
     }
 
     @Override
@@ -28,14 +23,13 @@ public class AOfen extends AktionOberklasse{
         }
         else verfügbar=false;
 
+
     }
 
     @Override
     public void ausführen() {
-
         System.out.println(ausführungsText);
-        gv.sucheGegenstand(goldenerSchlüssel).setSichtbar(true);
+        gv.sucheGegenstand(leiter);
         deaktiviereFürImmer();
-
     }
 }
