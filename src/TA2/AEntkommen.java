@@ -18,7 +18,11 @@ public class AEntkommen extends AktionOberklasse{
     public void update() {
         if(sichtbar==true&&aktiv==true&&raum==rv.getAktuellerRaum()&&sonderdeaktivierung==false){
             verfügbar=true;
-            this.ausführungsText="Du entkommst. Und gewinnst das Spiel.";
+            if(frei.isAktiv()){
+                this.ausführungsText="Du entkommst. Und gewinnst das Spiel.";
+
+            }
+
         }
         else verfügbar=false;}
 

@@ -164,6 +164,7 @@ public class Main {
     static  AKaempfe aKaempfeB = new AKaempfe(bibliothek);
     static ARuestung aRuestungA = new ARuestung(arena);
     static ARuestung aRuestungB = new ARuestung(bibliothek);
+    static AEntkommen aEntkommen=new AEntkommen();
 
     static AStart1 start1=new AStart1();
 
@@ -186,7 +187,7 @@ public class Main {
     sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleleiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
     zerstöreSchrank,zerstöreBesen,zerstöreTruhe,zerstöreVase,bastleSpeer,esseApfel,esseKekse,esseSchinken,esseTomatensoße,esseHandVollChips,trinkeFlascheCola,trinkeFlaschWein,trinkeVaseMitRest,trinkeWasser,trinkeWasserGlas,
             aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas, aRucksackAufheben, start1,
-    eafBoss1,eafBoss2};
+    eafBoss1,eafBoss2, aEntkommen};
     private Ereignisse[] ereignisListe ={};
 
     //Verwaltungen
