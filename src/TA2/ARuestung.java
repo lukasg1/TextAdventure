@@ -53,10 +53,10 @@ public class ARuestung extends AktionOberklasse{
                     else{
                     this.ausführungsText = "Ohne Waffen kannst du dich nicht verteidigen. Die Ritterrüstung schwingt ihr Schwert und dir wird schwarz vor Augen";
                     zaehler = 1;
-                }
+                }}
 
 
-                this.beschreibung = "Greife die Rüstung an";}
+                this.beschreibung = "Greife die Rüstung an";
 
 
                 break;
