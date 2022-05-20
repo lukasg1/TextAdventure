@@ -43,7 +43,7 @@ public class AStart1 extends AktionOberklasse{
                     this.ausführungsText="Vorsichtig stehst du auf, Schatten flackern in deinem Gehirn. Wo bist du? Und wer?";
                     break;
             case 1:
-                this.beschreibung = "Versuche dich zu bewegen";
+                this.beschreibung = "Versuche dich zu bewegen.";
                 this.ausführungsText="Du versuchst dich zu bewegen alles schmerzt";
                 break;
             case 3:

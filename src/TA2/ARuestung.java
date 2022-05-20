@@ -40,7 +40,7 @@ public class ARuestung extends AktionOberklasse{
                 aRuestungA.aktivieren();
                 aRuestungB.aktivieren();
                 if (gv.sucheGegnstandzumZerstören() != null) {
-                    this.ausführungsText = "Du greifst die Rüstung an. Du zerschmetterst mit " + gv.sucheGegnstandzumZerstören().getName() + " mit einem Schlag. Dabei geht " + gv.sucheGegnstandzumZerstören().getName() + " kaputt. Du hast den Rüstungsgeist besiegt";
+                    this.ausführungsText = "Du greifst die Rüstung an und zerschmetterst sie mit " + gv.sucheGegnstandzumZerstören().getName() + ". Dabei geht " + gv.sucheGegnstandzumZerstören().getName() + " kaputt. Du hast den Rüstungsgeist besiegt";
                     gv.sucheGegnstandzumZerstören().deaktivieren();
                     zaehler = 2;
 
