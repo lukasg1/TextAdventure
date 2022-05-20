@@ -44,12 +44,12 @@ public class Main {
      static TA2.TürBadezimmer türFlurOGBadezimmer = new TA2.TürBadezimmer("",true,true,"Die weiße Türe kommt dir bekannt vor. Magst du sie öffnen?","Du gehst bedächtig zu der Tür. Die Türe geht leicht auf.",flurOG,badezimmer);
      static TA2.AktionTreppe treppe2EG = new TA2.AktionTreppe("",true,true,"Nutze die massive Steintreppe","Vorsichtig nutzt du die Treppe. Stürzen mag niemand!",flurEG,flurOG);
      static TA2.AktionTür türKücheEsszimmer = new TA2.AktionTür("",true,true,"Ein Durchgang führt durch die Küche in einen weiteren Raum. Gehe dort hin","Du gehst durch den Durchgang in der Küche in den nächsten Raum",küche,esszimmer);
-     static TA2.AktionTür türEsszimmerGarten = new TA2.AktionTür("",true,true,"Eine kleine Türe, vielleicht ein Ausgang?","Du reißt die Türe auf.",esszimmer,garten);
+     static TA2.AktionTürBrauchtGegenstand türEsszimmerGarten = new TA2.AktionTürBrauchtGegenstand("",true,true,"Eine kleine Türe, vielleicht ein Ausgang?","Du reißt die Türe auf.",esszimmer,garten,bronzeschlüssel);
      static TA2.AktionTür türGartenKapelle = new TA2.AktionTür("",true,true,"Eine große mächtige Kappelle, die gar nicht in den Garten passt. Versuche die Holztüre zu öffnen","Die Türe öffnet sich träge und schlechte Luft schlägt dir entgegen.",garten,kapelle);
      static TA2.AktionTür türEsszimmerVorraum = new TA2.AktionTür("",true,true,"Öffne Tür im hinterem Teil des Raumes","Die Türe geht auf und du gehst durch.",esszimmer,vorraum);
      static TA2.AktionTür türVorraumBibliothek = new TA2.AktionTür("",true,true,"Öffne die verzierte Holztüre an der Wand. Was wohl dahinter liegt?","",vorraum,bibliothek);
      static TA2.AktionTür türVorraumFlurEG = new TA2.AktionTür("",true,true,"Öffne die große massive Holztüre.","Öffne die massive Tür",vorraum,flurEG);
-     static TA2.AktionTür türFlurEGAlbtraumraum = new TA2.AktionTür("",true,true,"Eine glatte Schwarzetüre. 'Öffne mich schreit' sie dir zu. Öffnest du sie?","Die Türe ist so faszinierten. Du fühlst fast einen Sog während du sie öffnest.",flurEG,albtraumRaum);
+     static TA2.AktionTürBrauchtGegenstand türFlurEGAlbtraumraum = new TA2.AktionTürBrauchtGegenstand("",true,true,"Eine glatte Schwarzetüre. 'Öffne mich schreit' sie dir zu. Öffnest du sie?","Die Türe ist so faszinierten. Du fühlst fast einen Sog während du sie öffnest.",flurEG,albtraumRaum,alterSchlüssel);
      static TA2.AktionTürBrauchtGegenstand türEingangshalleVorgarten = new TA2.AktionTürBrauchtGegenstand("",true,false,"Die Konturen zeigen eine massive Türe. Versuche sie zu öffnen.","Die Eingangstüre öffnet sich.",eingangshalle,vorgarten,goldenerSchlüssel);
      static TA2.AktionTür türFlurEGWohnzimmer = new TA2.AktionTür("",true,true,"Schlichte Tür am Flurende versuchen zu öffnen.","Die Türe schwingt lautlos auf.",flurEG,wohnzimmer);
      static TA2.AktionTür türFlurOGArena = new TA2.AktionTür("",true,true,"Türe mit Schwertsymbol öffnen.","",flurOG,arena);
@@ -156,6 +156,34 @@ public class Main {
      static AktionZusammenbasteln bastleSpeer = new AktionZusammenbasteln("",true,true,"","",besenstiel,klebeband,speerspitze,improvisierterSpeer);
      static AktionZusammenbasteln bastleLeiter = new AktionZusammenbasteln("",true,true,"","",halbeLeiter,halbeLeiter2,leiter);
 
+     //Coolemagiche gegenstände
+     static Gegenstand blutstein_1= new Gegenstand("blutstein_1",true,true,null,true,true);
+     static Gegenstand blutstein_2= new Gegenstand("blutstein_2",true,true,null,true,true);
+     static Gegenstand blutstein_3= new Gegenstand("blutstein_3",true,true,null,true,true);
+     static Gegenstand magischeKugel_1= new Gegenstand("magischeKugel_1",true,true,null,true,true);
+     static Gegenstand magischeKugel_2= new Gegenstand("magischeKugel_2",true,true,null,true,true);
+     static Gegenstand magischeKugel_3= new Gegenstand("magischeKugel_3",true,true,null,true,true);
+     static Gegenstand magischeKugel_4= new Gegenstand("magischeKugel_4",true,true,null,true,true);
+     static Gegenstand magischeKugel_5= new Gegenstand("magischeKugel_5",true,true,null,true,true);
+     static Gegenstand magischeKugel_6= new Gegenstand("magischeKugel_6",true,true,null,true,true);
+     static Gegenstand großemagischeKugel_1= new Gegenstand("großemagischeKugel_1",true,true,null,true,true);
+     static Gegenstand großemagischeKugel_2= new Gegenstand("großemagischeKugel_2",true,true,null,true,true);
+     static Gegenstand übermächtigemagischeKugel= new Gegenstand("übermächtigemagischeKugel",true,true,null,true,true);
+
+
+     static AktionSammeln blutstein_1_sammeln = new AktionSammeln("Blutstein 1 Sammeln",true,true,"Blutstein I aufheben","Du Hebst den 1. Blutstein auf",blutstein_1);
+     static AktionSammeln blutstein_2_sammeln = new AktionSammeln("Blutstein 2 Sammeln",true,true,"Blutstein II aufheben","Du Hebst den 2. Blutstein auf",blutstein_2);
+     static AktionSammeln blutstein_3_sammeln = new AktionSammeln("Blutstein 3 Sammeln",true,true,"Blutstein III aufheben","Du Hebst den 3. Blutstein auf",blutstein_3);
+     static AktionSammeln magischeKugel_1_sammeln = new AktionSammeln("Magischekugel 1 Sammeln",true,true,"Magischekugel I aufheben","Du Hebst die 1. Magischekugel auf",magischeKugel_1);
+     static AktionSammeln magischeKugel_2_sammeln = new AktionSammeln("Magischekugel 2 Sammeln",true,true,"Magischekugel II aufheben","Du Hebst die 2. Magischekugel auf",magischeKugel_2);
+     static AktionSammeln magischeKugel_3_sammeln = new AktionSammeln("Magischekugel 3 Sammeln",true,true,"Magischekugel III aufheben","Du Hebst die 3. Magischekugel auf",magischeKugel_3);
+     static AktionSammeln magischeKugel_4_sammeln = new AktionSammeln("Magischekugel 4 Sammeln",true,true,"Magischekugel VI aufheben","Du Hebst die 4. Magischekugel auf",magischeKugel_4);
+     static AktionSammeln magischeKugel_5_sammeln = new AktionSammeln("Magischekugel 5 Sammeln",true,true,"Magischekugel V aufheben","Du Hebst die 5. Magischekugel auf",magischeKugel_5);
+     static AktionSammeln magischeKugel_6_sammeln = new AktionSammeln("Magischekugel 6 Sammeln",true,true,"Magischekugel VI aufheben","Du Hebst die 6. Magischekugel auf",magischeKugel_6);
+
+     static AktionZusammenbasteln großemagischeKugel_1_basteln=new AktionZusammenbasteln("GroßemagischeKugel I basteln",true,true,"3Magische Kugeln zur Großenmagischenkugel I umwandeln"," Du wandelst Magischekugel I, II & III in GroßemagischeKugel1 um",magischeKugel_1,magischeKugel_2,magischeKugel_3,großemagischeKugel_1);
+     static AktionZusammenbasteln großemagischeKugel_2_basteln=new AktionZusammenbasteln("GroßemagischeKugel II basteln",true,true,"3Magische Kugeln zur Großenmagischenkugel II umwandeln"," Du wandelst Magischekugel VI, V & VI in GroßemagischeKugel2 um",magischeKugel_4,magischeKugel_5,magischeKugel_6,großemagischeKugel_2);
+     static AktionZusammenbasteln übermachtigmagischeKugel_basteln=new AktionZusammenbasteln("Übermachtigmagische Kugel basteln",true,true,"2 Großemagische Kugeln zur Übermächtigmagischenkugel umwandeln"," Du wandelst Großemagischekugel I & II in übermächtigmagischeKugel um",großemagischeKugel_1,großemagischeKugel_2,übermächtigemagischeKugel);
     //Einzelaktionen
 
     static ALichtschalter aLichtschalter= new ALichtschalter(eingangshalle);
@@ -189,7 +217,7 @@ public class Main {
     sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleleiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
     zerstöreSchrank,zerstöreBesen,zerstöreTruhe,zerstöreVase,bastleSpeer,esseApfel,esseKekse,esseSchinken,esseTomatensoße,esseHandVollChips,trinkeFlascheCola,trinkeFlaschWein,trinkeVaseMitRest,trinkeWasser,trinkeWasserGlas,
             aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas, aRucksackAufheben, start1, aFluchtA, aFluchtB,
-    eafBoss1,eafBoss2};
+    eafBoss1,eafBoss2,blutstein_1_sammeln,blutstein_2_sammeln,blutstein_3_sammeln,magischeKugel_1_sammeln,magischeKugel_2_sammeln,magischeKugel_3_sammeln,magischeKugel_4_sammeln,magischeKugel_5_sammeln,magischeKugel_6_sammeln,großemagischeKugel_1_basteln,großemagischeKugel_2_basteln,übermachtigmagischeKugel_basteln,bastleLeiter};
     private Ereignisse[] ereignisListe ={};
 
     //Verwaltungen
