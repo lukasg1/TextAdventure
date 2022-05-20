@@ -42,8 +42,8 @@ public class ARuestung extends AktionOberklasse{
                 if (gv.sucheGegnstandzumZerstören() != null) {
                     this.ausführungsText = "Du greifst die Rüstung an. Du zerschmetterst mit " + gv.sucheGegnstandzumZerstören().getName() + " mit einem Schlag. Dabei geht " + gv.sucheGegnstandzumZerstören().getName() + " kaputt. Du hast den Rüstungsgeist besiegt";
                     gv.sucheGegnstandzumZerstören().deaktivieren();
-                    gewonnen.aktivieren();
-                    deaktivieren();
+                    zaehler = 2;
+
                 } else {
                     this.ausführungsText = "Ohne Waffen kannst du dich nicht verteidigen. Die Ritterrüstung schwingt ihr Schwert und dir wird schwarz vor Augen";
                     zaehler = 1;
@@ -55,6 +55,9 @@ public class ARuestung extends AktionOberklasse{
 
             case 1:
                 gestorben.aktivieren();
+                break;
+            case 2:
+                deaktivieren();
                 break;
 
         }
