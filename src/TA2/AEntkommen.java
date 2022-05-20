@@ -7,7 +7,7 @@ public class AEntkommen extends AktionOberklasse{
 
     public AEntkommen() {
         this.raum=vorgarten;
-        this.ausführungsText="Langsam gehst du auf die Straße zu";
+        this.ausführungsText="Du stößt gegen eine unsichtbare Wand. Das ist gar nicht gut.";
         this.aktionsname="Entkommen";
         this.aktiv=true;
         this.sichtbar=true;
