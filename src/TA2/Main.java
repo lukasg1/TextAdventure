@@ -105,9 +105,9 @@ public class Main {
      static Gegenstand speerspitze = new Gegenstand("Speerspitze",true,true,gemächer,true,true);
 
      static Gegenstand tomatensoßendose = new Gegenstand("Tomatensoßendose",true,true,null,true,true);
-     static Gegenstand halbeLeiter2 = new Gegenstand("halbe Leiter",true,true,null,true,true);
-     static Gegenstand halbeLeiter = new Gegenstand("halbe Leiter",true,true,null,true,true);
-     static Gegenstand leiter = new Gegenstand("Leiter",true,true,null,true);
+     static Gegenstand halbeLeiter2 = new Gegenstand("halbe Leiter",true,true,vorgarten,true,true);
+     static Gegenstand halbeLeiter = new Gegenstand("halbe Leiter",true,true,garten,true,true);
+     static Gegenstand leiter = new Gegenstand("Leiter",true,true, null,true);
      static Gegenstand metallschrott = new Gegenstand("Metalschrott",true,true,null,true,true);
      static AktionSammeln sammleBesenstiel = new AktionSammeln("", true, true, "", "",besenstiel);
      static AktionSammeln sammleKlebeband = new AktionSammeln("", true, true, "", "",klebeband);
@@ -121,6 +121,7 @@ public class Main {
      static AktionSammeln sammleMetallschrott = new AktionSammeln("", true, true, "", "", metallschrott);
 
      static AktionSammeln sammleGlas = new AktionSammeln("", true, true, "", "",glasMitWasser);
+
 
     //essbares
      static Gegenstand schinken = new Gegenstand("Schinken",true,true,küche,true,true,false,true);
