@@ -25,13 +25,13 @@ public class ABlutstein1 extends AktionOberklasse {
 
     @Override
     public void ausführen() {
-        if (gv.isGegenstandImInventar(blutstein_2)&&gv.isGegenstandImInventar(blutstein_3)){
+        if (gv.isGegenstandImInventar(blutstein_2)==true&&gv.isGegenstandImInventar(blutstein_3)==true){
             this.ausführungsText = "Du hast den 3. Blutstein gefunden. Gratulation!";
-        } else if (gv.isGegenstandImInventar(blutstein_2)&&!gv.isGegenstandImInventar(blutstein_3)) {
+        } else if (gv.isGegenstandImInventar(blutstein_2)==true&&gv.isGegenstandImInventar(blutstein_3)==false) {
             this.ausführungsText = "Du hast den 2. Blutstein gefunden. Einer fehlt noch ...";
-        } else if (gv.isGegenstandImInventar(blutstein_3)&&!gv.isGegenstandImInventar(blutstein_2)) {
+        } else if (gv.isGegenstandImInventar(blutstein_3)==true&&gv.isGegenstandImInventar(blutstein_2)==false) {
             this.ausführungsText = "Du hast den 2. Blutstein gefunden. Einer fehlt noch ...";
-        } else {
+        } else if (gv.isGegenstandImInventar(blutstein_2)==false&&gv.isGegenstandImInventar(blutstein_3)==false){
             this.ausführungsText = "Du hast den 1. Blutstein gefunden. Sieh nur, wie er funkelt ...";
         }
         System.out.println(ausführungsText);
