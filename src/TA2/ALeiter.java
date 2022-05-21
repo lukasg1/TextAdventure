@@ -11,9 +11,9 @@ public class ALeiter extends AktionOberklasse {
         this.raum=bibliothek;
         this.sichtbar=true;
         this.aktionsname="Leiter";
-        this.ausführungsText="Du steigst mit der Leiter auf ein Dach und findest einen Blutstein.";
+        this.ausführungsText="Du steigst mit der Leiter auf ein Dach. Da funkelt doch etwas ...";
         this.aktiv=true;
-        this.beschreibung = "Blutschein finden";
+        this.beschreibung = "Die Leiter hochgehen";
     }
 
     @Override

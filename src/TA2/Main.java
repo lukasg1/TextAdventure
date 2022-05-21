@@ -14,7 +14,8 @@ public class Main {
 
      static Raum kapelle = new Raum("Kapelle", "Bedächtig gehst du in die Mitte des Raums, er ist voll von Skeletten. UND LEICHEN!?", "Du fühlst dich unwohl wieder in die Kapelle gegangen zu sein.", "Kapelle(draußen versteckt)");
      static Raum flurEG = new Raum("Flur Erdgeschoss", "Du hast ein ganz mulmiges Gefühl besonders als du Blut auf dem Boden siehst.","Du betrittst wieder den dir viel zu engen Flur. Scheiß Klaustorphobie.","Flur (EG)");
-     static Raum albtraumRaum = new Raum("AlbtraumRaum","Plötzlich dreht sich alles um dich und die Schatten bewegen sich.","Wieder beginnt sich alles zu drehen.","Albtraumraum(EG)");
+     static Raum albtraumRaum = new Raum("Albtraumraum","Plötzlich dreht sich alles um dich und die Schatten bewegen sich.","Wieder beginnt sich alles zu drehen.","Albtraumraum(EG)");
+     static Raum tresorRaum = new Raum("Tresorraum", "Du befindest dich im geheimen Tresorraum. Welcher Depp hat denn die Türe offen gelassen?!", "Du bist wieder im Tresorraum. Hast du dich etwa verlaufen? ...", "Tresorraum(EG)");
      static Raum wohnzimmer = new Raum("Wohnzimmer", "Du betrittst endlich mal einen gemütlichen Raum: Sofas, Sessel, Bilder. Einfach angenehm.","Endlich zurück im kleinen Wohnzimmer. Der Couch sieht verlockend aus,aber dafür hast du doch eigentlich keine Zeit...", "(Wohnzimmer(EG)");
      static Raum flurOG= new Raum("Flur Obergeschoss","Du stehst in einem großen Flur mit vielen Türen. Da staunst du wie groß das Gebäude wirklich ist.", "Du schaust dich im Flur um.","Flur(OG)");
      static Raum arena= new Raum("Arena Raum", "Du stehst in einem runden Raum und vor dir eine große Imposante Statue... die sich bewegt!","Du betrittst den Arena-Raum.","ArenaRaum(OG)");
@@ -57,6 +58,7 @@ public class Main {
      static TA2.AktionTür türFlurOGBeschwörerraum = new TA2.AktionTür("",true,true,"Türe auf der rechten Seite versuchen zu öffnen","Du öffnest die Tür",flurOG,beschwörkammer);
      static TA2.AktionTür türFlurOGGemächer = new TA2.AktionTür("",true,true,"Durch die geheime Tür gehen die man nicht sieht","Das das klappt hättest nichtmal du gedacht",flurOG,gemächer);
      static TA2.AktionTür türTeeZimmerHinterDemBild = new TA2.AktionTür("",true,true,"Gegen das Bild in der Mitte des Raum rennen?","Du rennst mit voller Geschwindigkeit in Richtung Wand.",teezimmer,hinterDemBild);
+     static TA2.AktionTür türAlbtraumraumTresorRaum = new TA2.AktionTür("", true, true,"Den geheimen Tresorraum öffnen?", "Du öffnest den Tresorraum. Welcher Depp hat denn die Türe offen stehen lassen?!", albtraumRaum, tresorRaum);
 
 
 
@@ -117,7 +119,7 @@ public class Main {
      static AktionSammeln sammleTomatensoßendose = new AktionSammeln("", true, true, "", "", tomatensoßendose);
      static AktionSammeln sammleHalbeLeiter2 = new AktionSammeln("", true, true, "", "", halbeLeiter2);
      static AktionSammeln sammleHalbeLeiter = new AktionSammeln("", true, true, "", "", halbeLeiter);
-     static AktionSammeln sammleleiter = new AktionSammeln("", true, true, "", "", leiter);
+     static AktionSammeln sammleLeiter = new AktionSammeln("", true, true, "", "", leiter);
      static AktionSammeln sammleMetallschrott = new AktionSammeln("", true, true, "", "", metallschrott);
 
      static AktionSammeln sammleGlas = new AktionSammeln("", true, true, "", "",glasMitWasser);
@@ -170,10 +172,13 @@ public class Main {
      static Gegenstand großemagischeKugel_2= new Gegenstand("großemagischeKugel_2",true,true,null,true,true);
      static Gegenstand übermächtigemagischeKugel= new Gegenstand("übermächtigemagischeKugel",true,true,null,true,true);
 
+     static ABlutstein1 blutstein_1_sichtbar = new ABlutstein1(bibliothek);
+     static ABlutstein2 blutstein_2_sichtbar = new ABlutstein2(tresorRaum);
+     static ABlutstein3 blutstein_3_sichtbar = new ABlutstein3(hinterDemBild);
 
-     static AktionSammeln blutstein_1_sammeln = new AktionSammeln("Blutstein 1 Sammeln",true,true,"Blutstein I aufheben","Du Hebst den 1. Blutstein auf",blutstein_1);
-     static AktionSammeln blutstein_2_sammeln = new AktionSammeln("Blutstein 2 Sammeln",true,true,"Blutstein II aufheben","Du Hebst den 2. Blutstein auf",blutstein_2);
-     static AktionSammeln blutstein_3_sammeln = new AktionSammeln("Blutstein 3 Sammeln",true,true,"Blutstein III aufheben","Du Hebst den 3. Blutstein auf",blutstein_3);
+     static AktionSammeln blutstein_1_sammeln = new AktionSammeln("Blutstein 1 Sammeln",true,false,"Blutstein I aufheben","Du Hebst den 1. Blutstein auf",blutstein_1);
+     static AktionSammeln blutstein_2_sammeln = new AktionSammeln("Blutstein 2 Sammeln",true,false,"Blutstein II aufheben","Du Hebst den 2. Blutstein auf",blutstein_2);
+     static AktionSammeln blutstein_3_sammeln = new AktionSammeln("Blutstein 3 Sammeln",true,false,"Blutstein III aufheben","Du Hebst den 3. Blutstein auf",blutstein_3);
      static AktionSammeln magischeKugel_1_sammeln = new AktionSammeln("Magischekugel 1 Sammeln",true,true,"Magischekugel I aufheben","Du Hebst die 1. Magischekugel auf",magischeKugel_1);
      static AktionSammeln magischeKugel_2_sammeln = new AktionSammeln("Magischekugel 2 Sammeln",true,true,"Magischekugel II aufheben","Du Hebst die 2. Magischekugel auf",magischeKugel_2);
      static AktionSammeln magischeKugel_3_sammeln = new AktionSammeln("Magischekugel 3 Sammeln",true,true,"Magischekugel III aufheben","Du Hebst die 3. Magischekugel auf",magischeKugel_3);
@@ -211,13 +216,13 @@ public class Main {
     static EAFBoss1 eafBoss1=new EAFBoss1();
     static EAFBoss2 eafBoss2=new EAFBoss2();
     //Listen
-    private static Gegenstand[] gegenstandsListe= {goldenerSchlüssel,vase,besen,truhe,schrank,handVollChips,tomatensoße,kekse,apfel,schinken,metallschrott,leiter,halbeLeiter,halbeLeiter2,tomatensoßendose,leeresGlas,flasche,speerspitze,klebeband,besenstiel, vaseMitWasser,ColaFlasche,flascheWein,glasMitWasser,wasser,modernerSchlüssel,bronzeschlüssel,alterSchlüssel,feuerzeug,streichölzer,axt,schwert,schwert2,eisenstange,improvisierterSpeer,massivesHolzbrett};
-    private static TA2.Raum[] raumListe = {eingangshalle, küche, esszimmer, garten, vorraum, kapelle, flurEG, albtraumRaum, wohnzimmer, flurOG, arena, beschwörkammer, badezimmer, teezimmer, hinterDemBild, gemächer, vorgarten, bibliothek};
+    private static Gegenstand[] gegenstandsListe= {goldenerSchlüssel,vase,besen,truhe,schrank,handVollChips,tomatensoße,kekse,apfel,schinken,metallschrott,leiter,halbeLeiter,halbeLeiter2,tomatensoßendose,leeresGlas,flasche,speerspitze,klebeband,besenstiel, vaseMitWasser,ColaFlasche,flascheWein,glasMitWasser,wasser,modernerSchlüssel,bronzeschlüssel,alterSchlüssel,feuerzeug,streichölzer,axt,schwert,schwert2,eisenstange,improvisierterSpeer,massivesHolzbrett, blutstein_1, blutstein_2, blutstein_3};
+    private static TA2.Raum[] raumListe = {eingangshalle, küche, esszimmer, garten, vorraum, kapelle, flurEG, albtraumRaum, wohnzimmer, flurOG, arena, beschwörkammer, badezimmer, teezimmer, hinterDemBild, gemächer, vorgarten, bibliothek, tresorRaum};
     private static AktionOberklasse[] aktionsListe={türEingangshalleKüche,türEingangshalleBadezimmer,türEingangshalleVorgarten,türFlurOGBadezimmer,türFlurEGAlbtraumraum,türEsszimmerGarten,türEsszimmerVorraum,türFlurEGWohnzimmer,türFlurOGArena,türFlurOGBeschwörerraum,türFlurOGGemächer,türFlurOGTeezimmer,türGartenKapelle,türKücheEsszimmer,türTeeZimmerHinterDemBild,türVorraumBibliothek,türVorraumFlurEG,treppe1EG,treppe2EG,sammleGoldenerSchlüssel,
-    sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleleiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
+    sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleLeiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
     zerstöreSchrank,zerstöreBesen,zerstöreTruhe,zerstöreVase,bastleSpeer,esseApfel,esseKekse,esseSchinken,esseTomatensoße,esseHandVollChips,trinkeFlascheCola,trinkeFlaschWein,trinkeVaseMitRest,trinkeWasser,trinkeWasserGlas,
             aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas, aRucksackAufheben, start1, aFluchtA, aFluchtB,
-    eafBoss1,eafBoss2,blutstein_1_sammeln,blutstein_2_sammeln,blutstein_3_sammeln,magischeKugel_1_sammeln,magischeKugel_2_sammeln,magischeKugel_3_sammeln,magischeKugel_4_sammeln,magischeKugel_5_sammeln,magischeKugel_6_sammeln,großemagischeKugel_1_basteln,großemagischeKugel_2_basteln,übermachtigmagischeKugel_basteln,bastleLeiter};
+    eafBoss1,eafBoss2,blutstein_1_sichtbar,blutstein_2_sichtbar,blutstein_3_sichtbar,blutstein_1_sammeln,blutstein_2_sammeln,blutstein_3_sammeln,magischeKugel_1_sammeln,magischeKugel_2_sammeln,magischeKugel_3_sammeln,magischeKugel_4_sammeln,magischeKugel_5_sammeln,magischeKugel_6_sammeln,großemagischeKugel_1_basteln,großemagischeKugel_2_basteln,übermachtigmagischeKugel_basteln,bastleLeiter};
     private Ereignisse[] ereignisListe ={};
 
     //Verwaltungen
