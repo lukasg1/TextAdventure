@@ -11,6 +11,7 @@ public class ABlutstein2 extends AktionOberklasse{
         this.raum = tresorRaum;
         this.sichtbar = true;
         this.aktionsname = "2. Blutstein";
+        this.ausführungsText = "Du sammelst einen Blutstein auf.";
         this.aktiv = true;
         this.beschreibung = "Blutstein mitnehmen";
     }
@@ -25,15 +26,6 @@ public class ABlutstein2 extends AktionOberklasse{
 
     @Override
     public void ausführen() {
-        if (gv.isGegenstandImInventar(blutstein_1)==true&&gv.isGegenstandImInventar(blutstein_3)==true){
-            this.ausführungsText = "Du hast den 3. Blutstein gefunden. Gratulation!";
-        } else if (gv.isGegenstandImInventar(blutstein_1)==true&&gv.isGegenstandImInventar(blutstein_3)==false) {
-            this.ausführungsText = "Du hast den 2. Blutstein gefunden. Einer fehlt noch ...";
-        } else if (gv.isGegenstandImInventar(blutstein_3)==true&&gv.isGegenstandImInventar(blutstein_1)==false) {
-            this.ausführungsText = "Du hast den 2. Blutstein gefunden. Einer fehlt noch ...";
-        } else if (gv.isGegenstandImInventar(blutstein_1)==false&&gv.isGegenstandImInventar(blutstein_3)==false){
-            this.ausführungsText = "Du hast den 1. Blutstein gefunden. Sieh nur, wie er funkelt ...";
-        }
         System.out.println(ausführungsText);
         gv.sucheGegenstand(blutstein_2).setSichtbar(true);
         g2.insInventar();
