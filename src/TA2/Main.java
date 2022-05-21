@@ -159,9 +159,9 @@ public class Main {
      static AktionZusammenbasteln bastleLeiter = new AktionZusammenbasteln("",true,true,"","",halbeLeiter,halbeLeiter2,leiter);
 
      //Coolemagiche gegenstände
-     static Gegenstand blutstein_1= new Gegenstand("blutstein_1",true,true,null,true,true);
-     static Gegenstand blutstein_2= new Gegenstand("blutstein_2",true,true,null,true,true);
-     static Gegenstand blutstein_3= new Gegenstand("blutstein_3",true,true,null,true,true);
+     static Gegenstand blutstein_1= new Gegenstand("blutstein_1",true,true,bibliothek,true,true);
+     static Gegenstand blutstein_2= new Gegenstand("blutstein_2",true,true,tresorRaum,true,true);
+     static Gegenstand blutstein_3= new Gegenstand("blutstein_3",true,true,hinterDemBild,true,true);
      static Gegenstand magischeKugel_1= new Gegenstand("magischeKugel_1",true,true,null,true,true);
      static Gegenstand magischeKugel_2= new Gegenstand("magischeKugel_2",true,true,null,true,true);
      static Gegenstand magischeKugel_3= new Gegenstand("magischeKugel_3",true,true,null,true,true);

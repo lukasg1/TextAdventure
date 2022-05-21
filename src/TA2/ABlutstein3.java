@@ -8,7 +8,7 @@ public class ABlutstein3 extends AktionOberklasse{
     protected Gegenstand g3 = blutstein_3;
 
     public ABlutstein3(Raum raum) {
-        this.raum = hinterDemBild;
+        this.raum = raum;
         this.sichtbar = true;
         this.aktionsname = "3. Blutstein";
         this.ausführungsText = "Du findest einen Blutstein und nimmst diesen mit. Gratulation!";
