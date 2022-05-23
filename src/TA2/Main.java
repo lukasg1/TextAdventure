@@ -175,9 +175,9 @@ public class Main {
 
 
 
-     static ASammelBlutstein blutstein_1_sammeln = new ASammelBlutstein("Blutstein 1 Sammeln",true,false,"Blutstein I aufheben","Du Hebst den 1. Blutstein auf",blutstein_1);
-     static AktionSammeln blutstein_2_sammeln = new AktionSammeln("Blutstein 2 Sammeln",true,false,"Blutstein II aufheben","Du Hebst den 2. Blutstein auf",blutstein_2);
-     static AktionSammeln blutstein_3_sammeln = new AktionSammeln("Blutstein 3 Sammeln",true,false,"Blutstein III aufheben","Du Hebst den 3. Blutstein auf",blutstein_3);
+     static ASammelBlutstein blutstein_1_sammeln = new ASammelBlutstein("Blutstein 1 Sammeln",true,true,"Blutstein I aufheben","Du Hebst den 1. Blutstein auf",blutstein_1);
+     static AktionSammeln blutstein_2_sammeln = new AktionSammeln("Blutstein 2 Sammeln",true,true,"Blutstein II aufheben","Du Hebst den 2. Blutstein auf",blutstein_2);
+     static AktionSammeln blutstein_3_sammeln = new AktionSammeln("Blutstein 3 Sammeln",true,true,"Blutstein III aufheben","Du Hebst den 3. Blutstein auf",blutstein_3);
      static AktionSammeln magischeKugel_1_sammeln = new AktionSammeln("Magischekugel 1 Sammeln",true,true,"Magischekugel I aufheben","Du Hebst die 1. Magischekugel auf",magischeKugel_1);
      static AktionSammeln magischeKugel_2_sammeln = new AktionSammeln("Magischekugel 2 Sammeln",true,true,"Magischekugel II aufheben","Du Hebst die 2. Magischekugel auf",magischeKugel_2);
      static AktionSammeln magischeKugel_3_sammeln = new AktionSammeln("Magischekugel 3 Sammeln",true,true,"Magischekugel III aufheben","Du Hebst die 3. Magischekugel auf",magischeKugel_3);
