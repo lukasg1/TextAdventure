@@ -6,6 +6,7 @@ public class ARucksackAufheben extends AktionOberklasse{
 
     protected Raum raum = eingangshalle;
     protected Gegenstand g1 = ColaFlasche;
+     protected Gegenstand g2 = tomatensoßendose;
 
 
     public ARucksackAufheben() {
@@ -28,6 +29,7 @@ public class ARucksackAufheben extends AktionOberklasse{
     @Override
     public void ausführen() {
         g1.insInventar();
+        g2.insInventar();
         System.out.println(ausführungsText);
         deaktiviereFürImmer();
     }

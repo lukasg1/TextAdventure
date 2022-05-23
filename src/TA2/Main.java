@@ -152,7 +152,7 @@ public class Main {
      static Gegenstand besen= new Gegenstand("Besen",true,true,esszimmer,true,false,false,false,true);
      static AktionZerstörenMitRest zerstöreSchrank = new AktionZerstörenMitRest("", true, true,"", "", schrank, massivesHolzbrett);
      static AktionZerstören zerstöreTruhe = new AktionZerstören("", true, true, "", "", truhe);
-     static AktionZerstören zerstöreBesen = new AktionZerstören("", true, true, "", "", besen);
+     static AktionZerstörenMitRest zerstöreBesen = new AktionZerstörenMitRest("", true, true, "", "", besen, besenstiel);
      static AktionZerstören zerstöreVase = new AktionZerstören("", true, true,"", "", vase);
 
      static AktionZusammenbasteln bastleSpeer = new AktionZusammenbasteln("",true,true,"","",besenstiel,klebeband,speerspitze,improvisierterSpeer);
