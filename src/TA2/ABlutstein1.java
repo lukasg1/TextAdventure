@@ -18,7 +18,7 @@ public class ABlutstein1 extends AktionOberklasse {
 
     @Override
     public void update() {
-        if(sichtbar==true&&aktiv==true&&raum==rv.getAktuellerRaum()&&sonderdeaktivierung==false){
+        if(sichtbar==true&&aktiv==true&&raum==rv.getAktuellerRaum()&&sonderdeaktivierung==false&&gv.isGegenstandImInventar(leiter)){
             verfügbar=true;
         }
         else verfügbar=false;

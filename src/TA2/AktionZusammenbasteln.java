@@ -20,7 +20,7 @@ public class AktionZusammenbasteln extends AktionBrauchtNix{
             this.aktionsname=endgegenstand.getName()+"zusammenbasteln";
         }
         if(beschreibung==""){
-            this.aktionsname="Bastel " + endgegenstand.getName()+ " aus "+ gegenstand1.getName()+" und "+ gegenstand2.getName()+" zusammen";
+            this.beschreibung="Bastle " + endgegenstand.getName()+ " aus "+ gegenstand1.getName()+" und "+ gegenstand2.getName()+" zusammen";
 
         }
         if(ausführungsText==""){
@@ -39,7 +39,7 @@ public class AktionZusammenbasteln extends AktionBrauchtNix{
             this.aktionsname=endgegenstand.getName()+"zusammenbasteln";
         }
         if(beschreibung==""){
-            this.aktionsname="Bastel " + endgegenstand.getName()+ " aus "+gegenstand3.getName()+","+ gegenstand1.getName()+" und "+ gegenstand2.getName()+" zusammen";
+            this.beschreibung="Bastle " + endgegenstand.getName()+ " aus "+gegenstand3.getName()+","+ gegenstand1.getName()+" und "+ gegenstand2.getName()+" zusammen";
 
         }
         if(ausführungsText==""){
@@ -60,7 +60,7 @@ public class AktionZusammenbasteln extends AktionBrauchtNix{
             this.aktionsname=endgegenstand.getName()+"zusammenbasteln";
         }
         if(beschreibung==""){
-            this.aktionsname="Bastel " + endgegenstand.getName()+ " aus "+gegenstand3.getName()+","+gegenstand4.getName()+","+ gegenstand1.getName()+" und "+ gegenstand2.getName()+" zusammen";
+            this.beschreibung="Bastle " + endgegenstand.getName()+ " aus "+gegenstand3.getName()+","+gegenstand4.getName()+","+ gegenstand1.getName()+" und "+ gegenstand2.getName()+" zusammen";
 
         }
         if(ausführungsText==""){
