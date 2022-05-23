@@ -56,7 +56,7 @@ public class EAFBoss2 extends AktionOberklasse{
                         türFlurOGBeschwörerraum.ausführen();
                         this.beschreibung="Versuche zu fliehen";
                         this.ausführungsText ="Du entkommst durch die Türe und schliesßt diese schnell hinter dir. ";
-                        deaktivieren();
+                        zähler = 5;
                     }
                     else {this.beschreibung="Versuche zu fliehen";
                         this.ausführungsText ="Der Dämon schlägt nach dir. Du weichst im letzten Moment aus. ";
@@ -64,10 +64,14 @@ public class EAFBoss2 extends AktionOberklasse{
 
                     }
                 }
+                break;
             case(4):
                 gestorben.aktivieren();
+                break;
 
-
+            case(5):
+                deaktivieren();
+                break;
 
         }
 
