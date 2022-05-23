@@ -185,9 +185,9 @@ public class Main {
      static AktionSammeln magischeKugel_5_sammeln = new AktionSammeln("Magischekugel 5 Sammeln",true,true,"Magischekugel V aufheben","Du Hebst die 5. Magischekugel auf",magischeKugel_5);
      static AktionSammeln magischeKugel_6_sammeln = new AktionSammeln("Magischekugel 6 Sammeln",true,true,"Magischekugel VI aufheben","Du Hebst die 6. Magischekugel auf",magischeKugel_6);
 
-     static AktionZusammenbasteln großemagischeKugel_1_basteln=new AktionZusammenbasteln("GroßemagischeKugel I basteln",true,true,"3Magische Kugeln zur Großenmagischenkugel I umwandeln"," Du wandelst Magischekugel I, II & III in GroßemagischeKugel1 um",magischeKugel_1,magischeKugel_2,magischeKugel_3,großemagischeKugel_1);
-     static AktionZusammenbasteln großemagischeKugel_2_basteln=new AktionZusammenbasteln("GroßemagischeKugel II basteln",true,true,"3Magische Kugeln zur Großenmagischenkugel II umwandeln"," Du wandelst Magischekugel VI, V & VI in GroßemagischeKugel2 um",magischeKugel_4,magischeKugel_5,magischeKugel_6,großemagischeKugel_2);
-     static AktionBesonderesZusammenbasteln übermachtigmagischeKugel_basteln=new AktionBesonderesZusammenbasteln("Übermachtigmagische Kugel basteln",true,true,"2 Großemagische Kugeln zur Übermächtigmagischenkugel umwandeln"," Du wandelst Großemagischekugel I & II in übermächtigmagischeKugel um",großemagischeKugel_1,großemagischeKugel_2,übermächtigemagischeKugel);
+     static AktionZusammenbasteln großemagischeKugel_1_basteln=new AktionZusammenbasteln("GroßemagischeKugel I basteln",true,true,"3 magische Kugeln zur Großenmagischenkugel I umwandeln"," Du wandelst Magischekugel I, II & III in GroßemagischeKugel1 um.",magischeKugel_1,magischeKugel_2,magischeKugel_3,großemagischeKugel_1);
+     static AktionZusammenbasteln großemagischeKugel_2_basteln=new AktionZusammenbasteln("GroßemagischeKugel II basteln",true,true,"3 magische Kugeln zur Großenmagischenkugel II umwandeln"," Du wandelst Magischekugel VI, V & VI in GroßemagischeKugel2 um.",magischeKugel_4,magischeKugel_5,magischeKugel_6,großemagischeKugel_2);
+     static AktionBesonderesZusammenbasteln übermachtigmagischeKugel_basteln=new AktionBesonderesZusammenbasteln("Übermachtigmagische Kugel basteln",true,true,"2 Großemagische Kugeln zur Übermächtigmagischenkugel umwandeln"," Du wandelst Großemagischekugel I & II in übermächtigmagischeKugel um.",großemagischeKugel_1,großemagischeKugel_2,übermächtigemagischeKugel);
     //Einzelaktionen
 
     static ALichtschalter aLichtschalter= new ALichtschalter(eingangshalle);
@@ -208,8 +208,8 @@ public class Main {
     static Ereignisse gewonnen= new Ereignisse("Sieg",false);
     static Ereignisse bosskampf=new Ereignisse("Boss", true);
     static Ereignisse frei=new Ereignisse("Frei", false);
-    static Ereignisse hausSauer=new Ereignisse("Haus im Blutrausch", false);
-    static Ereignisse gestorben=new Ereignisse("Du bist gestorben", false);
+    static Ereignisse hausSauer=new Ereignisse("Haus im Blutrausch.", false);
+    static Ereignisse gestorben=new Ereignisse("Du bist gestorben.", false);
 
     //Action Enemy Flows
     static EAFBoss1 eafBoss1=new EAFBoss1();
