@@ -32,7 +32,7 @@ public class Main {
     static Gegenstand goldenerSchlüssel = new Gegenstand("goldener Schlüssel",true,true,küche,false,true);
     static Gegenstand modernerSchlüssel = new Gegenstand("moderner Schlüssel",true,true,gemächer,true, true);
     static Gegenstand bronzeschlüssel = new Gegenstand("Bronzeschlüssel",true,true,hinterDemBild,true, true);
-    static Gegenstand alterSchlüssel = new Gegenstand("alter Schlüssel",true,true,null,true, true);
+    static Gegenstand alterSchlüssel = new Gegenstand("alter Schlüssel",true,true,arena,true, true);
     static AktionSammeln sammleGoldenerSchlüssel = new AktionSammeln("", true, true, "", "", goldenerSchlüssel);
     static AktionSammeln sammleModernerSchlüssel = new AktionSammeln("", true, true, "", "", modernerSchlüssel);
     static AktionSammeln sammleBronzeSchlüssel = new AktionSammeln("", true, true, "", "", bronzeschlüssel);
