@@ -188,7 +188,7 @@ public class Main {
 
      static AktionZusammenbasteln großemagischeKugel_1_basteln=new AktionZusammenbasteln("GroßemagischeKugel I basteln",true,true,"3Magische Kugeln zur Großenmagischenkugel I umwandeln"," Du wandelst Magischekugel I, II & III in GroßemagischeKugel1 um",magischeKugel_1,magischeKugel_2,magischeKugel_3,großemagischeKugel_1);
      static AktionZusammenbasteln großemagischeKugel_2_basteln=new AktionZusammenbasteln("GroßemagischeKugel II basteln",true,true,"3Magische Kugeln zur Großenmagischenkugel II umwandeln"," Du wandelst Magischekugel VI, V & VI in GroßemagischeKugel2 um",magischeKugel_4,magischeKugel_5,magischeKugel_6,großemagischeKugel_2);
-     static AktionZusammenbasteln übermachtigmagischeKugel_basteln=new AktionZusammenbasteln("Übermachtigmagische Kugel basteln",true,true,"2 Großemagische Kugeln zur Übermächtigmagischenkugel umwandeln"," Du wandelst Großemagischekugel I & II in übermächtigmagischeKugel um",großemagischeKugel_1,großemagischeKugel_2,übermächtigemagischeKugel);
+     static AktionBesonderesZusammenbasteln übermachtigmagischeKugel_basteln=new AktionBesonderesZusammenbasteln("Übermachtigmagische Kugel basteln",true,true,"2 Großemagische Kugeln zur Übermächtigmagischenkugel umwandeln"," Du wandelst Großemagischekugel I & II in übermächtigmagischeKugel um",großemagischeKugel_1,großemagischeKugel_2,übermächtigemagischeKugel);
     //Einzelaktionen
 
     static ALichtschalter aLichtschalter= new ALichtschalter(eingangshalle);
@@ -242,16 +242,26 @@ public class Main {
 
 
     public static void main(String[] args) {
-        updateAll();
+        spieler();
+        //bot();
+
+
+
+
+
+    }
+
+    public static void spieler(){updateAll();
         frame.setContentPane(new Auswahl().maintest);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
 
 
+    }
 
-        //spiele();
-
+    public static void bot(){
+        spiele();
     }
 
     public static void spiele(){
