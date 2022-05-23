@@ -150,7 +150,7 @@ public class Main {
      static Gegenstand schrank = new Gegenstand("Schrank",true,true,teezimmer,true,false,false,false,true);
      static Gegenstand truhe = new Gegenstand("Truhe",true,true,arena,true,false,false,false,true);
      static Gegenstand besen= new Gegenstand("Besen",true,true,esszimmer,true,false,false,false,true);
-     static AktionZerstören zerstöreSchrank = new AktionZerstören("", true, true,"", "", schrank);
+     static AktionZerstörenMitRest zerstöreSchrank = new AktionZerstörenMitRest("", true, true,"", "", schrank, massivesHolzbrett);
      static AktionZerstören zerstöreTruhe = new AktionZerstören("", true, true, "", "", truhe);
      static AktionZerstören zerstöreBesen = new AktionZerstören("", true, true, "", "", besen);
      static AktionZerstören zerstöreVase = new AktionZerstören("", true, true,"", "", vase);
@@ -162,12 +162,12 @@ public class Main {
      static Gegenstand blutstein_1= new Gegenstand("blutstein_1",true,true,bibliothek,true,true);
      static Gegenstand blutstein_2= new Gegenstand("blutstein_2",true,true,tresorRaum,true,true);
      static Gegenstand blutstein_3= new Gegenstand("blutstein_3",true,true,hinterDemBild,true,true);
-     static Gegenstand magischeKugel_1= new Gegenstand("magischeKugel_1",true,true,null,true,true);
-     static Gegenstand magischeKugel_2= new Gegenstand("magischeKugel_2",true,true,null,true,true);
-     static Gegenstand magischeKugel_3= new Gegenstand("magischeKugel_3",true,true,null,true,true);
-     static Gegenstand magischeKugel_4= new Gegenstand("magischeKugel_4",true,true,null,true,true);
-     static Gegenstand magischeKugel_5= new Gegenstand("magischeKugel_5",true,true,null,true,true);
-     static Gegenstand magischeKugel_6= new Gegenstand("magischeKugel_6",true,true,null,true,true);
+     static Gegenstand magischeKugel_1= new Gegenstand("magischeKugel_1",true,true,hinterDemBild,true,true);
+     static Gegenstand magischeKugel_2= new Gegenstand("magischeKugel_2",true,true,kapelle,true,true);
+     static Gegenstand magischeKugel_3= new Gegenstand("magischeKugel_3",true,true,bibliothek,true,true);
+     static Gegenstand magischeKugel_4= new Gegenstand("magischeKugel_4",true,true,kapelle,true,true);
+     static Gegenstand magischeKugel_5= new Gegenstand("magischeKugel_5",true,true,arena,true,true);
+     static Gegenstand magischeKugel_6= new Gegenstand("magischeKugel_6",true,true,albtraumRaum,true,true);
      static Gegenstand großemagischeKugel_1= new Gegenstand("großemagischeKugel_1",true,true,null,true,true);
      static Gegenstand großemagischeKugel_2= new Gegenstand("großemagischeKugel_2",true,true,null,true,true);
      static Gegenstand übermächtigemagischeKugel= new Gegenstand("übermächtigemagischeKugel",true,true,null,true,true);
