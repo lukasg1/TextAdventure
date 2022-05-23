@@ -15,7 +15,7 @@ public class AStart1 extends AktionOberklasse{
         this.sichtbar=true;
         this.wichtig=true;
         this.aktionsname="";
-        this.ausführungsText="Das Haus: Viel Spaß";
+        this.ausführungsText="Das Haus: Viel Spaß!";
         this.aktiv=true;
         this.beschreibung = "bereit";
         this.zähler=1;
@@ -40,11 +40,11 @@ public class AStart1 extends AktionOberklasse{
         System.out.println(ausführungsText);
         switch (zähler) {
             case 2: this.beschreibung="Aufstehen";
-                    this.ausführungsText="Vorsichtig stehst du auf, Schatten flackern in deinem Gehirn. Wo bist du? Und wer?";
+                    this.ausführungsText="Vorsichtig stehst du auf, Schatten flackern in deinem Gehirn. Wo bist du? ";
                     break;
             case 1:
                 this.beschreibung = "Versuche dich zu bewegen.";
-                this.ausführungsText="Du versuchst dich zu bewegen alles schmerzt";
+                this.ausführungsText="Du versuchst dich zu bewegen alles schmerzt.";
                 break;
             case 3:
                 deaktiviereFürImmer();

@@ -10,7 +10,7 @@ public class ARucksackAufheben extends AktionOberklasse{
 
 
     public ARucksackAufheben() {
-        this.ausführungsText="Du hebst den Rucksack auf und schaust rein, du kannst dich an nichts erinnern. Ist das deiner?";
+        this.ausführungsText="Du hebst den Rucksack auf und schaust hinein, du kannst dich an nichts erinnern. Ist das deiner?";
         this.aktionsname="Rucksack";
         this.aktiv=false;
         this.sichtbar=true;

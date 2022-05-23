@@ -8,7 +8,7 @@ public class AktionBrennen extends AktionBrauchtGegenstand{
 
     public AktionBrennen(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand) {
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText, gegenstand);
-        this.aktionsname = "verbrenne" + gegenstand.getName();
+        this.aktionsname = "verbrenne " + gegenstand.getName();
         this.beschreibung = "Verbrenne " + gegenstand.getName();
         if (ausführungsText == "") {
             this.ausführungsText = "Du hast den " + gegenstand.getName() + " mit einem " + gegenstandMitDemVerbranntWird.getName() + " verbrannt. " +

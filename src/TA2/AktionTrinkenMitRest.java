@@ -10,13 +10,13 @@ public class AktionTrinkenMitRest extends AktionTrinken{
     public AktionTrinkenMitRest(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand, Gegenstand gegenstandDerÜbrigBleibt) {
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText, gegenstand);
         if(aktionsname=="") {
-            this.aktionsname = "trinke" + gegenstand.getName();
+            this.aktionsname = "trinke " + gegenstand.getName();
         }
         if(ausführungsText=="") {
             this.ausführungsText = "Du trinkst " + gegenstand.getName();
         }
         if(beschreibung=="") {
-            this.beschreibung = "Trinke" + gegenstand.getName();
+            this.beschreibung = "Trinke " + gegenstand.getName();
         }
         this.gegenstandDerÜbrigBleibt = gegenstandDerÜbrigBleibt;
         if(gegenstand.isImInventar()){

@@ -40,7 +40,7 @@ public class AktionZerstörenMitRest extends AktionZerstören{
         gegenstandDerÜbrigBleibt.setRaum(rv.getAktuellerRaum());
         if (ausführungsText == "") {
             this.ausführungsText = "Du hast mit " + gegenstandMitDemZerstörtWird.getName() + " " + gegenstand.getName() + " zerstört."+
-            " Übrig bleibt hier noch ein " + gegenstandDerÜbrigBleibt.getName() + ".";
+            " Was dir bleibt ist ein " + gegenstandDerÜbrigBleibt.getName() + ".";
             System.out.println(ausführungsText);
         }
     }

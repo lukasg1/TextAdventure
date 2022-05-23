@@ -13,7 +13,7 @@ public class AOfen extends AktionOberklasse{
 
     public AOfen(Raum raum) {
         this.raum=raum;
-        this.ausführungsText="Du gehst zum Ofen, darin glitzert etwas golden.";
+        this.ausführungsText="Du gehst zum Ofen, darin glitzert etwas Goldenes.";
         this.aktionsname="Ofen";
         this.aktiv=true;
         this.sichtbar=true;

@@ -17,7 +17,7 @@ public class AHandy extends AktionOberklasse{
         this.aktionsname="Handy";
         this.aktiv=false;
         this.sichtbar=true;
-        this.beschreibung = "Handy hochheben";
+        this.beschreibung = "Handy aufheben";
 
     }
 

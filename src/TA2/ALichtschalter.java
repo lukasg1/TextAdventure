@@ -15,9 +15,9 @@ public class ALichtschalter extends AktionOberklasse{
         this.raum=raum;
         this.sichtbar=true;
         this.aktionsname="Lichtschalter";
-        this.ausführungsText="Du findest einen Lichschalter und du siehst dich blinzelnd um, du findest ein Handy auf dem Boden und erkennst die Türen um dich herum.";
+        this.ausführungsText="Du findest einen Lichtschalter und du siehst dich blinzelnd um, du findest ein Handy auf dem Boden und erkennst Türen um dich herum.";
         this.aktiv=true;
-        this.beschreibung = "Lichschalter suchen";
+        this.beschreibung = "Lichtschalter suchen";
 
 
     }

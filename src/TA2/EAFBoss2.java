@@ -46,16 +46,16 @@ public class EAFBoss2 extends AktionOberklasse{
                 if(w100.würfel()<15){
                     zähler=3;
                     eafBoss1.zähler=4;
-                    eafBoss1.ausführungsText = "Der Dämon grinst. Das wars. Das letzte was du siehst ist seine Faust die auf dein Gesicht zufliegt.";
+                    eafBoss1.ausführungsText = "Der Dämon grinst. Das wars. Das Letzte was du siehst ist seine Faust die auf dein Gesicht zufliegt.";
                     this.beschreibung="Versuche zu fliehen";
-                    this.ausführungsText = "Der Dämon grinst. Das wars. Das letzte was du siehst ist seine Faust die auf dein Gesicht zufliegt.";
+                    this.ausführungsText = "Der Dämon grinst. Das wars. Das Letzte was du siehst ist seine Faust die auf dein Gesicht zufliegt.";
 
                 }
                 else {
                     if(w100.würfel()<50){
                         türFlurOGBeschwörerraum.ausführen();
                         this.beschreibung="Versuche zu fliehen";
-                        this.ausführungsText ="Du entkommst durch die Türe und schliesßt diese schnell hinter dir. ";
+                        this.ausführungsText ="Du entkommst durch die Türe und versperrst diese schnell hinter dir. ";
                         zähler = 5;
                     }
                     else {this.beschreibung="Versuche zu fliehen";

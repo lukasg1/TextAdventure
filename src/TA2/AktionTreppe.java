@@ -15,11 +15,11 @@ public class AktionTreppe extends AktionBrauchtRaum{
     public void update() {
         if (sichtbar == true && aktiv == true && raum == rv.getAktuellerRaum() && sonderdeaktivierung == false) {
             verfügbar = true;
-            this.beschreibung = "Von " + raum.getRaumName() + " nach " + zielraum.getRaumName() + " gehen";this.ausführungsText = "Du gehst die Treppe Hoch" ;
+            this.beschreibung = "Von " + raum.getRaumName() + " nach " + zielraum.getRaumName() + " gehen";this.ausführungsText = "Du gehst die Treppe hoch." ;
 
         } else if (sichtbar == true && aktiv == true && zielraum == rv.getAktuellerRaum() && sonderdeaktivierung == false) {
             verfügbar = true;
-            this.beschreibung = "Die Treppe von " + zielraum.getRaumName() + " nach " + raum.getRaumName() + " gehen";this.ausführungsText = "Du gehst die Treppe Runter";
+            this.beschreibung = "Die Treppe von " + zielraum.getRaumName() + " nach " + raum.getRaumName() + " gehen";this.ausführungsText = "Du gehst die Treppe runter.";
         }
          else verfügbar = false;
 

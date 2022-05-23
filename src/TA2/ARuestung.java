@@ -40,18 +40,18 @@ public class ARuestung extends AktionOberklasse{
                 aRuestungA.aktivieren();
                 aRuestungB.aktivieren();
                 if (gv.sucheGegnstandzumZerstören() != null) {
-                    this.ausführungsText = "Du greifst die Rüstung an und zerschmetterst sie mit " + gv.sucheGegnstandzumZerstören().getName() + ". Dabei geht " + gv.sucheGegnstandzumZerstören().getName() + " kaputt. Du hast den Rüstungsgeist besiegt";
+                    this.ausführungsText = "Du greifst die Rüstung an und zerschmetterst sie mit " + gv.sucheGegnstandzumZerstören().getName() + ".Du hast den Rüstungsgeist besiegt. Dabei geht jedoch " + gv.sucheGegnstandzumZerstören().getName() + "kaputt.";
                     gv.sucheGegnstandzumZerstören().deaktivieren();
                     zaehler = 2;
 
                 } else {
                     if(w100.würfel()>50){
-                        this.ausführungsText = "Der Engel Ron rettet dich vor einem tötlichen Schlag. Benebelt wachst du aufm dem Flur vor dem Arenaraum auf. ";
+                        this.ausführungsText = "Der Engel Ron rettet dich vor einem tödlichen Schlag. Benebelt wachst du auf dem Flur vor dem Arenaraum auf. ";
                         zaehler=2;
 
                     }
                     else{
-                    this.ausführungsText = "Ohne Waffen kannst du dich nicht verteidigen. Die Ritterrüstung schwingt ihr Schwert und dir wird schwarz vor Augen";
+                    this.ausführungsText = "Ohne Waffen kannst du dich nicht verteidigen. Die Ritterrüstung schwingt ihr Schwert, trifft dich und dir wird schwarz vor Augen. ";
                     zaehler = 1;
                 }}
 

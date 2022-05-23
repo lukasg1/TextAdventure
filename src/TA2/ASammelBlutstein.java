@@ -12,7 +12,7 @@ public class ASammelBlutstein extends AktionBrauchtGegenstand{
     public ASammelBlutstein(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand) {
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText, gegenstand);
         this.aktionsname = "Blutstein mitnehmen" ;
-        this.ausführungsText = "Du steigst auf die Leiter und holst den Blutstein runter.";
+        this.ausführungsText = "Du steigst auf die Leiter und sammelst den Blutstein auf.";
         this.beschreibung = "Du siehst etwas auf einem Bücherregal, kletter hoch " ;
     }
     

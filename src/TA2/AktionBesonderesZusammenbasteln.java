@@ -20,7 +20,7 @@ public class AktionBesonderesZusammenbasteln extends AktionBrauchtNix{
             this.aktionsname=endgegenstand.getName()+"zusammenbasteln";
         }
         if(beschreibung==""){
-            this.aktionsname="Du kombinierst die Kugeln zu einer großen Kugel und fühlst dich mächtig. Durch dich strömt Energie. Du fühlst dich frei.";
+            this.aktionsname="Du fügst die Kugeln zu einer großen Kugel zusammen und fühlst dich mächtig. Dich durchströmt Energie. Du fühlst dich frei.";
 
         }
         if(ausführungsText==""){
@@ -36,10 +36,10 @@ public class AktionBesonderesZusammenbasteln extends AktionBrauchtNix{
         this.gegenstand2=gegenstand2;
         this.gegenstand3=gegenstand3;
         if(aktionsname==""){
-            this.aktionsname=endgegenstand.getName()+"zusammenbasteln";
+            this.aktionsname=endgegenstand.getName()+" zusammenbasteln";
         }
         if(beschreibung==""){
-            this.aktionsname="Bastel " + endgegenstand.getName()+ " aus "+gegenstand3.getName()+","+ gegenstand1.getName()+" und "+ gegenstand2.getName()+" zusammen";
+            this.aktionsname="Bastel " + endgegenstand.getName()+ " aus "+gegenstand3.getName()+","+ gegenstand1.getName()+" und "+ gegenstand2.getName()+" zusammen.";
 
         }
         if(ausführungsText==""){
@@ -57,10 +57,10 @@ public class AktionBesonderesZusammenbasteln extends AktionBrauchtNix{
         this.gegenstand3=gegenstand3;
         this.gegenstand4=gegenstand4;
         if(aktionsname==""){
-            this.aktionsname=endgegenstand.getName()+"zusammenbasteln";
+            this.aktionsname=endgegenstand.getName()+" zusammenbasteln";
         }
         if(beschreibung==""){
-            this.aktionsname="Bastel " + endgegenstand.getName()+ " aus "+gegenstand3.getName()+","+gegenstand4.getName()+","+ gegenstand1.getName()+" und "+ gegenstand2.getName()+" zusammen";
+            this.aktionsname="Bastel " + endgegenstand.getName()+ " aus "+gegenstand3.getName()+","+gegenstand4.getName()+","+ gegenstand1.getName()+" und "+ gegenstand2.getName()+" zusammen.";
 
         }
         if(ausführungsText==""){

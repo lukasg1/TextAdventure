@@ -28,7 +28,7 @@ public class VerwaltungGegenstände implements InterfaceOfUpdate{
                 return gegenstandsliste[i].getName();
             }
         }
-        return "Kein Gegenstand vorhanden"; //passiert aber nie
+        return "Kein Gegenstand vorhanden."; //passiert aber nie
     }
     public boolean isGegenstandVerfügbar(Gegenstand gegenstand){
         for(int i = 0; i< this.gegenstandsliste.length;i++){
