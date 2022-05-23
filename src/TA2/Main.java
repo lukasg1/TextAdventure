@@ -268,7 +268,7 @@ public class Main {
         for(int i=0; i<20; i++){
             try {
 
-                updateAll();
+                updateAllBot();
 
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -290,8 +290,22 @@ public class Main {
 
 
 
-        //int rand=(int)(Math.random() * av.anzahlaktiveaktionen()) ;
-       // av.gibAktiveAktionen()[rand ].ausführen();
+    }
+
+    public static void updateAllBot(){
+        gv.update();
+        av.update();
+
+        //Abbruchbedingung
+        if(gewonnen.isAktiv()||gestorben.isAktiv()){
+            frame.dispose();
+
+        }
+
+
+
+        int rand=(int)(Math.random() * av.anzahlaktiveaktionen()) ;
+        av.gibAktiveAktionen()[rand ].ausführen();
 
     }
 

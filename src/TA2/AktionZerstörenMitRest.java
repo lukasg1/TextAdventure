@@ -17,8 +17,8 @@ public class AktionZerstörenMitRest extends AktionZerstören{
         }
         this.gegenstandDerÜbrigBleibt = gegenstandDerÜbrigBleibt;
         if (ausführungsText == "") {
-            this.ausführungsText = "Du hast mit " + gegenstandMitDemZerstörtWird.getName() + " " + gegenstand.getName() + " zerstört."+
-                    " Übrig bleibt hier noch ein " + gegenstandDerÜbrigBleibt + ".";
+            this.ausführungsText = "Du hast " +  " " + gegenstand.getName() + " zerstört."+
+                    " Übrig bleibt hier noch ein " + gegenstandDerÜbrigBleibt.getName() + ".";
 
         }
     }
@@ -40,7 +40,7 @@ public class AktionZerstörenMitRest extends AktionZerstören{
         gegenstandDerÜbrigBleibt.setRaum(rv.getAktuellerRaum());
         if (ausführungsText == "") {
             this.ausführungsText = "Du hast mit " + gegenstandMitDemZerstörtWird.getName() + " " + gegenstand.getName() + " zerstört."+
-            " Übrig bleibt hier noch ein " + gegenstandDerÜbrigBleibt + ".";
+            " Übrig bleibt hier noch ein " + gegenstandDerÜbrigBleibt.getName() + ".";
             System.out.println(ausführungsText);
         }
     }
