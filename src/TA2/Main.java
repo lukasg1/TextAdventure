@@ -109,7 +109,7 @@ public class Main {
      static Gegenstand tomatensoßendose = new Gegenstand("Tomatensoßendose",true,true,null,true,true);
      static Gegenstand halbeLeiter2 = new Gegenstand("halbe Leiter",true,true,vorgarten,true,true);
      static Gegenstand halbeLeiter = new Gegenstand("halbe Leiter",true,true,garten,true,true);
-     static Gegenstand leiter = new Gegenstand("Leiter",true,true, null,true);
+     static Gegenstand leiter = new Gegenstand("Leiter",true,true, null,true,true);
      static Gegenstand metallschrott = new Gegenstand("Metalschrott",true,true,null,true,true);
      static AktionSammeln sammleBesenstiel = new AktionSammeln("", true, true, "", "",besenstiel);
      static AktionSammeln sammleKlebeband = new AktionSammeln("", true, true, "", "",klebeband);
@@ -172,11 +172,10 @@ public class Main {
      static Gegenstand großemagischeKugel_2= new Gegenstand("großemagischeKugel_2",true,true,null,true,true);
      static Gegenstand übermächtigemagischeKugel= new Gegenstand("übermächtigemagischeKugel",true,true,null,true,true);
 
-     static ABlutstein1 blutstein_1_sichtbar = new ABlutstein1(bibliothek);
-     static ABlutstein2 blutstein_2_sichtbar = new ABlutstein2(tresorRaum);
-     static ABlutstein3 blutstein_3_sichtbar = new ABlutstein3(hinterDemBild);
 
-     static AktionSammeln blutstein_1_sammeln = new AktionSammeln("Blutstein 1 Sammeln",true,false,"Blutstein I aufheben","Du Hebst den 1. Blutstein auf",blutstein_1);
+
+
+     static ASammelBlutstein blutstein_1_sammeln = new ASammelBlutstein("Blutstein 1 Sammeln",true,false,"Blutstein I aufheben","Du Hebst den 1. Blutstein auf",blutstein_1);
      static AktionSammeln blutstein_2_sammeln = new AktionSammeln("Blutstein 2 Sammeln",true,false,"Blutstein II aufheben","Du Hebst den 2. Blutstein auf",blutstein_2);
      static AktionSammeln blutstein_3_sammeln = new AktionSammeln("Blutstein 3 Sammeln",true,false,"Blutstein III aufheben","Du Hebst den 3. Blutstein auf",blutstein_3);
      static AktionSammeln magischeKugel_1_sammeln = new AktionSammeln("Magischekugel 1 Sammeln",true,true,"Magischekugel I aufheben","Du Hebst die 1. Magischekugel auf",magischeKugel_1);
@@ -222,7 +221,7 @@ public class Main {
     sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleLeiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
     zerstöreSchrank,zerstöreBesen,zerstöreTruhe,zerstöreVase,bastleSpeer,esseApfel,esseKekse,esseSchinken,esseTomatensoße,esseHandVollChips,trinkeFlascheCola,trinkeFlaschWein,trinkeVaseMitRest,trinkeWasser,trinkeWasserGlas,
             aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas, aRucksackAufheben, start1, aFluchtA, aFluchtB,
-    eafBoss1,eafBoss2,blutstein_1_sichtbar,blutstein_2_sichtbar,blutstein_3_sichtbar,blutstein_1_sammeln,blutstein_2_sammeln,blutstein_3_sammeln,magischeKugel_1_sammeln,magischeKugel_2_sammeln,magischeKugel_3_sammeln,magischeKugel_4_sammeln,magischeKugel_5_sammeln,magischeKugel_6_sammeln,großemagischeKugel_1_basteln,großemagischeKugel_2_basteln,übermachtigmagischeKugel_basteln,bastleLeiter};
+    eafBoss1,eafBoss2,blutstein_1_sammeln,blutstein_2_sammeln,blutstein_3_sammeln,magischeKugel_1_sammeln,magischeKugel_2_sammeln,magischeKugel_3_sammeln,magischeKugel_4_sammeln,magischeKugel_5_sammeln,magischeKugel_6_sammeln,großemagischeKugel_1_basteln,großemagischeKugel_2_basteln,übermachtigmagischeKugel_basteln,bastleLeiter};
     private Ereignisse[] ereignisListe ={};
 
     //Verwaltungen
