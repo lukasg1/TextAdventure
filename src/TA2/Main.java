@@ -223,7 +223,7 @@ public class Main {
     sammleBronzeSchlüssel,sammleAlterSchlüssel, sammleAxt,sammleBesenstiel,sammleEisenstange,sammleFeuerzeug,sammleFlasche,sammleHalbeLeiter,sammleHalbeLeiter2,sammleImprovisierterSpeer,sammleKlebeband,sammleLeeresGlas,sammleLeiter,sammleMassivesHolzbrett,sammleMetallschrott,sammleModernerSchlüssel,sammleSchwert,sammleSchwert2,sammleSpeerspitze,sammleStreichhölzer,sammleTomatensoßendose,
     zerstöreSchrank,zerstöreBesen,zerstöreTruhe,zerstöreVase,bastleSpeer,esseApfel,esseKekse,esseSchinken,esseTomatensoße,esseHandVollChips,trinkeFlascheCola,trinkeFlaschWein,trinkeVaseMitRest,trinkeWasser,trinkeWasserGlas,
             aLichtschalter,aHandy, aRuestungA, aRuestungB, aOfen,sammleSchinken,sammleApfel,sammleKekse,sammleHandVollChips,sammleTomatensoße, aKaempfeA,aKaempfeB, sammleGlas, aRucksackAufheben, start1, aFluchtA, aFluchtB,
-    eafBoss1,eafBoss2,blutstein_1_sammeln,blutstein_2_sammeln,blutstein_3_sammeln,magischeKugel_1_sammeln,magischeKugel_2_sammeln,magischeKugel_3_sammeln,magischeKugel_4_sammeln,magischeKugel_5_sammeln,magischeKugel_6_sammeln,großemagischeKugel_1_basteln,großemagischeKugel_2_basteln,übermachtigmagischeKugel_basteln,bastleLeiter};
+    eafBoss1,eafBoss2,blutstein_1_sammeln,blutstein_2_sammeln,blutstein_3_sammeln,magischeKugel_1_sammeln,magischeKugel_2_sammeln,magischeKugel_3_sammeln,magischeKugel_4_sammeln,magischeKugel_5_sammeln,magischeKugel_6_sammeln,großemagischeKugel_1_basteln,großemagischeKugel_2_basteln,übermachtigmagischeKugel_basteln,bastleLeiter,entkommen};
     private Ereignisse[] ereignisListe ={};
 
     //Verwaltungen
