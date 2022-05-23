@@ -11,9 +11,9 @@ public class ASammelBlutstein extends AktionBrauchtGegenstand{
 
     public ASammelBlutstein(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand) {
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText, gegenstand);
-        this.aktionsname = "sammle" + gegenstand.getName();
-        this.ausführungsText = "Du sammelst einen Blutstein auf.";
-        this.beschreibung = "Blutstein mitnehmen " ;
+        this.aktionsname = "Blutstein mitnehmen" ;
+        this.ausführungsText = "Du steigst auf die Leiter und holst den Blutstein runter.";
+        this.beschreibung = "Du siehst etwas auf einem Bücherregal, kletter hoch " ;
     }
     
 

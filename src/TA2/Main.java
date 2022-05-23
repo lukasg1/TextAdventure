@@ -214,6 +214,8 @@ public class Main {
     //Action Enemy Flows
     static EAFBoss1 eafBoss1=new EAFBoss1();
     static EAFBoss2 eafBoss2=new EAFBoss2();
+
+    static AEntkommen entkommen=new AEntkommen(vorgarten);
     //Listen
     private static Gegenstand[] gegenstandsListe= {goldenerSchlüssel,vase,besen,truhe,schrank,handVollChips,tomatensoße,kekse,apfel,schinken,metallschrott,leiter,halbeLeiter,halbeLeiter2,tomatensoßendose,leeresGlas,flasche,speerspitze,klebeband,besenstiel, vaseMitWasser,ColaFlasche,flascheWein,glasMitWasser,wasser,modernerSchlüssel,bronzeschlüssel,alterSchlüssel,feuerzeug,streichölzer,axt,schwert,schwert2,eisenstange,improvisierterSpeer,massivesHolzbrett, blutstein_1, blutstein_2, blutstein_3, magischeKugel_1,magischeKugel_2,magischeKugel_3,magischeKugel_4,magischeKugel_5,magischeKugel_6,übermächtigemagischeKugel,großemagischeKugel_1,großemagischeKugel_2};
     private static TA2.Raum[] raumListe = {eingangshalle, küche, esszimmer, garten, vorraum, kapelle, flurEG, albtraumRaum, wohnzimmer, flurOG, arena, beschwörkammer, badezimmer, teezimmer, hinterDemBild, gemächer, vorgarten, bibliothek, tresorRaum};

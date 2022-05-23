@@ -66,7 +66,7 @@ public class EAFBoss1 extends AktionOberklasse{
                 if(gv.sucheGegnstandzumZerstören()!=null) {
                     this.ausführungsText = "Du tötest das Monster indem du " + gv.sucheGegnstandzumZerstören()+" durch die verbleibenden beiden Köpfe jagst. Na ging doch, aber duschen wäre jetzt nett.";
                     gv.sucheGegnstandzumZerstören().deaktivieren();
-                    gewonnen.aktivieren();
+                    zähler=6;
                 }
                 else {
                     if(w100.würfel()>50){
@@ -89,6 +89,9 @@ public class EAFBoss1 extends AktionOberklasse{
                 break;
 
 
+            case(6):
+                gewonnen.aktivieren();
+                break;
 
         }
 

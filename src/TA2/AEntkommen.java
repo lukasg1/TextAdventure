@@ -5,8 +5,8 @@ import static TA2.Main.*;
 public class AEntkommen extends AktionOberklasse{
     protected Raum raum;
 
-    public AEntkommen() {
-        this.raum=vorgarten;
+    public AEntkommen(Raum raum) {
+        this.raum=raum;
         this.ausführungsText="Du stößt gegen eine unsichtbare Wand. Das ist gar nicht gut.";
         this.aktionsname="Entkommen";
         this.aktiv=true;
@@ -30,7 +30,7 @@ public class AEntkommen extends AktionOberklasse{
     public void ausführen() {
 
         System.out.println(ausführungsText);
-        if(frei.isAktiv()){
+        if(frei.isAktiv()||übermächtigemagischeKugel.isImInventar()){
             gewonnen.aktivieren();
 
         }
