@@ -59,7 +59,7 @@ public class AktionTürBrauchtGegenstand extends AktionBrauchtRaum{
                 this.ausführungsText="Du gehst in den neuen Raum";
                 this.texthelp=true;
             }else{
-                this.ausführungsText="Tür verlschlossen";
+                this.ausführungsText="Tür verschlossen. Hier kommst du leider nicht durch.";
             }
 
     }
