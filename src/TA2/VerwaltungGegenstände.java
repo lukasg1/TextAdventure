@@ -240,7 +240,7 @@ public class VerwaltungGegenstände implements InterfaceOfUpdate{
         for(int i = 0; i< this.gegenstandsliste.length;i++){
             if(gegenstandsliste[i]==gegenstand) {
 
-                if (gegenstandsliste[i].verfügbarkeitPrüfen() == true) {
+                if (gegenstandsliste[i].isAktiv() == true) {
                     if (gegenstandsliste[i].isImInventar() == true) {
 
                         return true;

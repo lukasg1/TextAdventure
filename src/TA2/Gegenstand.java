@@ -144,6 +144,10 @@ public class Gegenstand implements InterfaceOfUpdate, InterfaceOfVerfügbar, Int
 
     }
 
+    public boolean isAktiv() {
+        return aktiv;
+    }
+
     @Override
     public void deaktivieren() {
         this.aktiv=false;
