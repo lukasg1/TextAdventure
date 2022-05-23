@@ -30,8 +30,8 @@ public class Main {
 
     //Schlüssel
     static Gegenstand goldenerSchlüssel = new Gegenstand("goldener Schlüssel",true,true,küche,false,true);
-    static Gegenstand modernerSchlüssel = new Gegenstand("moderner Schlüssel",true,true,null,true, true);
-    static Gegenstand bronzeschlüssel = new Gegenstand("Bronzeschlüssel",true,true,null,true, true);
+    static Gegenstand modernerSchlüssel = new Gegenstand("moderner Schlüssel",true,true,gemächer,true, true);
+    static Gegenstand bronzeschlüssel = new Gegenstand("Bronzeschlüssel",true,true,hinterDemBild,true, true);
     static Gegenstand alterSchlüssel = new Gegenstand("alter Schlüssel",true,true,null,true, true);
     static AktionSammeln sammleGoldenerSchlüssel = new AktionSammeln("", true, true, "", "", goldenerSchlüssel);
     static AktionSammeln sammleModernerSchlüssel = new AktionSammeln("", true, true, "", "", modernerSchlüssel);
@@ -51,7 +51,7 @@ public class Main {
      static TA2.AktionTür türVorraumBibliothek = new TA2.AktionTür("",true,true,"Öffne die verzierte Holztüre an der Wand. Was wohl dahinter liegt?","",vorraum,bibliothek);
      static TA2.AktionTür türVorraumFlurEG = new TA2.AktionTür("",true,true,"Öffne die große massive Holztüre.","Öffne die massive Tür",vorraum,flurEG);
      static TA2.AktionTürBrauchtGegenstand türFlurEGAlbtraumraum = new TA2.AktionTürBrauchtGegenstand("",true,true,"Eine glatte Schwarzetüre. 'Öffne mich schreit' sie dir zu. Öffnest du sie?","Die Türe ist so faszinierten. Du fühlst fast einen Sog während du sie öffnest.",flurEG,albtraumRaum,alterSchlüssel);
-     static TA2.AktionTürBrauchtGegenstand türEingangshalleVorgarten = new TA2.AktionTürBrauchtGegenstand("",true,false,"Die Konturen zeigen eine massive Türe. Versuche sie zu öffnen.","Die Eingangstüre öffnet sich.",eingangshalle,vorgarten,goldenerSchlüssel);
+     static TA2.AktionTürBrauchtGegenstand türEingangshalleVorgarten = new TA2.AktionTürBrauchtGegenstand("",true,true,"Die Konturen zeigen eine massive Türe. Versuche sie zu öffnen.","Die Eingangstüre öffnet sich.",eingangshalle,vorgarten,goldenerSchlüssel);
      static TA2.AktionTür türFlurEGWohnzimmer = new TA2.AktionTür("",true,true,"Schlichte Tür am Flurende versuchen zu öffnen.","Die Türe schwingt lautlos auf.",flurEG,wohnzimmer);
      static TA2.AktionTür türFlurOGArena = new TA2.AktionTür("",true,true,"Türe mit Schwertsymbol öffnen.","",flurOG,arena);
      static TA2.AktionTür türFlurOGTeezimmer = new TA2.AktionTür("",true,true,"Schlichte Holztüre, man hört leises plätschern. Öffnen?","",flurOG,teezimmer);
