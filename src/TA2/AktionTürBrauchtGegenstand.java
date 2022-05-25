@@ -15,7 +15,7 @@ public class AktionTürBrauchtGegenstand extends AktionBrauchtRaum{
         this.zielraum=zielraum;
         this.aktionsname= raum.getRaumName()+zielraum.getRaumName()+"Tür";
         this.gegenstand=gegenstand;
-        this.ausführungsText="Tür verschlossen";
+        this.ausführungsText="Tür verschlossen.";
 
 
     }
@@ -56,7 +56,7 @@ public class AktionTürBrauchtGegenstand extends AktionBrauchtRaum{
 
 
                 }
-                this.ausführungsText="Du gehst in den neuen Raum";
+                this.ausführungsText="Du gehst in den neuen Raum.";
                 this.texthelp=true;
             }else{
                 this.ausführungsText="Tür verschlossen. Hier kommst du leider nicht durch.";

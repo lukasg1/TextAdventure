@@ -76,7 +76,7 @@ public class EAFBoss1 extends AktionOberklasse{
                     }
                     else {
                         zähler=0;
-                        this.ausführungsText = " Das Monster schlägt nach dir...das war knapp;";
+                        this.ausführungsText = " Das Monster schlägt nach dir...das war knapp.";
 
                     }
 
