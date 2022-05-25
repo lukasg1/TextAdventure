@@ -3,7 +3,7 @@ package TA2;
 import static TA2.Main.rv;
 
 public class AFlucht extends AktionOberklasse{
-    protected Raum raum;
+    private Raum raum;
 
     public AFlucht(Raum raum) {
         this.raum=raum;

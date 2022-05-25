@@ -1,8 +1,8 @@
 package TA2;
 
 public class Gegner implements InterfaceOfUpdate{
-    public String name;
-    public String gegnerArt;
+    private String name;
+    private String gegnerArt;
 
     @Override
     public void update() {

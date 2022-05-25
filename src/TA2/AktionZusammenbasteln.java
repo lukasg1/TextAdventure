@@ -5,11 +5,11 @@ import static TA2.Main.rv;
 
 public class AktionZusammenbasteln extends AktionBrauchtNix{
 
-    protected Gegenstand gegenstand1=null;
-    protected Gegenstand gegenstand2=null;
-    protected Gegenstand gegenstand3=null;
-    protected Gegenstand gegenstand4=null;
-    protected Gegenstand endgegenstand;
+    private Gegenstand gegenstand1=null;
+    private Gegenstand gegenstand2=null;
+    private Gegenstand gegenstand3=null;
+    private Gegenstand gegenstand4=null;
+    private Gegenstand endgegenstand;
 
     public AktionZusammenbasteln(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand1, Gegenstand gegenstand2, Gegenstand endgegenstand) {
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText);

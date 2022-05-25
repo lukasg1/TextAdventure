@@ -4,16 +4,16 @@ public class Hauptperson implements InterfaceOfUpdate{
 
     //Eigenschaften der Person
 
-    public boolean personVerletzt;
-    public boolean personDurstig;
-    public boolean personHungrig;
-    public int schadenPerson;
-    public boolean statusLeben; //tot oder lebendig
-    public String verletzungsArt;
-    public boolean verletzungsartBrennen;
-    public boolean verletzungsartBruch;
-    public boolean verletzungsartVergiftet;
-    public int verletzungsCounter;
+    private boolean personVerletzt;
+    private boolean personDurstig;
+    private boolean personHungrig;
+    private int schadenPerson;
+    private boolean statusLeben; //tot oder lebendig
+    private String verletzungsArt;
+    private boolean verletzungsartBrennen;
+    private boolean verletzungsartBruch;
+    private boolean verletzungsartVergiftet;
+    private int verletzungsCounter;
 
 
     public Hauptperson(boolean personVerletzt, boolean personDurstig,

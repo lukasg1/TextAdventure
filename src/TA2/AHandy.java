@@ -6,7 +6,7 @@ import static TA2.Main.rv;
 public class AHandy extends AktionOberklasse{
 
 
-    protected Raum raum;
+    private Raum raum;
 
 
 

@@ -5,8 +5,8 @@ import static TA2.Main.*;
 
 
 public class AKaempfe extends AktionOberklasse{
-    protected Raum raum;
-    public int zähler;
+    private Raum raum;
+    private int zähler;
 
     public AKaempfe(Raum raum) {
         this.raum=raum;

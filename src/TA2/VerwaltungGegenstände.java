@@ -3,7 +3,7 @@ package TA2;
 
 
 public class VerwaltungGegenstände implements InterfaceOfUpdate{
-    public Gegenstand[] gegenstandsliste;
+    private Gegenstand[] gegenstandsliste;
 
     public VerwaltungGegenstände(Gegenstand[] gegenstandsliste){
 

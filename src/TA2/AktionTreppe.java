@@ -3,7 +3,7 @@ package TA2;
 import static TA2.Main.rv;
 
 public class AktionTreppe extends AktionBrauchtRaum{
-    protected Raum zielraum;
+    private Raum zielraum;
 
 
 

@@ -4,7 +4,7 @@ import static TA2.Main.*;
 
 public class EAFBoss2 extends AktionOberklasse{
     private Ereignisse ereignis;
-    protected Raum raum;
+    private Raum raum;
     public int zähler;
 
 

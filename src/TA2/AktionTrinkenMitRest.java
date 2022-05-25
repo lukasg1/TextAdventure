@@ -5,7 +5,7 @@ import static TA2.Main.rv;
 
 public class AktionTrinkenMitRest extends AktionTrinken{
 
-    protected Gegenstand gegenstandDerÜbrigBleibt;
+    private Gegenstand gegenstandDerÜbrigBleibt;
 
     public AktionTrinkenMitRest(String aktionsname, boolean aktiv, boolean sichtbar, String beschreibung, String ausführungsText, Gegenstand gegenstand, Gegenstand gegenstandDerÜbrigBleibt) {
         super(aktionsname, aktiv, sichtbar, beschreibung, ausführungsText, gegenstand);

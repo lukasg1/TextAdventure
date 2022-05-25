@@ -3,8 +3,8 @@ package TA2;
 import static TA2.Main.*;
 
 public class AStart1 extends AktionOberklasse{
-    protected Raum raum;
-    protected int zähler;
+    private Raum raum;
+    private int zähler;
 
 
     //Aktionsattribute

@@ -4,9 +4,9 @@ import static TA2.Main.*;
 
 public class ARucksackAufheben extends AktionOberklasse{
 
-    protected Raum raum = eingangshalle;
-    protected Gegenstand g1 = ColaFlasche;
-     protected Gegenstand g2 = tomatensoßendose;
+    private Raum raum = eingangshalle;
+    private Gegenstand g1 = ColaFlasche;
+    private Gegenstand g2 = tomatensoßendose;
 
 
     public ARucksackAufheben() {

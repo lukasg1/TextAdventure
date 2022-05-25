@@ -1,13 +1,14 @@
 package TA2;
 
 public class VerwaltungAktionen implements InterfaceOfUpdate{
-    AktionOberklasse[] aktionen;
+    private AktionOberklasse[] aktionen;
     public VerwaltungAktionen(AktionOberklasse[] aktionen) {
         this.aktionen = aktionen;
     }
 
     public AktionOberklasse[] gibAktiveAktionen(){
         update();
+
 
         int zähler1 =0;
         int zählerw=0;

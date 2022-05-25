@@ -1,7 +1,7 @@
 package TA2;
 
 public class VerwaltungZeit implements InterfaceOfUpdate{
-    protected int Zeit=0;
+    public int Zeit=0;
     public VerwaltungZeit() {
     }
 

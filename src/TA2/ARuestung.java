@@ -4,9 +4,9 @@ import static TA2.Main.*;
 
 public class ARuestung extends AktionOberklasse {
 
-    protected Raum raum;
-    protected AktionOberklasse aktion;
-    public int zaehler;
+    private Raum raum;
+    private AktionOberklasse aktion;
+    private int zaehler;
 
 
     public ARuestung(Raum raum) {

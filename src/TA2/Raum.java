@@ -2,12 +2,12 @@ package TA2;
 
 
 public class Raum {
-    public boolean entdeckt;
-    public String raumName;
-    public String textErstesMal;
-    public String textNichtErstesMal;
-    public String lage;
-    public int letzterAufruf;
+    private boolean entdeckt;
+    private String raumName;
+    private String textErstesMal;
+    private String textNichtErstesMal;
+    private String lage;
+    private int letzterAufruf;
     public Raum(String raumName, String textErstesMal, String textNichtErstesMal, String lage){
         this.raumName = raumName;
         entdeckt=false;

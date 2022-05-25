@@ -3,9 +3,9 @@ package TA2;
 import static TA2.Main.*;
 
 public class EAFBoss1 extends AktionOberklasse{
-    protected Raum raum;
+    private Raum raum;
     public int zähler;
-    protected Ereignisse ereignis;
+    private Ereignisse ereignis;
 
 
     //Aktionsattribute

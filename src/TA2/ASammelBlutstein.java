@@ -4,8 +4,8 @@ import static TA2.Main.*;
 
 public class ASammelBlutstein extends AktionBrauchtGegenstand{
     
-    protected Raum raum;
-    protected Gegenstand g2 = blutstein_2;
+    private Raum raum;
+    private Gegenstand g2 = blutstein_2;
     
 
 

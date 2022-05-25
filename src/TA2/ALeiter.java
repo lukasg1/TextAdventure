@@ -5,7 +5,7 @@ import static TA2.Main.aRucksackAufheben;
 
 public class ALeiter extends AktionOberklasse {
 
-    protected Raum raum;
+    private Raum raum;
 
     public ALeiter() {
         this.raum=bibliothek;

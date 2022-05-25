@@ -1,10 +1,10 @@
 package TA2;
 
 public class AktionAktiviertAktionen extends AktionBrauchtNix{
-    protected AktionOberklasse aktion1;
-    protected AktionOberklasse aktion2=null;
-    protected AktionOberklasse aktion3=null;
-    protected AktionOberklasse aktion4=null;
+    private AktionOberklasse aktion1;
+    private AktionOberklasse aktion2=null;
+    private AktionOberklasse aktion3=null;
+    private AktionOberklasse aktion4=null;
 
 
 

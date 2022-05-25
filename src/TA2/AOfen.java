@@ -5,7 +5,7 @@ import static TA2.Main.*;
 public class AOfen extends AktionOberklasse{
 
 
-    protected Raum raum;
+    private Raum raum;
 
 
     //Aktionsattribute
